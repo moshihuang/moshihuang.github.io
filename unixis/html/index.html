@@ -59,8 +59,8 @@
             <li> <a class="js-scroll" href="#contact">Contact</a></li>
           </ul>
         </div>
-        <div class="talk-to-us"><img src="../img/icon/four-point-white.svg" alt=""><span>Talk to Us</span>
-          <div class="hide-div d-none"> 
+        <div class="talk-to-us"><span>Talk to Us</span>
+          <div class="sub-div">
             <div class="text-white">若您也有著相同理念，歡迎與我們聯繫！</div>
           </div>
         </div>
@@ -149,8 +149,8 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <div class="row">
-                        <div class="col-12 col-lg-5 order-sm-2"><img src="../img/md/service-carousel-img-1.jpg" alt=""></div>
-                        <div class="col-12 col-lg-6 order-sm-1">
+                        <div class="col-12 col-lg-5 order-sm-2 order-md-1"><img src="../img/md/service-carousel-img-1.jpg" alt=""></div>
+                        <div class="col-12 col-lg-6 order-sm-1 order-md-2">
                           <div class="content-wrap">
                             <h2 class="num text-orange">01</h2>
                             <h2 class="title">確認產品走向</h2>
@@ -168,8 +168,8 @@
                     </div>
                     <div class="swiper-slide">
                       <div class="row">
-                        <div class="col-12 col-lg-5 order-sm-2"><img src="../img/md/service-carousel-img-2.jpg" alt=""></div>
-                        <div class="col-12 col-lg-6 order-sm-1">
+                        <div class="col-12 col-lg-5 order-sm-2 order-md-1"><img src="../img/md/service-carousel-img-2.jpg" alt=""></div>
+                        <div class="col-12 col-lg-6 order-sm-1 order-md-2">
                           <div class="content-wrap">
                             <h2 class="num text-orange">02</h2>
                             <h2 class="title">確認產品走向</h2>
@@ -187,8 +187,8 @@
                     </div>
                     <div class="swiper-slide">
                       <div class="row">
-                        <div class="col-12 col-lg-5 order-sm-2"><img src="../img/md/service-carousel-img-3.jpg" alt=""></div>
-                        <div class="col-12 col-lg-6 order-sm-1">
+                        <div class="col-12 col-lg-5 order-sm-2 order-md-1"><img src="../img/md/service-carousel-img-3.jpg" alt=""></div>
+                        <div class="col-12 col-lg-6 order-sm-1 order-md-2">
                           <div class="content-wrap">
                             <h2 class="num text-orange">03</h2>
                             <h2 class="title">確認產品走向</h2>
@@ -206,8 +206,8 @@
                     </div>
                     <div class="swiper-slide">
                       <div class="row">
-                        <div class="col-12 col-lg-5 order-sm-2"><img src="../img/md/service-carousel-img-4.jpg" alt=""></div>
-                        <div class="col-12 col-lg-6 order-sm-1">
+                        <div class="col-12 col-lg-5 order-sm-2 order-md-1"><img src="../img/md/service-carousel-img-4.jpg" alt=""></div>
+                        <div class="col-12 col-lg-6 order-sm-1 order-md-2">
                           <div class="content-wrap">
                             <h2 class="num text-orange">04</h2>
                             <h2 class="title">確認產品走向</h2>
@@ -339,7 +339,7 @@
                         </div>
                         <div class="text-right">
                           <h3 class="title two-point-orange-before">產品設計團隊</h3>
-                          <p>團隊中的管理者、研究員、工程師和產品設計師相輔相成，<br>透過密切合作與絕佳默契，逐步建構數位產品的獨特世界觀。</p>
+                          <p>團隊中的管理者、研究員、工程師和產品設計師相輔相成，<br class="d-none d-lg-block">透過密切合作與絕佳默契，逐步建構數位產品的獨特世界觀。</p>
                         </div>
                       </div>
                     </div>
@@ -352,7 +352,7 @@
         <section class="contact" id="contact">
           <div class="container">
             <div class="row"> 
-              <div class="col-12 col-lg-5 order-sm-2">
+              <div class="col-12 col-lg-5 order-sm-2 order-md-1">
                 <div class="info">
                   <p class="text-white">Digital Product Architects</p>
                   <div class="logo"> <img src="../img/logo-footer.svg" alt=""></div>
@@ -361,7 +361,7 @@
                   <address class="address two-point-orange-before">臺北市松山區南京東路4段171號2樓之1</address>
                 </div>
               </div>
-              <div class="col-12 col-lg-7 order-sm-1">
+              <div class="col-12 col-lg-7 order-sm-1 order-md-2">
                 <div class="bg-gray contact-bg">
                   <h2 class="title text-orange two-point-orange-after">Contact</h2>
                   <h2 class="title">讓我們一起打磨一份有溫度的數位產品！  </h2>
@@ -384,10 +384,10 @@
           </div>
         </div>
       </footer>
-      <div class="backtotop">
+      <div class="scrolltop">
         <div class="container">
           <div class="row">
-            <div class="col-12"><a class="js-scroll" href="#top"><img class="mr-1 align-middle" src="../img/icon/arrow-down-orange.svg" alt=""><span class="text-orange">Top</span></a></div>
+            <div class="col-12"><a class="backtotop js-scroll" href="#top"><img class="mr-1 align-middle" src="../img/icon/arrow-down-orange.svg" alt=""><span class="text-orange">Top</span></a></div>
           </div>
         </div>
       </div>
@@ -401,7 +401,8 @@
       //- 
       const swiper1 = new Swiper(".committedSwiper", {
         navigation: {
-          nextEl: ".swiper-button-next"
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
       
@@ -421,6 +422,16 @@
         pagination: {
           el: ".swiper-pagination3",
           clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 16,
+          },
         },
       });
       

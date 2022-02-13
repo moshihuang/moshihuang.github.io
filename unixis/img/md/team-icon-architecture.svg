@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="131px" height="119px" viewBox="0 0 131 119" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Group 100</title>
+<svg width="135px" height="158px" viewBox="0 0 135 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 191</title>
     <g id="最終版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop_1440" transform="translate(-332.000000, -4697.000000)">
-            <g id="Group-122" transform="translate(233.000000, 4515.000000)">
-                <g id="Group-100" transform="translate(99.000000, 182.000000)">
-                    <path d="M62.4494134,119 C34.5876868,119 12,95.7370269 12,67.0361956 L12,51.9638044 C12,23.2629731 34.5876868,0 62.4494134,0 L80.5446205,0 C108.406347,0 131,23.2629731 131,51.9638044 L131,67.0361956 C131,95.7370269 108.406347,119 80.5446205,119 L62.4494134,119 Z" id="Fill-25-Copy-11" fill="#E4E9EF"></path>
-                    <g id="Group-85" transform="translate(44.000000, 11.000000)" stroke-width="1.2">
-                        <rect id="Rectangle" stroke="#FF5036" fill="#FF5036" x="8" y="9" width="76" height="89"></rect>
-                        <rect id="Rectangle-Copy" stroke="#FF5036" fill="#FFFFFF" x="0" y="0" width="76" height="89"></rect>
-                        <rect id="Rectangle" stroke="#242628" fill="#242628" x="14" y="11" width="47" height="22"></rect>
-                        <line x1="14" y1="11" x2="61" y2="33" id="Path-20" stroke="#FF5036"></line>
-                        <line x1="14" y1="11" x2="61" y2="33" id="Path-20-Copy" stroke="#FF5036" transform="translate(37.500000, 22.000000) scale(1, -1) translate(-37.500000, -22.000000) "></line>
-                        <line x1="14" y1="44.5" x2="61" y2="44.5" id="Path-21" stroke="#242628"></line>
-                        <line x1="14" y1="50.5" x2="47" y2="50.5" id="Path-21-Copy" stroke="#FF5036"></line>
-                    </g>
-                    <g id="Group-94" transform="translate(0.000000, 40.000000)">
-                        <g id="Group-92" transform="translate(4.000000, 4.000000)">
-                            <polyline id="Path-19" stroke="#FF5036" stroke-width="1.2" points="0 0 25 0 25 40 75 40"></polyline>
-                            <polygon id="Path-22" fill="#FF5036" points="74 36 74 45 83 40.2"></polygon>
+        <g id="Desktop_1440" transform="translate(-334.000000, -4680.000000)">
+            <g id="Group-191" transform="translate(334.000000, 4680.000000)">
+                <text id="Brand" font-family="MuseoSans-500, Museo Sans" font-size="16" font-weight="normal" letter-spacing="-0.385882286" fill="#FF5036">
+                    <tspan x="47" y="146">Brand</tspan>
+                </text>
+                <g id="Group-93" transform="translate(12.000000, 14.000000)">
+                    <path d="M48.1920941,107 C23.0708651,107 2.70491803,86.0828729 2.70491803,60.2762431 L2.70491803,46.7237569 C2.70491803,20.9171271 23.0708651,0 48.1920941,0 L64.5074447,0 C89.6286736,0 110,20.9171271 110,46.7237569 L110,60.2762431 C110,86.0828729 89.6286736,107 64.5074447,107 L48.1920941,107 Z" id="Fill-25-Copy-9" fill="#E4E9EF"></path>
+                    <g id="Group-88" transform="translate(0.000000, 14.386555)" stroke-width="1.08">
+                        <g id="Group-63" transform="translate(0.000000, 8.092437)">
+                            <rect id="Rectangle" stroke="#FF5036" fill="#FF5036" x="0" y="0" width="93.7704918" height="57.5462185"></rect>
+                            <line x1="7.46013923" y1="46.3067227" x2="43.031664" y2="46.3067227" id="Path-23" stroke="#242628"></line>
+                            <line x1="7.21311475" y1="40.012605" x2="26.8012295" y2="40.012605" id="Path-23-Copy" stroke="#E4E9EF"></line>
                         </g>
-                        <path d="M3.3915572,8 C1.51849995,8 0,6.43610265 0,4.506635 L0,3.493365 C0,1.56389735 1.51849995,0 3.3915572,0 L4.60804171,0 C6.48109897,0 8,1.56389735 8,3.493365 L8,4.506635 C8,6.43610265 6.48109897,8 4.60804171,8 L3.3915572,8 Z" id="Fill-25-Copy-15" fill="#FF5036"></path>
+                        <ellipse id="Oval" stroke="#242628" fill="#242628" cx="37.4180328" cy="16.6344538" rx="16.6803279" ry="16.6344538"></ellipse>
+                        <line x1="105.491803" y1="8.44468509" x2="105.942623" y2="76.0763233" id="Path-15" stroke="#FF5036"></line>
+                        <line x1="105.491803" y1="76.8781513" x2="11.7213115" y2="76.8781513" id="Path-15-Copy" stroke="#FF5036"></line>
                     </g>
+                    <polygon id="Triangle" stroke="#FF5036" stroke-width="1.08" fill="#FFFFFF" transform="translate(69.610266, 46.593769) rotate(-291.000000) translate(-69.610266, -46.593769) " points="76.4794105 17.4513511 99.7244507 75.7361863 39.4960806 68.9010194"></polygon>
+                    <path d="M11.1727155,95.3109244 C9.4838934,95.3109244 8.1147541,93.904731 8.1147541,92.1698315 L8.1147541,91.25874 C8.1147541,89.5238405 9.4838934,88.1176471 11.1727155,88.1176471 L12.2695458,88.1176471 C13.9583679,88.1176471 15.3278689,89.5238405 15.3278689,91.25874 L15.3278689,92.1698315 C15.3278689,93.904731 13.9583679,95.3109244 12.2695458,95.3109244 L11.1727155,95.3109244 Z" id="Fill-25-Copy-16" fill="#FF5036"></path>
+                    <path d="M104.943207,95.3109244 C103.254385,95.3109244 101.885246,93.904731 101.885246,92.1698315 L101.885246,91.25874 C101.885246,89.5238405 103.254385,88.1176471 104.943207,88.1176471 L106.040038,88.1176471 C107.72886,88.1176471 109.098361,89.5238405 109.098361,91.25874 L109.098361,92.1698315 C109.098361,93.904731 107.72886,95.3109244 106.040038,95.3109244 L104.943207,95.3109244 Z" id="Fill-25-Copy-17" fill="#FF5036"></path>
+                    <path d="M104.943207,26.9747899 C103.254385,26.9747899 101.885246,25.5685965 101.885246,23.833697 L101.885246,22.9226055 C101.885246,21.187706 103.254385,19.7815126 104.943207,19.7815126 L106.040038,19.7815126 C107.72886,19.7815126 109.098361,21.187706 109.098361,22.9226055 L109.098361,23.833697 C109.098361,25.5685965 107.72886,26.9747899 106.040038,26.9747899 L104.943207,26.9747899 Z" id="Fill-25-Copy-18" fill="#FF5036"></path>
                 </g>
+                <rect id="Rectangle" x="0" y="0" width="135" height="158"></rect>
             </g>
         </g>
     </g>

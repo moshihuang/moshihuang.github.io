@@ -613,21 +613,24 @@
           $('.m-menu').removeClass('m-menu-opened');
         });
       
+        function committedBG() {
+          document.addEventListener('mousemove', function (event) {
+            if (window.event) { // IE fix
+              event = window.event;
+            }
+            // Grab the mouse's X-position.
+            var mousex = event.clientX;
+            var mousey = event.clientY;
+            $('.committed .container').css({'background-position-x': 70 + mousex / 100 + "%", 'background-position-y': -33 + mousey / 10 + "px"});
+          }, false);
+        }
+      
+        committedBG();
+        
         $(window).resize(function() {
-          if($(window).width() > 768) {
-            document.addEventListener('mousemove', function (event) {
-              if (window.event) { // IE fix
-                event = window.event;
-              }
-              // Grab the mouse's X-position.
-              var mousex = event.clientX;
-              var mousey = event.clientY;
-              $('.committed .container').css({'background-position-x': 70 + mousex / 100 + "%", 'background-position-y': -33 + mousey / 10 + "px"});
-            }, false);
+          if ($(window).width() > 768) {
+            committedBG();
           } 
-          else {
-            
-          }
         });
         
       

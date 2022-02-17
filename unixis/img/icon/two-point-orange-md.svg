@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="5px" height="16px" viewBox="0 0 5 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Group 160</title>
-    <g id="最終版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop_1440" transform="translate(-730.000000, -2029.000000)" fill="#FF5036">
-            <g id="Group-145" transform="translate(730.000000, 1874.000000)">
-                <g id="Group-113" transform="translate(0.000000, 143.000000)">
-                    <g id="Group-160" transform="translate(0.000000, 12.500000)">
-                        <path d="M2.88002607,5 L2.11972325,5 C0.949062469,5 0,4.02256416 0,2.81664687 L0,2.18335313 C0,0.977435844 0.949062469,0 2.11972325,0 L2.88002607,0 C4.05068685,0 5,0.977435844 5,2.18335313 L5,2.81664687 C5,4.02256416 4.05068685,5 2.88002607,5" id="Fill-25"></path>
-                        <path d="M2.88002607,15 L2.11972325,15 C0.949062469,15 0,14.0225642 0,12.8166469 L0,12.1833531 C0,10.9774358 0.949062469,10 2.11972325,10 L2.88002607,10 C4.05068685,10 5,10.9774358 5,12.1833531 L5,12.8166469 C5,14.0225642 4.05068685,15 2.88002607,15" id="Fill-25-Copy-7"></path>
-                    </g>
+<svg width="5px" height="13px" viewBox="0 0 5 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 184</title>
+    <defs>
+        <polygon id="path-1" points="0 0 5 0 5 5 0 5"></polygon>
+    </defs>
+    <g id="0215_官網字級調整" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-370.000000, -202.000000)" id="Group-184">
+            <g transform="translate(370.000000, 202.000000)" id="Group-50">
+                <path d="M2.88009827,13 L2.11977639,13 C0.94908626,13 0,12.022306 0,10.8166469 L0,10.1833531 C0,8.97743584 0.94908626,8 2.11977639,8 L2.88009827,8 C4.0507884,8 5.00012534,8.97743584 5.00012534,10.1833531 L5.00012534,10.8166469 C5.00012534,12.022306 4.0507884,13 2.88009827,13" id="Fill-22" fill="#FF5036"></path>
+                <g id="Group-27">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-26"></g>
+                    <path d="M2.88009827,5 L2.11977639,5 C0.94908626,5 0,4.02256416 0,2.81664687 L0,2.18335313 C0,0.977435844 0.94908626,0 2.11977639,0 L2.88009827,0 C4.0507884,0 5.00012534,0.977435844 5.00012534,2.18335313 L5.00012534,2.81664687 C5.00012534,4.02256416 4.0507884,5 2.88009827,5" id="Fill-25" fill="#FF5036" mask="url(#mask-2)"></path>
                 </g>
             </g>
         </g>

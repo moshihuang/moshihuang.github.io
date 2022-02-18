@@ -23,7 +23,7 @@
     <div class="grid-line">
       <div class="horizontal-wrap"><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span></div>
       <div class="vertical-wrap">
-        <div class="container"><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span></div>
+        <div class="container-fluid"><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span></div>
       </div>
     </div>
     <div class="wrap">
@@ -58,12 +58,10 @@
             <li class="navTeam"> <a class="js-scroll" href="#team">Team</a></li>
             <li class="navContact"> <a class="js-scroll" href="#contact">Contact</a></li>
           </ul>
-        </div>
-        <div class="talk-to-us"><span>Talk to Us</span>
+        </div><a class="talk-to-us js-scroll animate-link" href="#contact"><span>Talk to Us</span>
           <div class="sub-div">
             <div class="text-white">若您也有著相同理念，歡迎與我們聯繫！</div>
-          </div>
-        </div>
+          </div></a>
       </nav>
       <main class="content">
         <section class="committed">
@@ -146,6 +144,7 @@
                 </div>
               </div>
               <div class="col-12">
+                <div class="div" data-scrollmagic-pin-spacer></div>
                 <div class="swiper serviceSwiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -232,7 +231,7 @@
                     <div class="col-12 col-lg-9 offset-lg-2">
                       <div class="text-wrap" data-aos="fade-down">
                         <h5 class="sub-title text-gray">協同合作夥伴，共同打造優質的數位產品</h5>
-                        <h2 class="title text-gray">Clients</h2>
+                        <h2 class="title text-gray two-point-gray-after">Clients</h2>
                       </div>
                     </div>
                   </div>
@@ -241,7 +240,7 @@
             </div>
             <div class="row no-gutters">
               <div class="col-12 col-lg-4 offset-lg-1">
-                <div>
+                <div class="mr-5">
                   <p>不論您是否已經有初步想法，不論您的企業規模大小，我們都能協助您打造您孕育一個用戶喜歡、有商業價值，也可實現的產品。</p>
                 </div>
               </div>
@@ -251,9 +250,9 @@
                     <div class="swiper clientsSwiper1">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="../img/md/clients-ctbc-bank.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/md/clients-three.svg" alt=""></div>
                         <div class="swiper-slide"><img src="../img/md/clients-sanaa.svg" alt=""></div>
                         <div class="swiper-slide"><img src="../img/md/clients-ctbc-finance.svg" alt=""></div>
-                        <div class="swiper-slide"><img src="../img/md/clients-three.svg" alt=""></div>
                       </div>
                     </div>
                     <div class="swiper clientsSwiper2">
@@ -268,8 +267,8 @@
                       <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="../img/md/clients-ctbc-finance.svg" alt=""></div>
                         <div class="swiper-slide"><img src="../img/md/clients-ctbc-bank.svg" alt=""></div>
-                        <div class="swiper-slide"><img src="../img/md/clients-sanaa.svg" alt=""></div>
                         <div class="swiper-slide"><img src="../img/md/clients-three.svg" alt=""></div>
+                        <div class="swiper-slide"><img src="../img/md/clients-sanaa.svg" alt=""></div>
                       </div>
                     </div>
                   </div>
@@ -299,13 +298,13 @@
                     <h2 class="sub-title">唯度不只是誕生數位產品的工坊<span class="d-sm-inline d-md-none ">，</span><br class="d-sm-block">更是致力於建構設計專業環境與知識的職人</h2>
                   </div>
                   <div class="row no-gutters">
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-5">
                       <div class="text-center" data-aos="fade-down">
                         <h4 class="text-orange">專業且開放的設計環境</h4>
                         <p>在唯度裡，我們秉持著多樣化的彈性與個性，彼此互相交流分享，共同面對不同的挑戰。</p><img src="../img/md/culture-img-1.svg" alt="">
                       </div>
                     </div>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-5 offset-lg-1">
                       <div class="text-center" data-aos="fade-down">
                         <h4 class="text-orange">完整的知識系統</h4>
                         <p>唯度致力於培育人才，分享專業知識，任何人都可以是產品設計的專家。</p><img src="../img/md/culture-img-2.svg" alt="">
@@ -334,7 +333,7 @@
               <div class="col-12 col-lg-11 offset-lg-1">
                 <div class="row no-gutters">
                   <div class="col-12 col-lg-8">
-                    <div class="bg-white" data-aos="fade-down" data-aos-anchor=".product-design-text">
+                    <div class="bg-white" data-aos="fade-down" data-aos-anchor=".product-design-bg">
                       <h3 class="title two-point-orange-before">產品設計師的特質</h3>
                       <p>唯度的產品設計師各自專精於不同領域，包括資訊架構、品牌設計或研究等，但皆以全局觀進行產品設計。</p>
                       <div class="list"> 
@@ -526,6 +525,17 @@
       //-   }
       //- });
       
+      // init controller
+      var controller = new ScrollMagic.Controller();
+      
+      // create a scene
+      new ScrollMagic.Scene({
+        duration: 100, // the scene should last for a scroll distance of 100px
+        offset: 50, // start this scene after scrolling for 50px
+      })
+        .setPin('.serviceSwiper') // pins the element for the the scene's duration
+        .addTo(controller); // assign the scene to the controller 
+      
       // jQuery
       $(function() {
       
@@ -566,6 +576,7 @@
           handler: function(direction) {
             $('.navValue').addClass('active');
             $('.navValue').siblings().removeClass('active');
+            $('.product-design-circle').removeClass('fade-out');
           },
           //- offset: '50%'
         });
@@ -573,6 +584,7 @@
           handler: function(direction) {
             $('.navService').addClass('active');
             $('.navService').siblings().removeClass('active');
+            $('.product-design-circle').removeClass('fade-out');
           },
           //- offset: '50%'
         });
@@ -580,6 +592,7 @@
           handler: function(direction) {
             $('.navCulture').addClass('active');
             $('.navCulture').siblings().removeClass('active');
+            $('.product-design-circle').removeClass('fade-out');
           },
           //- offset: '50%'
         });
@@ -587,24 +600,21 @@
           handler: function(direction) {
             $('.navTeam').addClass('active');
             $('.navTeam').siblings().removeClass('active');
-            $('.visule').css('opacity', '1');
+            $('.product-design-circle').addClass('fade-out').removeClass('fade-in');
           },
-          //- offset: '50%'
         });
         var waypoints = $('#contact').waypoint({
           handler: function(direction) {
             $('.navContact').addClass('active');
             $('.navContact').siblings().removeClass('active');
-            $('.visule').css('opacity', '1');
+            $('.product-design-circle').removeClass('fade-out').addClass('fade-in');
           },
-          //- offset: '50%'
         });
       
-        var waypoints = $('.product-design-text').waypoint({
+        var waypoints = $('.team').waypoint({
           handler: function(direction) {
-            $('.visule').css('opacity', '0');
+            $('.product-design-circle').addClass('fade-out').removeClass('fade-in');
           },
-          //- offset: '50%'
         });
       
         $('.m-nav a').on('click', function() {
@@ -619,7 +629,7 @@
             // Grab the mouse's X-position.
             var mousex = event.clientX;
             var mousey = event.clientY;
-            $('.committed .container').css({'background-position-x': 70 + mousex / 100 + "%", 'background-position-y': -33 + mousey / 10 + "px"});
+            $('.committed .container-fluid').css({'background-position-x': 70 + mousex / 100 + "%", 'background-position-y': -33 + mousey / 10 + "px"});
           }, false);
         }
       

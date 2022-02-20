@@ -573,6 +573,11 @@
           $(this).siblings().removeClass('active');
         });
       
+        $('.talk-to-us').on('click', function() {
+          $('.side-menu li').removeClass('active');
+          $('.navContact').addClass('active');
+        });
+      
         $('.copy').on('click', function() {
           $('.copy-success').addClass('copied');
           setTimeout(function(){
@@ -581,25 +586,29 @@
           }, 2000);
         });
       
-        //- $(window).on('scroll', function() {
-        //-   const windowH = $(window).scrollTop(),
-        //-         footerH = $('.footer').offset().top + $('.backtotop').outerHeight() - window.innerHeight,
-        //-         gap = windowH - footerH;
+        $(window).on('scroll', function() {
+          const windowH = $(window).scrollTop(),
+                footerH = $('.footer').offset().top + $('.backtotop').outerHeight() - window.innerHeight,
+                gap = windowH - footerH;
       
-        //-   if (windowH <= 200) {
-        //-     $('.backtotop').removeClass('show').addClass('hide')
-        //-   }
-        //-   if (windowH > 200) {
-        //-     $('.backtotop').removeClass('hide').addClass('show')
-        //-   }
-        //-   if (windowH > 200 && windowH >= footerH - 40) {
-        //-     $('.backtotop').addClass('fixed').css('top', -40 - gap);
-        //-   }
-        //-   else {
-        //-     $('.backtotop').removeClass('fixed')
-        //-   }
-        //-   // console.log(windowH, gap)
-        //- });
+          if (gap > 0) {
+            $('.side-menu li').removeClass('active');
+            $('.navContact').addClass('active');
+          }
+          //- if (windowH <= 200) {
+          //-   $('.backtotop').removeClass('show').addClass('hide')
+          //- }
+          //- if (windowH > 200) {
+          //-   $('.backtotop').removeClass('hide').addClass('show')
+          //- }
+          //- if (windowH > 200 && windowH >= footerH - 40) {
+          //-   $('.backtotop').addClass('fixed').css('top', -40 - gap);
+          //- }
+          //- else {
+          //-   $('.backtotop').removeClass('fixed')
+          //- }
+          //- console.log(windowH, gap)
+        });
       
         var waypoints = $('#value').waypoint({
           handler: function(direction) {

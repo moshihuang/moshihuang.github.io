@@ -9528,18 +9528,18 @@ h1.title, .h1.title {
 .contact .btn-contact {
   display: flex;
   margin-top: 32px;
-  height: 80px;
+  height: 64px;
 }
 .contact .btn-contact .h4.text-gray {
-  height: 80px;
-  padding: 24px 52px;
+  height: 64px;
+  padding: 18px 48px;
   color: #FFF;
   background: #FF5036;
   transition: all 0.2s ease-out;
   border-right: 1px solid #FF5036;
 }
 .contact .btn-contact .arrow-block {
-  height: 80px;
+  height: 64px;
   display: flex;
   padding: 0 16px;
   background: #242628;

@@ -65,6 +65,12 @@
       </nav>
       <main class="content">
         <section class="committed">
+          <div class="committed-bg"> 
+            <div class="committed-bg-1"> <img src="../img/md/committed-bg-1.svg" alt=""></div>
+            <div class="committed-bg-2"><img src="../img/md/committed-bg-2.svg" alt=""></div>
+            <div class="committed-bg-3"><img src="../img/md/committed-bg-3.svg" alt=""></div>
+            <div class="committed-bg-4"><img src="../img/md/committed-bg-4.svg" alt=""></div>
+          </div>
           <div class="container-fluid">
             <div class="row no-gutters">
               <div class="col-12 col-md-4 offset-md-1">
@@ -339,39 +345,39 @@
               </div>
               <div class="col-12 col-md-11 offset-md-1">
                 <div class="row no-gutters">
-                  <div class="d-none d-md-flex">
-                    <div class="col-12 col-md-8">
-                      <div class="bg-white" data-aos="fade-down" data-aos-anchor=".product-design-bg">
-                        <h3 class="title two-point-orange-before">產品設計師的特質</h3>
-                        <p>唯度的產品設計師各自專精於不同領域，包括資訊架構、品牌設計或研究等，<br>但皆以全局觀進行產品設計。</p>
-                        <div class="list"> 
-                          <div class="row no-gutters">
-                            <div class="col-12 col-md-4"> <img src="../img/md/team-icon-architecture.svg" alt=""></div>
-                            <div class="col-12 col-md-4"> <img src="../img/md/team-icon-brand.svg" alt=""></div>
-                            <div class="col-12 col-md-4"> <img src="../img/md/team-icon-research.svg" alt=""></div>
+                  <div class="col-12 col-md-7">
+                    <div class="bg-white d-none d-md-block" data-aos="fade-down" data-aos-anchor=".product-design-bg">
+                      <div class="row no-gutters">
+                        <div class="col-12 col-md-10 offset-md-1">
+                          <h3 class="title two-point-orange-before">產品設計師的特質</h3>
+                          <p>唯度的產品設計師各自專精於不同領域，包括資訊架構、品牌設計或研究等，<br>但皆以全局觀進行產品設計。</p>
+                          <div class="list"> 
+                            <div class="row no-gutters">
+                              <div class="col-12 col-md-4"> <img src="../img/md/team-icon-architecture.svg" alt=""></div>
+                              <div class="col-12 col-md-4"> <img src="../img/md/team-icon-brand.svg" alt=""></div>
+                              <div class="col-12 col-md-4"> <img src="../img/md/team-icon-research.svg" alt=""></div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="product-design">
-                      <div class="row no-gutters">
-                        <div class="col-12 col-md-8 offset-md-4">
-                          <div class="visule">
-                            <div class="product-design-bg"><img src="../img/md/team-icon-product-design-bg.svg" alt=""></div>
-                            <div class="product-design-circle"><img src="../img/md/team-icon-product-design.svg" alt=""></div>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="bg-white d-block d-md-none">
+                      <h3 class="title two-point-orange-before">產品設計師的特質</h3>
+                      <p>唯度的產品設計師各自專精於不同領域，包括資訊架構、品牌設計或研究等，<br class="d-none d-md-block">但皆以全局觀進行產品設計。</p><img src="../img/sm/team-icon.svg" alt="">
                     </div>
                   </div>
-                  <div class="d-flex d-md-none">
-                    <div class="col-12 col-md-8">
-                      <div class="bg-white">
-                        <h3 class="title two-point-orange-before">產品設計師的特質</h3>
-                        <p>唯度的產品設計師各自專精於不同領域，包括資訊架構、品牌設計或研究等，<br>但皆以全局觀進行產品設計。</p><img src="../img/sm/team-icon.svg" alt="">
+                </div>
+              </div>
+              <div class="col-12">  
+                <div class="row no-gutters">     
+                  <div class="col-12 col-md-8 offset-md-4">
+                    <div class="d-none d-md-block product-design">
+                      <div class="visule">
+                        <div class="product-design-bg"><img src="../img/md/team-icon-product-design-bg.svg" alt=""></div>
+                        <div class="product-design-circle"><img src="../img/md/team-icon-product-design.svg" alt=""></div>
                       </div>
-                      <div class="product-design-circle-sm"><img src="../img/sm/product-design.svg" alt=""></div>
                     </div>
+                    <div class="d-flex d-md-none product-design-sm"><img src="../img/sm/product-design.svg" alt=""></div>
                   </div>
                 </div>
                 <div class="row no-gutters">
@@ -410,7 +416,7 @@
                     <div class="arrow-block"><img src="../img/icon/arrow-btn-contact.svg" alt=""></div></a>
                 </div>
                 <div class="d-none d-md-flex">
-                  <div class="text-right"><a class="backtotop js-scroll hide animate-link" href="#top"><img class="mr-1 align-middle" src="../img/icon/arrow-down-orange.svg" alt=""><span class="text-orange animate-link-text">Top</span></a></div>
+                  <div class="text-right w-100"><a class="backtotop js-scroll hide animate-link" href="#top"><img class="mr-1 align-middle" src="../img/icon/arrow-down-orange.svg" alt=""><span class="text-orange animate-link-text">Top</span></a></div>
                 </div>
               </div>
             </div>
@@ -609,7 +615,6 @@
             $('.navService').siblings().removeClass('active');
             $('.product-design-circle').removeClass('fade-out');
           },
-          //- offset: '50%'
         });
         var waypoints = $('#culture').waypoint({
           handler: function(direction) {
@@ -617,26 +622,19 @@
             $('.navCulture').siblings().removeClass('active');
             $('.product-design-circle').removeClass('fade-out');
           },
-          //- offset: '50%'
         });
         var waypoints = $('#team').waypoint({
           handler: function(direction) {
             $('.navTeam').addClass('active');
             $('.navTeam').siblings().removeClass('active');
-            $('.product-design-circle').addClass('fade-out').removeClass('fade-in');
+            $('.product-design-circle').addClass('fade-out');
           },
         });
         var waypoints = $('#contact').waypoint({
           handler: function(direction) {
             $('.navContact').addClass('active');
             $('.navContact').siblings().removeClass('active');
-            $('.product-design-circle').removeClass('fade-out').addClass('fade-in');
-          },
-        });
-      
-        var waypoints = $('.team').waypoint({
-          handler: function(direction) {
-            $('.product-design-circle').addClass('fade-out').removeClass('fade-in');
+            $('.product-design-circle').removeClass('fade-out');
           },
         });
       
@@ -652,7 +650,7 @@
             // Grab the mouse's X-position.
             var mousex = event.clientX;
             var mousey = event.clientY;
-            $('.committed .container-fluid').css({'background-position-x': 70 + mousex / 100 + "%", 'background-position-y': -33 + mousey / 10 + "px"});
+            $('.committed .committed-bg-1').css({'background-position-x': 70 + mousex / 100 + "%", 'background-position-y': -33 + mousey / 10 + "px"});
           }, false);
         }
       

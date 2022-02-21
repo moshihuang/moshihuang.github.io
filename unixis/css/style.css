@@ -9620,6 +9620,10 @@ h1.title, .h1.title {
     width: 96px;
     height: 96px;
   }
+  .side-menu .logo img {
+    width: 48px;
+    height: 48px;
+  }
   .side-menu .talk-to-us {
     width: 96px;
   }
@@ -9628,7 +9632,7 @@ h1.title, .h1.title {
   }
 
   .committed .bg-orange {
-    height: 84%;
+    height: 88%;
   }
   .committed .container-fluid {
     padding-bottom: 160px;
@@ -9652,6 +9656,14 @@ h1.title, .h1.title {
     width: 100%;
   }
 
+  .team .product-design .product-design-circle {
+    top: 2%;
+    left: 17%;
+  }
+  .team .product-design .product-design-circle img {
+    width: 60%;
+  }
+
   .contact .info {
     padding-top: 80px;
   }
@@ -9659,7 +9671,55 @@ h1.title, .h1.title {
     padding: 60px 48px;
   }
 }
-@media (max-width: 768px) {
+/* pad Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .grid-line .horizontal-wrap .line:nth-child(n+7) {
+    display: none;
+  }
+  .grid-line .vertical-wrap .container-fluid {
+    width: calc(100% - 92px - 92px - 56px);
+  }
+  .grid-line .vertical-wrap .line:nth-child(n+5) {
+    display: none;
+  }
+
+  .committed .bg-orange {
+    height: 68%;
+  }
+
+  .value .list .list-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .clients .bg-gray {
+    width: 440px;
+    height: 132px;
+  }
+  .clients .bg-gray .d-md-flex .swiper {
+    height: 60px;
+    margin: 0;
+  }
+
+  .team .bg-orange .title-wrap {
+    padding-left: 6%;
+    width: 95%;
+  }
+
+  .contact .info {
+    padding-right: 15px;
+  }
+  .contact .info .logo {
+    widthL: 80%;
+  }
+  .contact .contact-bg {
+    padding: 48px 32px;
+  }
+  .contact .btn-contact .h4.text-gray {
+    padding: 18px 32px;
+  }
+}
+@media (max-width: 767px) {
   .container-fluid {
     width: 100%;
   }

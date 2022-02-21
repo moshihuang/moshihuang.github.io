@@ -9137,16 +9137,28 @@ h1.title, .h1.title {
   position: relative;
 }
 .committed .committed-bg .committed-bg-1 {
-  top: -20px;
+  width: 156px;
+  height: 121px;
+  top: -140px;
+  left: 70%;
 }
 .committed .committed-bg .committed-bg-2 {
-  top: 120px;
+  width: 130px;
+  height: 130px;
+  top: 0;
+  left: 45%;
 }
 .committed .committed-bg .committed-bg-3 {
-  top: 80px;
+  width: 63px;
+  height: 63px;
+  top: -80px;
+  left: 86%;
 }
 .committed .committed-bg .committed-bg-4 {
-  top: 80%;
+  width: 206px;
+  height: 157px;
+  top: 260px;
+  left: 77%;
 }
 .committed .bg-orange {
   width: 100%;
@@ -9632,7 +9644,7 @@ h1.title, .h1.title {
   }
 
   .committed .bg-orange {
-    height: 88%;
+    height: 89%;
   }
   .committed .container-fluid {
     padding-bottom: 160px;
@@ -9672,7 +9684,7 @@ h1.title, .h1.title {
   }
 }
 /* pad Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
   .grid-line .horizontal-wrap .line:nth-child(n+7) {
     display: none;
   }
@@ -9684,7 +9696,10 @@ h1.title, .h1.title {
   }
 
   .committed .bg-orange {
-    height: 68%;
+    height: 53%;
+  }
+  .committed h5.sub-title {
+    margin-top: 60px;
   }
 
   .value .list .list-item {
@@ -9693,7 +9708,7 @@ h1.title, .h1.title {
   }
 
   .clients .bg-gray {
-    width: 480px;
+    width: 440px;
     height: 132px;
   }
   .clients .bg-gray .d-md-flex .swiper {

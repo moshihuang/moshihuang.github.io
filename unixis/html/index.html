@@ -659,7 +659,11 @@
             // Grab the mouse's X-position.
             var mousex = event.clientX;
             var mousey = event.clientY;
-            $('.committed .committed-bg-1').css({'background-position-x': 70 + mousex / 100 + "%", 'background-position-y': -33 + mousey / 10 + "px"});
+            $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
+            $('.committed .committed-bg-2').css({'left': 25 + mousex / 90 + "%", 'top': 0 + mousey / 1000 + "%"});
+            $('.committed .committed-bg-3').css({'left': 76 + mousex / 50 + "%", 'top': -40 + mousey / 100 + "px"});
+            $('.committed .committed-bg-4').css({'left': 55 + mousex / 120 + "%", 'top': 90 + mousey / 5 + "px"});
+      
           }, false);
         }
       

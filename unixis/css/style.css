@@ -9693,12 +9693,16 @@ h1.title, .h1.title {
   }
 
   .clients .bg-gray {
-    width: 440px;
+    width: 480px;
     height: 132px;
   }
   .clients .bg-gray .d-md-flex .swiper {
     height: 60px;
     margin: 0;
+  }
+
+  .culture .culture-img {
+    padding-left: 96px;
   }
 
   .team .bg-orange .title-wrap {

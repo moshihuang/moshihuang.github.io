@@ -9263,7 +9263,8 @@ h1.title, .h1.title {
 }
 
 .service {
-  padding-bottom: 200px;
+  padding-bottom: 4200px;
+  min-height: 100vh;
 }
 .service .bg-gray {
   padding: 32px;
@@ -9344,6 +9345,10 @@ h1.title, .h1.title {
 }
 .service .swiper-pagination2 .swiper-pagination-bullet-active {
   color: #FF5036;
+}
+.service #serviceStickyTrigger {
+  position: absolute;
+  top: 50%;
 }
 
 .clients {
@@ -9957,6 +9962,7 @@ h1.title, .h1.title {
 
   .service {
     padding-bottom: 200px;
+    min-height: auto;
   }
   .service .bg-gray {
     left: 0;

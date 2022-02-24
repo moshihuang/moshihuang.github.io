@@ -4195,17 +4195,17 @@ html {
     max-width: 100%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   .container, .container-sm, .container-md {
     max-width: 720px;
   }
 }
-@media (min-width: 1140px) {
+@media (min-width: 1000px) {
   .container, .container-sm, .container-md, .container-lg {
-    max-width: 1140px;
+    max-width: 1000px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1140px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
     max-width: 1140px;
   }
@@ -4731,7 +4731,7 @@ html {
     margin-left: 91.666667%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 768) {
   .col-md {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -4978,7 +4978,7 @@ html {
     margin-left: 91.666667%;
   }
 }
-@media (min-width: 1140px) {
+@media (min-width: 1000px) {
   .col-lg {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -5225,7 +5225,7 @@ html {
     margin-left: 91.666667%;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1140px) {
   .col-xl {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -5549,7 +5549,7 @@ html {
     display: inline-flex !important;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
   .d-md-none {
     display: none !important;
   }
@@ -5588,7 +5588,7 @@ html {
     display: inline-flex !important;
   }
 }
-@media (min-width: 1140px) {
+@media (min-width: 1000px) {
   .d-lg-none {
     display: none !important;
   }
@@ -5627,7 +5627,7 @@ html {
     display: inline-flex !important;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1140px) {
   .d-xl-none {
     display: none !important;
   }
@@ -8728,7 +8728,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   word-break: break-word;
   margin-bottom: 0.5rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.4;
 }
 
@@ -8765,15 +8765,17 @@ h6, .h6 {
 p, .body-1 {
   font-size: 0.875rem;
   line-height: 1.68;
+  font-weight: 300;
 }
 
 small, .small, .caption1 {
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .font-12, .caption2 {
   font-size: 0.75rem;
+  font-weight: 300;
 }
 
 .serif {
@@ -8832,6 +8834,7 @@ small, .small, .caption1 {
 }
 html, body {
   font-family: "Museo Sans", "Noto Sans CJK TC", sans-serif;
+  font-weight: 300;
 }
 
 a {
@@ -9603,20 +9606,8 @@ h1.title, .h1.title {
   color: #FFF;
 }
 
-@media (max-width: 1440px) {
-  .grid-line .horizontal-wrap .line:nth-child(n+6) {
-    display: none;
-  }
-  .grid-line .vertical-wrap .line:nth-child(n+5) {
-    display: none;
-  }
-
-  .clients .bg-gray .d-md-flex .swiper {
-    margin-right: 30px;
-  }
-}
 /* pad Landscape */
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
   .container-fluid {
     width: 100%;
   }

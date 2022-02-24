@@ -8728,7 +8728,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   word-break: break-word;
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.4;
 }
 
@@ -8765,17 +8765,17 @@ h6, .h6 {
 p, .body-1 {
   font-size: 0.875rem;
   line-height: 1.68;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 small, .small, .caption1 {
   font-size: 0.875rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .font-12, .caption2 {
   font-size: 0.75rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .serif {
@@ -8834,7 +8834,7 @@ small, .small, .caption1 {
 }
 html, body {
   font-family: "Museo Sans", "Noto Sans CJK TC", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 a {

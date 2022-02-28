@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="13px" viewBox="0 0 5 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 13</title>
+    <defs>
+        <polygon id="path-1" points="0 0 5 0 5 5 0 5"></polygon>
+    </defs>
+    <g id="0215_官網字級調整" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile_375" transform="translate(-305.000000, -3299.000000)">
+            <g id="Group-48" transform="translate(-1.000000, 3164.000000)">
+                <g id="Group-45" transform="translate(193.000000, 118.000000)">
+                    <g id="Group-26" transform="translate(113.000000, 17.000000)">
+                        <g id="Group-24" transform="translate(0.000000, 8.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-23"></g>
+                            <path d="M2.88009827,5 L2.11977639,5 C0.94908626,5 0,4.02230598 0,2.81664687 L0,2.18335313 C0,0.977435844 0.94908626,0 2.11977639,0 L2.88009827,0 C4.0507884,0 5.00012534,0.977435844 5.00012534,2.18335313 L5.00012534,2.81664687 C5.00012534,4.02230598 4.0507884,5 2.88009827,5" id="Fill-22" fill="#E4E9EF" mask="url(#mask-2)"></path>
+                        </g>
+                        <path d="M2.88009827,5 L2.11977639,5 C0.94908626,5 0,4.02256416 0,2.81664687 L0,2.18335313 C0,0.977435844 0.94908626,0 2.11977639,0 L2.88009827,0 C4.0507884,0 5.00012534,0.977435844 5.00012534,2.18335313 L5.00012534,2.81664687 C5.00012534,4.02256416 4.0507884,5 2.88009827,5" id="Fill-25" fill="#E4E9EF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

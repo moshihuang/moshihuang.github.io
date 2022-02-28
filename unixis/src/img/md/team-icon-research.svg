@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="135px" height="158px" viewBox="0 0 135 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 193</title>
+    <g id="最終版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop_1440" transform="translate(-668.000000, -4680.000000)">
+            <g id="Group-193" transform="translate(668.000000, 4680.000000)">
+                <text id="Research" font-family="MuseoSans-500, Museo Sans" font-size="16" font-weight="normal" letter-spacing="-0.385882286" fill="#FF5036">
+                    <tspan x="41" y="146">Research</tspan>
+                </text>
+                <g id="Group-192" transform="translate(8.000000, 14.000000)">
+                    <path d="M57.3816171,107 C32.3186852,107 12,86.0828729 12,60.2762431 L12,46.7237569 C12,20.9171271 32.3186852,0 57.3816171,0 L73.6591058,0 C98.7220377,0 119.04609,20.9171271 119.04609,46.7237569 L119.04609,60.2762431 C119.04609,86.0828729 98.7220377,107 73.6591058,107 L57.3816171,107 Z" id="Fill-25-Copy-10" fill="#E4E9EF"></path>
+                    <g id="Group-98" transform="translate(0.000000, 10.077463)">
+                        <g id="Group-91" stroke-width="1.08">
+                            <polygon id="Rectangle-Copy-18" stroke="#FF5036" fill="#FF5036" transform="translate(49.925759, 39.774432) rotate(-15.000000) translate(-49.925759, -39.774432) " points="6.12773737 10.3325544 93.7218658 10.3354016 93.7237799 69.2163104 6.12965148 69.2134632"></polygon>
+                            <polygon id="Rectangle" stroke="#FF5036" fill="#FFFFFF" transform="translate(60.298519, 46.405159) rotate(-15.000000) translate(-60.298519, -46.405159) " points="16.5004755 16.2746158 104.094604 16.2774631 104.096563 76.5357031 16.5024344 76.5328559"></polygon>
+                            <g id="Group-72" transform="translate(94.679558, 37.451962) rotate(-15.000000) translate(-94.679558, -37.451962) translate(71.013380, 31.790857)">
+                                <g id="Group-97" transform="translate(-0.000000, 0.000000)">
+                                    <line x1="0.1582276" y1="1.27963894" x2="41.6153544" y2="1.07911756" id="Path-17" stroke="#FF5036"></line>
+                                    <line x1="0.607568416" y1="6.26730123" x2="46.6833004" y2="5.81572316" id="Path-17-Copy" stroke="#242628"></line>
+                                    <line x1="-9.09494702e-13" y1="10.8961217" x2="18.3161168" y2="10.8961217" id="Path-17-Copy-2" stroke="#FF5036"></line>
+                                </g>
+                            </g>
+                        </g>
+                        <polygon id="Rectangle" fill="#242628" transform="translate(38.009232, 45.004571) rotate(-15.000000) translate(-38.009232, -45.004571) " points="24.3645108 31.4029787 51.6290534 31.4278794 51.6539541 58.6061633 24.3894115 58.5812626"></polygon>
+                        <g id="Group-95" transform="translate(35.000000, 33.922537)" stroke="#FF5036">
+                            <ellipse id="Oval-Copy-3" stroke-width="1.08" transform="translate(13.780072, 14.026916) rotate(-90.000000) translate(-13.780072, -14.026916) " cx="13.7800718" cy="14.0269157" rx="14.0269157" ry="13.7800718"></ellipse>
+                            <line x1="28.7977955" y1="35.5150307" x2="39.4849693" y2="17.7977955" id="Path-24" stroke-width="5.4" transform="translate(34.141382, 26.656413) rotate(-90.000000) translate(-34.141382, -26.656413) "></line>
+                        </g>
+                    </g>
+                </g>
+                <rect id="Rectangle" x="0" y="0" width="135" height="158"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

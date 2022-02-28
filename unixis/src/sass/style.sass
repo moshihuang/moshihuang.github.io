@@ -1,0 +1,1324 @@
+@charset "UTF-8"
+
+@import "./function/variables"
+
+@import "./globals/reboot"
+@import "./globals/utilities"
+@import "./globals/grid"
+@import "./globals/typography"
+
+
+html, body
+  font-family: "Museo Sans", "Noto Sans CJK TC", sans-serif
+  font-weight: $font-normal
+
+a
+  cursor: pointer
+  transition: color 0.3s ease
+  &:hover
+    text-decoration: none
+  &.animate-link
+    padding: 4px 0
+    position: relative
+    .animate-link-text
+      display: inline-block
+      &:before
+        content: ""
+        width: 0px
+        height: 1px
+        position: absolute
+        left: 0
+        bottom: -2px
+        display: inline-block
+        background: $orange
+        transition: width .3s ease-out
+    &:hover
+      .animate-link-text
+        &:before
+          width: 100%
+
+.btn
+  transition: all 0.3s ease    
+
+img
+  max-width: 100%
+
+.text-orange
+  color: $primary !important
+.text-white
+  color: $white !important
+.text-gray
+  color: $secondary !important
+
+.bg-orange
+  background: $primary !important
+.bg-gray 
+  background: $secondary !important
+
+
+.one-point-orange-before
+  padding-left: 8px
+  position: relative
+  &:before
+    position: relative
+    left: -8px
+    content: url("../img/icon/one-point-orange-md.svg")
+
+.two-point-orange-before
+  padding-left: 8px
+  position: relative
+  &:before
+    position: relative
+    top: 2px
+    left: -6px
+    content: url("../img/icon/two-point-orange-md.svg")
+
+.two-point-orange-after
+  padding-right: 8px
+  position: relative
+  &:after
+    position: relative
+    left: 8px
+    content: url("../img/icon/two-point-orange-md.svg")
+
+.two-point-gray-before
+  padding-: 8px
+  position: relative
+  &:before
+    position: relative
+    left: -8px
+    content: url("../img/icon/two-point-gray-md.svg")
+
+.two-point-gray-after
+  padding-right: 8px
+  position: relative
+  &:after
+    position: relative
+    left: 8px
+    content: url("../img/icon/two-point-gray-md.svg")
+
+
+.arrow-circle-link
+  img
+    vertical-align: text-bottom
+
+
+
+.fade-in
+  opacity: 1
+  transition: opacity 0.6s ease-in-out
+.fade-out
+  opacity: 0
+  transition: opacity 0.4s ease-in-out
+
+
+.wrap
+  overflow: hidden
+
+
+.grid-line
+  .horizontal-wrap 
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: space-between
+    position: fixed
+    top: 0
+    left: 0
+    flex-flow: column
+    z-index: 2
+    .line
+      height: 1px
+      width: 100%
+      opacity: .5
+      background: #E4E9EF
+      &:nth-child(n+7)
+        display: none
+        
+
+  .vertical-wrap
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: space-between
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1
+    .container-fluid
+      width: calc(100% - 120px - 120px - 8.33% - 8.33% + 40px)
+      display: flex
+      justify-content: space-between
+    .line
+      width: 1px
+      height: 100%
+      opacity: .5
+      background: #E4E9EF
+
+
+
+.wrap
+  position: relative
+  z-index: 2
+
+
+.m-menu
+  display: none
+
+
+
+
+.side-menu
+  width: 120px
+  height: 100%
+  position: fixed
+  z-index: 100
+  top: 0
+  left: 0
+  background: #E3E9EE
+  .logo
+    width: 120px
+    height: 120px
+    display: flex
+    align-items: center
+    justify-content: center
+    background: #242628
+    img
+      width: 62px
+      height: 62px
+
+  .nav
+    height: calc(100% - 120px - 60px)
+    display: flex
+    align-items: center
+    justify-content: center 
+    ul
+      padding-left: 0
+      margin-bottom: 0
+    li
+      list-style: none
+      position: relative
+      a
+        padding: 8px 0
+        display: inline-block
+        font-size: 14px
+        color: #242628
+        &:hover
+          color: $orange
+          text-decoration: none
+
+    li.active
+      a
+        color: $orange
+      &:before
+        position: absolute
+        top: 6px
+        left: -10px
+        content: url("../img/icon/one-point-orange.svg")
+          
+
+  .talk-to-us
+    width: 120px
+    padding: 18px 0
+    text-align: center
+    background: #FF5036
+    position: fixed
+    bottom: 0
+    transition: all 0.5s ease-out
+    z-index: 100
+    cursor: pointer
+    span
+      padding: 2px 0 2px 24px
+      width: 18px
+      height: 18px
+      font-size: 14px
+      color: #fff
+      background: url("../img/icon/four-point-white.svg") left center no-repeat
+    .sub-div
+      width: 300px
+      height: 60px
+      position: absolute
+      top: 0
+      left: 120px
+      font-size: 14px
+      background: $black
+      transition: all 0.2s ease-out
+      display: none
+      div
+        display: none
+        transition-delay: 0.2s
+
+    &:hover
+      background: $black
+      span 
+        color: $orange
+        background: url("../img/icon/four-point-orange.svg") left center no-repeat
+      .sub-div
+        width: 300px
+        line-height: 60px
+        transition: all 0.5s ease-out
+        display: block
+        div
+          display: block
+          transition-delay: 0.5s
+
+  
+
+h1.title, .h1.title
+  margin-bottom: 16px
+
+
+
+.committed
+  padding-top: 110px
+  padding-bottom: 240px
+  .committed-bg 
+    position: absolute
+    width: 100%
+    height: 100%
+    .committed-bg-1,
+    .committed-bg-2,
+    .committed-bg-3,
+    .committed-bg-4
+      position: relative
+    .committed-bg-1
+      width: 156px
+      height: 121px
+      top: -140px
+      left: 70%
+    .committed-bg-2
+      width: 130px
+      height: 130px
+      top: 0
+      left: 45%
+    .committed-bg-3
+      width: 63px
+      height: 63px
+      top: -80px
+      left: 86%
+    .committed-bg-4
+      width: 206px
+      height: 157px
+      top: 260px
+      left: 77%
+
+
+  // .container-fluid
+    // background: url("../img/md/committed-bg.png") right -33px no-repeat
+    // background-size: 50%
+  .bg-orange
+    width: calc(100%)
+    height: 100%
+    position: absolute
+    top: 20px
+    left: 0
+    z-index: 1
+
+  h5.sub-title
+    margin-top: 80px
+  
+
+  
+
+  .committedSwiper
+    padding-right: 0px
+    position: relative
+    left: 20px
+    z-index: 2
+    overflow: visible
+    .swiper-wrapper
+      border: 1px solid $orange
+    .swiper-button-next
+      width: 83px
+      height: 64px
+      top: 75%
+      right: -42px
+      background: $orange
+      transition: all 0.4s ease-out
+      &:after
+        display: none
+      &:hover
+        background: $black
+
+  .scroll-down
+    margin-top: 48px
+    img
+      position: relative
+      top: -2px
+
+
+.value
+  padding-top: 0
+  padding-bottom: 220px
+  .bg-orange
+    width: 91.7%
+    height: 400px
+    position: relative
+    top: 0px
+    left: 0
+    z-index: 2
+  .bg-gray
+    width: 91.7%
+    height: 400px
+    position: absolute
+    top: 80px
+    left: 8%
+    z-index: 1
+  .text-wrap
+    width: 75.1%
+    margin-left: 16.6%
+    position: absolute
+    top: 32px
+    z-index: 3
+    h5.sub-title
+      margin-right: 3%
+      margin-bottom: 48px
+      text-align: right
+    .title
+      .two-point-gray-after
+        margin-bottom: 16px
+
+  .list
+    display: flex
+    margin-top: 64px
+    flex-direction: column
+    .list-item
+      margin-bottom: 64px
+      display: flex
+      flex-direction: row
+      &:last-child
+        margin-bottom: 0
+    .list-img
+      width: 30%
+      margin-right: 24px
+      img
+        width: 100%
+    .list-content
+      width: 70%
+    .desc
+      margin-bottom: 0
+
+
+.service
+  padding-bottom: 4200px
+  min-height: 100vh
+  .bg-gray
+    padding: 32px
+    height: 200px
+    position: relative
+  .bg-orange
+    padding: 32px  
+    width: 3000px
+    height: 140px
+    position: absolute
+    top: 80px
+    left: 8.3%
+    z-index: 2
+
+  .serviceSwiper
+    height: calc(100vh - 200px)
+    position: relative
+    z-index: 1
+    // overflow: visible
+    .swiper-slide
+      overflow: visible
+      .content-wrap
+        padding-left: 10%
+        padding-bottom: 12px
+      .num
+        padding-top: 80px
+        margin-bottom: 32px
+      .goal-list
+        display: inline-flex
+        margin-bottom: 24px
+        .item
+          margin-right: 16px
+      .desc
+        margin-bottom: 48px
+
+  .swiper-pagination2
+    padding: 20px 0 0 10px
+    display: flex
+    flex-direction: column
+    position: absolute
+    left: auto
+    bottom: auto
+    top: 50px
+    left: calc(100% - 60px)
+    width: 200px
+    height: 100%
+    background: $white
+    z-index: 10
+    .swiper-pagination-bullet
+      width: 30px
+      font-size: 24px
+      display: flex
+      height: 95px
+      position: relative
+      background: none
+      border-radius: 0
+      color: $gray
+      opacity: 1
+      &:after
+        content: ''
+        width: 1px 
+        height: 50px
+        position: absolute
+        top: 40px
+        left: 15px
+        background: $gray
+        pointer-events: none
+      &:last-child
+        &:after
+          display: none
+    .swiper-pagination-bullet-active
+      color: $orange
+
+  #serviceStickyTrigger
+    position: absolute
+    top: 50%
+
+
+.clients
+  padding-bottom: 280px
+  .bg-orange
+    padding: 32px 0 24px 0
+    margin-bottom: 40px
+    position: relative
+    z-index: 2
+    .title.text-gray
+      text-align: right
+  .bg-gray
+    width: 3000px
+    height: 200px
+    padding: 68px 40px
+    position: relative
+    top: -68px
+    display: flex
+    .d-md-flex
+      .swiper
+        margin: 0 30px 0 20px
+        
+  .scroll-down-lg
+    margin: 0
+
+  .swiper-slide
+    height: 104px
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+.culture
+  padding-top: 0
+  padding-bottom: 200px
+  position: relative
+  .bg-orange
+    width: 100%
+    height: 550px
+    position: absolute
+    top: -80px
+    z-index: 1
+  .bg-white
+    width: calc(100% - 30px)
+    margin-bottom: 64px
+    position: relative
+    z-index: 2
+    border: 1px solid $orange
+  .content-wrap
+    padding: 72px 0
+    position: relative
+    z-index: 3
+    h2.sub-title
+      margin-bottom: 32px
+
+  .culture-img
+    width: 100%
+    padding-left: 120px
+    display: flex
+    img
+      width: 33.33%
+
+
+.team
+  padding-top: 0
+  padding-bottom: 0
+  margin-bottom: -120px
+  .bg-orange
+    padding-top: 24px
+    padding-bottom: 80px
+    z-index: 2
+    .title-wrap
+      padding-left: 7%
+  .bg-white
+    padding: 40px 0
+    position: relative
+    top: -60px
+    z-index: 3
+    border: 1px solid $orange
+
+  h3.title.two-point-orange-before:before
+    top: -3px 
+
+  .list
+    img
+      padding: 0 16px
+      width: 100%
+
+  .product-design
+    width: 100%
+    position: relative
+    margin-top: -36%
+    z-index: 2
+    .visule
+      margin-bottom: 16px
+      position: relative
+    .product-design-bg
+      position: relative
+      img
+        width: 100%
+    .product-design-circle
+      position: absolute
+      top: 17%
+      left: 22%
+      img
+        width: 100%
+
+  .product-design-text
+    margin-top: 32px
+    padding-bottom: 400px
+    position: relative
+
+
+.contact
+  background: $black
+  .info
+    padding-top: 120px
+    padding-bottom: 200px
+    .logo
+      margin-bottom: 72px
+    .phone, .email, address
+      margin-bottom: 16px
+      color: $white
+      font-weight: normal
+      
+    .copy,
+    .copy-success
+      display: inline-block
+    .copy
+      cursor: pointer
+    .copy-img
+      position: relative
+    .copy-success
+      padding: 8px 12px
+      position: absolute
+      top: -44px
+      right: -36px
+      background: $orange
+      border-radius: 8px
+      opacity: 0
+      transition: all 0.2s ease-out
+      .text-white
+        display: block
+        font-size: 14px
+      &:before
+        content: ''
+        display: block
+        width: 0
+        height: 0
+        position: absolute
+        border-left: 8px solid transparent
+        border-right: 8px solid transparent
+        border-top: 8px solid $orange
+        left: 38px
+        top: 36px
+    .copy-success.copied
+      opacity: 1
+      transition: all 0.2s ease-out
+      
+
+  .contact-bg
+    margin-top: -88px
+    padding: 70px 72px
+    position: relative
+    // top: -88px 
+    background: url("../img/md/contact-bg.svg") right top no-repeat #E4E9EF !important
+    background-size: cover !important
+
+  h2.title.text-orange
+    margin-bottom: 60px
+
+  .btn-contact
+    display: flex
+    margin-top: 32px
+    height: 64px
+    .h4.text-gray
+      height: 64px
+      padding: 18px 48px
+      color: $white
+      background: $orange
+      transition: all 0.2s ease-out
+      border-right: 1px solid $orange
+    .arrow-block
+      height: 64px
+      display: flex
+      padding: 0 16px
+      background: $black
+      img
+        width: 14px
+    &:hover
+      text-decoration: none
+      .h4.text-gray
+        color: $white !important
+        border-right: 1px solid $gray
+        background: $black
+
+
+
+.backtotop
+  margin: 36px 0
+  padding: 0 !important
+  display: inline-block
+  img
+    margin-top: -4px
+    margin-left: 4px
+    transform: rotate(180deg)
+
+// .scrolltop
+//   position: fixed
+//   width: 100%
+//   text-align: right
+//   bottom: 32px
+//   z-index: 5
+
+// .backtotop
+//   z-index: 99
+//   &.hide
+//     display: none
+//   &.show
+//     display: inline-block
+//   &.fixed
+//     position: relative
+//   &:hover
+//     text-decoration: none
+//   img
+//     margin-right: 4px
+//     transform: rotate(180deg) 
+
+.footer
+  padding: 30px 0
+  background: $black
+  color: $white
+  border-top: 1px solid $gray
+  p 
+    margin-bottom: 0
+  .medium-link
+    color: $gray
+    &:hover
+      color: $white
+      img
+        color: $white
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1440px)
+  .grid-line
+    .horizontal-wrap
+      .line
+        &:nth-child(n+6)
+          display: none
+    .vertical-wrap 
+      .line
+        &:nth-child(n+6)
+          display: none
+
+  .clients 
+    .bg-gray 
+      .d-md-flex 
+        .swiper
+          margin-right: 30px
+
+
+
+@media (max-width: 1140px)
+  .container-fluid
+    width: calc(100% - 92px - 92px)
+
+  .grid-line
+    .horizontal-wrap
+      .line
+        &:nth-child(n+5)
+          display: none
+    .vertical-wrap 
+      .container-fluid
+        width: calc(100% - 92px - 92px)
+      .line
+        &:nth-child(n+5)
+          display: none
+
+  .side-menu
+    width: 96px
+    .logo
+      width: 96px
+      height: 96px
+      img
+        width: 48px
+        height: 48px
+    .talk-to-us
+      width: 96px
+      span
+        padding: 2px 0 2px 20px
+
+
+  .committed 
+    .bg-orange
+      height: 89%
+    .container-fluid
+      padding-bottom: 160px
+
+
+  .value 
+    padding-bottom: 160px
+    .list
+      margin-top: 32px
+
+
+      
+  .clients 
+    .bg-gray 
+      padding: 32px 24px
+      .d-md-flex 
+        .swiper
+          margin-right: 0
+
+  
+  .culture 
+    .bg-white
+      width: 100%
+
+  
+  .team 
+    .product-design 
+      .product-design-circle
+        top: 2%
+        left: 17%
+        img
+          width: 60%
+
+
+  .contact 
+    .info
+      padding-top: 80px
+    .contact-bg
+      padding: 60px 48px
+
+
+
+
+/* pad Landscape 橫 */
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape)
+  .committed 
+    .bg-orange
+      height: 84% !important
+    .container-fluid
+      background: url("../img/sm/committed-bg.png") center 300px no-repeat !important
+
+
+
+
+/* pad portrait 直 */ 
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait)
+  .grid-line
+    .horizontal-wrap
+      .line
+        &:nth-child(n+7)
+          display: none !important
+    .vertical-wrap 
+      .container-fluid
+        width: calc(100% - 92px - 92px - 56px) !important
+      .line
+        &:nth-child(n+5)
+          display: none !important
+
+  .committed 
+    .bg-orange
+      width: 70% !important
+      height: 49% !important
+    h5.sub-title
+      margin-top: 60px !important
+    .committedSwiper
+      width: 70% !important
+      margin-left: 0 !important
+    .container-fluid
+      background: url("../img/sm/committed-bg.png") center 300px no-repeat !important
+
+  .value 
+    .list 
+      .list-item
+        flex-direction: column !important
+        align-items: center !important
+
+
+  .clients 
+    .bg-gray
+      width: 440px !important
+      height: 132px !important
+      .d-md-flex 
+        .swiper
+          height: 60px !important
+          margin: 0 !important
+
+  .culture 
+    .culture-img
+      padding-left: 96px !important
+
+
+  .team 
+    .bg-orange 
+      .title-wrap
+        padding-left: 6% !important
+        width: 95% !important
+
+  .contact 
+    .info 
+      padding-right: 15px !important
+      .logo
+        widthL: 80% !important
+  
+    .contact-bg
+      padding: 48px 32px !important
+    
+    .btn-contact 
+      .h4.text-gray
+        padding: 18px 32px !important
+
+
+
+
+@media (max-width: 1000px)
+  .container-fluid
+    width: 100%
+
+  .grid-line 
+    .horizontal-wrap
+      .line
+        &:nth-child(n+4)
+          display: flex
+        // &:nth-child(n+8)
+        //   display: none
+    .vertical-wrap
+      .container-fluid
+        width: 100%
+      .line
+        &:nth-child(n+4)
+          display: flex
+        &:nth-child(n+6)
+          display: none 
+
+
+
+  .side-menu 
+    display: none
+
+  .m-menu
+    position: relative
+    display: block
+    top: 0
+    left: 0
+    height: 70px
+    width: 100%
+    background: #E4E9EF
+    transition: all 0.5s ease-out, background 1s ease-out
+    transition-delay: 0.2s
+    .logo
+      width: 70px
+      height: 70px
+      display: inline-flex
+      background: $black
+      img
+        margin: 0 auto
+        width: 37px
+        height: 37px
+        align-self: center
+
+    .m-nav
+      width: 100%
+      height: 50px
+      position: absolute
+      top: 0
+      right: 0
+      z-index: 99
+
+    .burger-wrap
+      position: fixed
+      top: 0
+      right: 0
+      height: 70px
+      width: 70px
+      cursor: pointer
+      transform: rotate(0deg)
+      transition: all 0.3s $cubic
+      user-select: none
+      -webkit-tap-highlight-color: transparent
+      z-index: 99
+      background: $orange
+      .burger
+        width: 18px
+        height: 18px
+        position: relative
+        // margin: 0 auto
+        top: 40%
+        right: -24px
+        .bar
+          width: 100%
+          height: 2px
+          display: block
+          position: relative
+          background: #FFF
+          transition: all 0.3s $cubic
+          transition-delay: 0s
+          &.top
+            transform: translateY(0px) rotate(0deg)
+          &.middle
+            transform: translateY(6px) rotate(0deg)
+          &.bottom
+            transform: translateY(12px) rotate(0deg)
+
+    ul.menu
+      position: fixed
+      height: 0
+      margin: 0
+      padding: 0
+      
+      // display: none
+      overflow: hidden
+      list-style: none
+      transition: transform 0.5s $cubic, opacity 0.6s $cubic
+      li
+        text-align: center
+        transform: scale(1.15) translateY(-30px)
+        opacity: 0
+        transition: transform 0.3s $cubic, opacity 0.6s $cubic
+        // @for $i from 1 through $menuItems
+        //   &:nth-child(#{$i})
+        //     transition-delay: #{0.5 - ($i * 0.05)}s
+        a
+          display: block
+          color: $gray
+          font-size: 2rem // 32px
+          line-height: 2
+          position: relative
+          &:active
+            background: #EE472E
+        a.medium
+          font-size: 1rem
+          line-height: 4rem
+        &.divider
+          margin: 24px 32px
+          border-top: 1px solid #E4E9EF
+
+    &.m-menu-opened
+      height: 100%
+      transition: all 0.5s ease-in, background 0.6s ease-in
+      transition-delay: 0.25s
+      .burger-wrap
+        // transform: rotate(90deg)
+        .burger
+          .bar
+            transition: all 0.4s $cubic
+            // transition-delay: 0.2s
+            &.top
+              transform: translateY(5px) rotate(45deg)
+            &.middle
+              display: none
+            &.bottom
+              transform: translateY(3px) rotate(-45deg)
+
+      ul.menu
+        padding-top: 70px
+        height: 100vh
+        width: 100%
+        opacity: 1
+        // display: block
+        background: $orange
+        li
+          transform: scale(1) translateY(0px)
+          opacity: 1
+          // @for $i from 1 through $menuItems
+          //   &:nth-child(#{$i})
+          //     transition-delay: #{0.05 * $i + 0.2}s
+
+
+
+  
+
+  // .content
+  //   padding-top: 50px
+
+  .committed
+    padding-top: 40px
+    padding-bottom: 120px 
+    .no-gutters
+      margin-left: 32px
+      margin-right: 32px
+      
+    .container-fluid
+      background: url("../img/sm/committed-bg.png") center 300px no-repeat
+
+    .committed-bg
+      display: none
+
+    h5.sub-title
+      margin-top: 0
+
+    .scroll-down
+      margin-bottom: 40px
+    .committedSwiper 
+      width: calc(100% - 20px)
+      left: 8px
+      .swiper-button-next
+        right: -34px
+    .bg-orange
+      width: calc(100% - 20px)
+      height: 100%
+
+
+
+  .value
+    padding-bottom: 0
+    .bg-orange
+      width: calc(100% - 32px)
+      height: 440px
+      left: 0
+      padding-left: 32px
+    .bg-gray
+      width: 100%
+      height: 420px
+    .text-wrap
+      width: 84%
+      margin-left: 0
+      h5.sub-title
+        margin-right: 0
+        margin-bottom: 32px
+
+    .list
+      padding-top: 84px
+      margin-bottom: 64px
+      .list-item
+        margin: 0 32px 48px 32px
+        flex-direction: column
+        align-items: center
+      .list-img
+        margin-bottom: 16px
+      .list-content
+        text-align: center
+      
+
+  .service
+    padding-bottom: 200px
+    min-height: auto
+    .bg-gray
+      left: 0
+    .bg-orange
+      height: 120px
+      top: 100px
+      left: 30px
+
+    .serviceSwiper 
+      .swiper-slide 
+        .goal-list 
+          margin-bottom: 8px
+          .item
+            margin-right: 4px
+        .content-wrap
+          padding: 0 32px 48px 32px
+        .desc
+          margin-bottom: 16px
+        .order-sm-2
+          img
+            margin-left: 0
+            width: 80%
+
+      .swiper-pagination2
+        display: none
+
+
+
+  .clients
+    padding-bottom: 200px
+    .bg-orange
+      width: 90%
+      padding: 32px
+      margin-bottom: 0
+    .bg-gray
+      width: 100%
+      height: auto
+      padding: 32px
+      margin: 0
+      top: 0
+      flex-wrap: wrap
+      .logo-wrap
+        width: 100%
+        display: flex
+        justify-content: space-between
+    p
+      margin: 24px 32px
+
+    .scroll-down-lg
+      margin-top: 64px
+      img
+        height: 90px
+
+
+  .culture
+    padding-bottom: 40px
+    .bg-orange
+      left: -40px
+    .bg-white
+      padding-left: 32px
+      padding-right: 32px
+      margin-bottom: 48px
+      border-top: 1px solid $orange
+      border-left: 0
+      border-right: 0
+    .content-wrap
+      padding-top: 64px
+      padding-bottom: 48px
+      h2.sub-title
+        margin-bottom: 0
+      .col-12.col-md-4.offset-md-1,
+      .col-12.col-md-4.offset-md-2
+        margin-top: 60px
+        
+    .culture-img
+      flex-direction: column
+      padding-left: 0
+      img
+        width: 100%
+        margin: 24px 0 0 0
+
+
+  .team
+    padding-bottom: 80px
+    .bg-orange
+      padding: 32px
+      margin-left: -32px
+      width: 80%
+    .bg-white
+      width: 90%
+      padding: 60px 32px
+      margin-bottom: 40px
+      top: 0
+      left: -1px
+      p
+        margin-bottom: 32px
+        width: 70%
+
+    .product-design-circle-sm
+      padding-left: 32px
+      padding-right: 32px
+      margin-bottom: 32px
+      position: relative
+      top: 0
+      left: 0
+    
+    .product-design-sm
+      padding: 0 32px
+      width: 100%
+      img
+        width: 100%
+
+    .product-design-text
+      top: 0
+      padding: 0 32px 68px 32px
+
+
+
+
+
+  .contact 
+    margin-top: 100px
+    .info
+      padding: 60px 32px 32px 32px
+      .logo
+        img
+          width: 270px
+    h2.title.text-orange
+      margin-bottom: 16px
+    .btn-contact 
+      .h4.text-gray
+        padding-left: 32px
+        padding-right: 32px
+    .contact-bg
+      top: 0
+      padding: 64px 32px
+      margin: 0
+      background-image: none !important
+      position: relative
+      &:after
+        width: 114px
+        content: ''
+        position: absolute
+        top: -50px
+        right: 30px
+        content: url("../img/sm/contact-bg-orange.png")
+
+
+  .backtotop
+    text-align: right
+    margin-right: 32px
+
+  .footer
+    border-top: 0
+    .d-flex.justify-content-between
+      padding: 0 32px
+      flex-direction: column-reverse
+      div
+        margin: 8px 0
+        
+
+
+@media (max-width: 375px)
+  .side-menu 
+    display: none
+
+
+
+
+
+
+
+
+
+
+
+// iphone 6 7 8 plus and many new phone
+@media (min-width: 412px)
+
+
+
+// iphone 5
+@media (max-width: 320px)
+
+
+
+// 橫向 landscape
+@media (orientation: landscape)
+
+
+
+// iphone 5 橫向
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape)
+
+
+
+@media (max-width: 768px)
+  

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="135px" height="158px" viewBox="0 0 135 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 177 Copy</title>
+    <g id="最終版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop_1440" transform="translate(-501.000000, -4680.000000)">
+            <g id="Group-177-Copy" transform="translate(501.000000, 4680.000000)">
+                <rect id="Rectangle" x="0" y="0" width="135" height="158"></rect>
+                <g id="Group-100" transform="translate(8.000000, 14.000000)">
+                    <path d="M56.4429831,107 C31.3461606,107 11,86.0828729 11,60.2762431 L11,46.7237569 C11,20.9171271 31.3461606,0 56.4429831,0 L72.7424826,0 C97.8393051,0 118.19084,20.9171271 118.19084,46.7237569 L118.19084,60.2762431 C118.19084,86.0828729 97.8393051,107 72.7424826,107 L56.4429831,107 Z" id="Fill-25-Copy-11" fill="#E4E9EF"></path>
+                    <g id="Group-85" transform="translate(39.633588, 9.890756)" stroke-width="1.08">
+                        <rect id="Rectangle" stroke="#FF5036" fill="#FF5036" x="7.20610687" y="8.09243697" width="68.4580153" height="80.0252101"></rect>
+                        <rect id="Rectangle-Copy" stroke="#FF5036" fill="#FFFFFF" x="0" y="0" width="68.4580153" height="80.0252101"></rect>
+                        <rect id="Rectangle" stroke="#242628" fill="#242628" x="12.610687" y="9.8907563" width="42.3358779" height="19.7815126"></rect>
+                        <line x1="12.610687" y1="9.8907563" x2="54.9465649" y2="29.6722689" id="Path-20" stroke="#FF5036"></line>
+                        <line x1="12.610687" y1="9.8907563" x2="54.9465649" y2="29.6722689" id="Path-20-Copy" stroke="#FF5036" transform="translate(33.778626, 19.781513) scale(1, -1) translate(-33.778626, -19.781513) "></line>
+                        <line x1="12.610687" y1="40.012605" x2="54.9465649" y2="40.012605" id="Path-21" stroke="#242628"></line>
+                        <line x1="12.610687" y1="45.407563" x2="42.3358779" y2="45.407563" id="Path-21-Copy" stroke="#FF5036"></line>
+                    </g>
+                    <g id="Group-94" transform="translate(0.000000, 35.966387)">
+                        <g id="Group-92" transform="translate(3.603053, 3.596639)">
+                            <polyline id="Path-19" stroke="#FF5036" stroke-width="1.08" points="0 0 22.519084 0 22.519084 35.9663866 67.5572519 35.9663866"></polyline>
+                            <polygon id="Path-22" fill="#FF5036" points="66.6564885 32.3697479 66.6564885 40.4621849 74.7633588 36.1462185"></polygon>
+                        </g>
+                        <path d="M3.05499046,7.19327731 C1.36780912,7.19327731 0,5.78708389 0,4.05218441 L0,3.1410929 C0,1.40619342 1.36780912,0 3.05499046,0 L4.15075513,0 C5.83793647,0 7.20610687,1.40619342 7.20610687,3.1410929 L7.20610687,4.05218441 C7.20610687,5.78708389 5.83793647,7.19327731 4.15075513,7.19327731 L3.05499046,7.19327731 Z" id="Fill-25-Copy-15" fill="#FF5036"></path>
+                    </g>
+                </g>
+                <text id="Architecture" font-family="MuseoSans-500, Museo Sans" font-size="16" font-weight="normal" letter-spacing="-0.385882286" fill="#FF5036">
+                    <tspan x="29" y="146">Architecture</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

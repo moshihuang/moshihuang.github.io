@@ -1,0 +1,771 @@
+doctype html
+html(lang="zh-TW")
+  head
+    include ../partials/head
+
+  body
+    #top 
+    
+    .grid-line
+      .horizontal-wrap
+        span.line
+        span.line
+        span.line
+        span.line
+        span.line
+        span.line
+        span.line
+        span.line
+
+      .vertical-wrap
+        .container-fluid
+          span.line
+          span.line
+          span.line
+          span.line
+          span.line
+          span.line
+
+    .wrap
+      .m-menu
+        a.js-scroll(href="#top")
+          .logo
+            img(src="../img/unixis-logo-sm.svg" alt="")
+        nav.m-nav
+          .burger-wrap
+            .burger
+              .bar.top
+              .bar.middle
+              .bar.bottom
+          ul.menu()
+            li
+              a.js-scroll.two-point-gray-before(href="#value") Value
+            li
+              a.js-scroll.two-point-gray-before(href="#service") Service
+            li
+              a.js-scroll.two-point-gray-before(href="#culture") Culture
+            li
+              a.js-scroll.two-point-gray-before(href="#team") Team
+            li
+              a.js-scroll.two-point-gray-before(href="#contact") Contact
+            li.divider
+            li
+              a.js-scroll.medium(href="") 
+                span.text-white Medium
+                img.ml-1(src="../img/icon/medium-white.svg" alt="")
+          
+
+      nav.side-menu
+        a.js-scroll(href="#top")
+          .logo
+            img(src="../img/unixis-logo-md.svg" alt="")
+        .nav
+          ul
+            li.navValue
+              a.js-scroll(href="#value") Value
+            li.navService
+              a.js-scroll(href="#service") Service
+            li.navCulture
+              a.js-scroll(href="#culture") Culture
+            li.navTeam 
+              a.js-scroll(href="#team") Team
+            li.navContact 
+              a.js-scroll(href="#contact") Contact
+        
+        a.talk-to-us.js-scroll.animate-link(href="#contact")
+          span Talk to Us
+          .sub-div
+            .text-white 若您也有著相同理念，歡迎與我們聯繫！
+
+
+
+      main.content
+
+        section.committed
+          .committed-bg 
+            .committed-bg-1 
+              img(src="../img/md/committed-bg-1.svg" alt="")
+            .committed-bg-2
+              img(src="../img/md/committed-bg-2.svg" alt="")
+            .committed-bg-3
+              img(src="../img/md/committed-bg-3.svg" alt="")
+            .committed-bg-4
+              img(src="../img/md/committed-bg-4.svg" alt="")
+
+          .container-fluid
+            .row.no-gutters
+              .col-12.col-md-4.offset-md-1
+                h5.sub-title.two-point-orange-after(data-aos="fade-down") We Committed to
+                h1.title(data-aos="fade-down" data-aos-delay="200") 打磨匠心獨具的<br>數位產品
+                p(data-aos="fade-down" data-aos-delay="400") 唯度設計 UNIXIS DESIGN 是一間數位產品事務所，我們秉持對待數位產品如同建築的職人精神，以創新與整合力，打造社會所需的產品與服務。
+                
+                .scroll-down(data-aos="fade-down" data-aos-delay="600")
+                  a.js-scroll.animate-link(href="#value")
+                    img.mr-1(src="../img/icon/arrow-down-orange.svg" alt="")
+                    span.animate-link-text.text-orange Scroll down
+
+              .col-12.col-md-5.offset-md-1
+                .bg-orange
+                .swiper.committedSwiper
+                  .swiper-wrapper
+                    .swiper-slide
+                      img(src="../img/md/committed-img-1.jpg" alt="")
+                    .swiper-slide
+                      img(src="../img/md/committed-img-2.jpg" alt="")
+                    .swiper-slide
+                      img(src="../img/md/committed-img-3.jpg" alt="")
+                    .swiper-slide
+                      img(src="../img/md/committed-img-4.jpg" alt="")
+                    .swiper-slide
+                      img(src="../img/md/committed-img-5.jpg" alt="")
+                    .swiper-slide
+                      img(src="../img/md/committed-img-6.jpg" alt="")
+                    .swiper-slide
+                      img(src="../img/md/committed-img-7.jpg" alt="")
+                    .swiper-slide
+                      img(src="../img/md/committed-img-8.jpg" alt="")
+                  
+                  .swiper-button-next
+                    img(src="../img/icon/arrow-btn-contact.svg" alt="")
+
+
+        section#value.value
+          .container-fluid
+            .row.no-gutters
+              .col-12.col-md-7
+                .bg-gray(data-aos="fade-down")
+                .bg-orange
+                  .text-wrap(data-aos="fade-down")
+                    h5.sub-title.text-gray 對數位產品的執著，<br class="d-sm-block d-md-none">是我們獨樹一格的原因
+                    h2.title
+                      .text-gray.two-point-gray-after Value
+                      .text-black 從獨特角度出發，由全局視野佈局，最終以細膩設計展現
+
+              .col-12.col-md-4.offset-md-1
+                .list
+                  .list-item(data-aos="fade-down")
+                    .list-img 
+                      img(src="../img/md/value-icon-unique.svg" alt="")
+                    .list-content 
+                      h4.title 獨到觀點 Unique
+                      p.desc 擅長根據不同產品的特性與背景，創造獨特的產品個性。
+                  .list-item(data-aos="fade-down")
+                    .list-img 
+                      img(src="../img/md/value-icon-considerate.svg" alt="")
+                    .list-content 
+                      h4.title 專注貫串 Considerate
+                      p.desc 擅長在初期以全局觀制定產品策略，使產品在不同觸點與裝置上皆能保有一致性的體驗。
+                  .list-item(data-aos="fade-down")
+                    .list-img 
+                      img(src="../img/md/value-icon-devoted.svg" alt="")
+                    .list-content 
+                      h4.title 踏實落地 Devoted
+                      p.desc 擅長掌握產品設計細節，並協同開發人員，將最終設計扎實呈現。
+
+
+
+        section#service.service
+          .container-fluid
+            .row.no-gutters
+              .col-9.col-md-7.offset-md-5
+                .bg-gray(data-aos="fade-down")
+                  h5.sub-title.text-orange 依客戶需求，淬鍊出能改善生活的產品與服務
+                .bg-orange(data-aos="fade-down")
+                  h2.title.text-gray.two-point-gray-after Service
+              
+              .col-12
+                .swiper.serviceSwiper
+                  .swiper-wrapper
+                    .swiper-slide.service-swiper-slide-1
+                      .row.no-gutters
+                        .col-12.col-md-5.order-sm-2.order-md-1
+                          img(src="../img/md/service-carousel-img-1.jpg" alt="")
+                        .col-12.col-md-6.order-sm-1.order-md-2
+                          .content-wrap
+                            h2.num.text-orange 01
+                            h2.title 確認產品走向
+                            .goal-list
+                              .item.two-point-orange-before 商業策略
+                              .item.two-point-orange-before 價值主張
+                              .item.two-point-orange-before 概念測試
+                              .item.two-point-orange-before 探索研究
+                            p.desc 透過前期探索與研究，定義產品核心價值與商業策略，進而針對初步概念進行測試。
+                            a.arrow-circle-link.animate-link(href="#")
+                              span.text-orange.animate-link-text 在Medium了解更多
+                              img.ml-1(src="../img/icon/arrow-circle-orange.svg" alt="")
+
+                    .swiper-slide.service-swiper-slide-2
+                      .row.no-gutters
+                        .col-12.col-md-5.order-sm-2.order-md-1
+                          img(src="../img/md/service-carousel-img-2.jpg" alt="")
+                        .col-12.col-md-6.order-sm-1.order-md-2
+                          .content-wrap
+                            h2.num.text-orange 02
+                            h2.title 塑造產品個性
+                            .goal-list
+                              .item.two-point-orange-before 品牌
+                              .item.two-point-orange-before 價值主張
+                              .item.two-point-orange-before UI/UX 概念
+                            p.desc 以商業策略與價值主張，建構品牌策略與設計，進而根據設計主軸撰寫UX文案並發展UI/UX概念。
+                            a.arrow-circle-link.animate-link(href="#")
+                              span.text-orange.animate-link-text 在Medium了解更多
+                              img.ml-1(src="../img/icon/arrow-circle-orange.svg" alt="")
+
+                    .swiper-slide.service-swiper-slide-3
+                      .row.no-gutters
+                        .col-12.col-md-5.order-sm-2.order-md-1
+                          img(src="../img/md/service-carousel-img-3.jpg" alt="")
+                        .col-12.col-md-6.order-sm-1.order-md-2
+                          .content-wrap
+                            h2.num.text-orange 03
+                            h2.title 強健產品體魄
+                            .goal-list
+                              .item.two-point-orange-before 業務邏輯釐清
+                              .item.two-point-orange-before UI/UX 細部設計
+                            p.desc 透過與客戶密集溝通業務邏輯，建立設計共識、了解產品背景，並進一步發展細部的UI/UX設計。
+                            a.arrow-circle-link.animate-link(href="#")
+                              span.text-orange.animate-link-text 在Medium了解更多
+                              img.ml-1(src="../img/icon/arrow-circle-orange.svg" alt="")
+
+                    .swiper-slide.service-swiper-slide-4
+                      .row.no-gutters
+                        .col-12.col-md-5.order-sm-2.order-md-1
+                          img(src="../img/md/service-carousel-img-4.jpg" alt="")
+                        .col-12.col-md-6.order-sm-1.order-md-2
+                          .content-wrap
+                            h2.num.text-orange 04
+                            h2.title 調整產品體質
+                            .goal-list
+                              .item.two-point-orange-before 易用性測試
+                              .item.two-point-orange-before 品牌
+                              .item.two-point-orange-before UI/UX 設計
+                            p.desc 產品上線後，透過數據追蹤與產品測試，持續優化用戶體驗，最終讓產品可以不斷地創新與茁壯。
+                            a.arrow-circle-link.animate-link(href="#")
+                              span.text-orange.animate-link-text 在Medium了解更多
+                              img.ml-1(src="../img/icon/arrow-circle-orange.svg" alt="")
+
+                  .swiper-pagination2
+
+
+
+
+        section#clients.clients
+          .container-fluid
+            .row.no-gutters
+              .col-12.col-md-6
+                .bg-orange
+                  .row
+                    .col-12.col-md-10.offset-md-1.col-md-9.offset-lg-2
+                      .text-wrap(data-aos="fade-down")
+                        h5.sub-title.text-gray 協同合作夥伴，共同打造優質的數位產品
+                        h2.title.text-gray.two-point-gray-after Clients
+
+            .row.no-gutters
+              .col-12.col-md-4.offset-md-1
+                .mr-0.mr-md-5(data-aos="fade-down")
+                  p 不論您是否已經有初步想法，不論您的企業規模大小，我們都能協助您打造您孕育一個用戶喜歡、有商業價值，也可實現的產品。
+              .col-12.col-md-6
+                .bg-gray
+                  .d-none.d-md-flex
+                    .swiper.clientsSwiper1
+                      .swiper-wrapper
+                        .swiper-slide
+                          img(src="../img/md/clients-ctbc-bank.svg" alt="")
+                        .swiper-slide
+                          img(src="../img/md/clients-three.svg" alt="")
+                        .swiper-slide
+                          img(src="../img/md/clients-sanaa.svg" alt="")
+                        .swiper-slide
+                          img(src="../img/md/clients-ctbc-finance.svg" alt="")
+                        
+
+                    .swiper.clientsSwiper2
+                      .swiper-wrapper
+                        .swiper-slide
+                          img(src="../img/md/clients-sanaa.svg" alt="")
+                        .swiper-slide
+                          img(src="../img/md/clients-ctbc-finance.svg" alt="")
+                        .swiper-slide
+                          img(src="../img/md/clients-ctbc-bank.svg" alt="")
+                        .swiper-slide
+                          img(src="../img/md/clients-three.svg" alt="")
+
+                    .swiper.clientsSwiper3
+                      .swiper-wrapper
+                        .swiper-slide
+                          img(src="../img/md/clients-ctbc-finance.svg" alt="")
+                        .swiper-slide
+                          img(src="../img/md/clients-ctbc-bank.svg" alt="")
+                        .swiper-slide
+                          img(src="../img/md/clients-three.svg" alt="")
+                        .swiper-slide
+                          img(src="../img/md/clients-sanaa.svg" alt="")
+
+                    //- .swiper.clientsSwiper4
+                    //-   .swiper-wrapper
+                    //-     .swiper-slide
+                    //-       img(src="../img/md/clients-three.svg" alt="")
+                    //-     .swiper-slide
+                    //-       img(src="../img/md/clients-ctbc-bank.svg" alt="")
+                    //-     .swiper-slide
+                    //-       img(src="../img/md/clients-sanaa.svg" alt="")
+                    //-     .swiper-slide
+                    //-       img(src="../img/md/clients-ctbc-finance.svg" alt="")
+
+                  .d-flex.flex-column.d-md-none.w-100(data-aos="fade-down")
+                    .logo-wrap
+                      img(src="../img/md/clients-ctbc-bank.svg" alt="")
+                      img(src="../img/md/clients-sanaa.svg" alt="") 
+                    .logo-wrap
+                      img(src="../img/md/clients-ctbc-finance.svg" alt="") 
+                      img(src="../img/md/clients-three.svg" alt="") 
+
+
+            .text-center.scroll-down-lg(data-aos="fade-down")
+              img(src="../img/icon/scroll-down-lg.svg" alt="")
+
+
+
+        section#culture.culture
+          .container-fluid
+            .row.no-gutters
+              .col-12.col-md-11 
+                .bg-orange(data-aos="fade-down")
+
+              .col-12.col-md-11.offset-md-1 
+                .bg-white(data-aos="fade-down")
+                  .row
+                    .col-12.col-md-10.offset-md-1
+                      .content-wrap
+                        .text-center(data-aos="fade-down")
+                          h2.title.text-orange.two-point-orange-after Culture
+                          h2.sub-title 唯度不只是誕生數位產品的工坊<span class="d-sm-inline d-md-none ">，</span><br class="d-sm-block">更是致力於建構設計專業環境與知識的職人
+                        .row.no-gutters
+                          .col-12.col-md-4.offset-md-1
+                            .text-center(data-aos="fade-down")
+                              h4.text-orange 專業且開放的設計環境
+                              p 在唯度裡，我們秉持著多樣化的彈性與個性，彼此互相交流分享，共同面對不同的挑戰。
+                              img(src="../img/md/culture-img-1.svg" alt="")
+                          .col-12.col-md-4.offset-md-2
+                            .text-center(data-aos="fade-down")
+                              h4.text-orange 完整的知識系統
+                              p 唯度致力於培育人才，分享專業知識，任何人都可以是產品設計的專家。
+                              img(src="../img/md/culture-img-2.svg" alt="")
+
+          .culture-img(data-aos="fade-down")
+            img(src="../img/md/culture-img-1.jpg" alt="")
+            img(src="../img/md/culture-img-2.jpg" alt="")
+            img(src="../img/md/culture-img-3.jpg" alt="")
+
+
+
+        section#team.team
+          .container-fluid
+            .row.no-gutters
+              .col-12.col-md-7
+                .bg-orange
+                  .row.no-gutters
+                    .col-12.col-md-11.offset-md-1
+                      .title-wrap
+                        h2.title.text-gray.two-point-gray-after Team
+                        h5.sub-title.text-gray 團隊組成以產品設計師為核心，向外延展相關職務
+
+
+              .col-12.col-md-11.offset-md-1
+                .row.no-gutters
+                  .col-12.col-md-7
+                    .bg-white.d-none.d-md-block(data-aos="fade-down" data-aos-anchor=".product-design-bg")
+                      .row.no-gutters
+                        .col-12.col-md-10.offset-md-1
+                          h3.title.two-point-orange-before 產品設計師的特質
+                          p 唯度的產品設計師各自專精於不同領域，包括資訊架構、品牌設計或研究等，但皆以全局觀進行產品設計。
+                          .list 
+                            .row.no-gutters
+                              .col-12.col-md-4 
+                                img(src="../img/md/team-icon-architecture.svg" alt="")
+                                //- .text-orange.text-center.mt-2 Architecture
+                              .col-12.col-md-4 
+                                img(src="../img/md/team-icon-brand.svg" alt="")
+                                //- .text-orange.text-center.mt-2 Brand
+                              .col-12.col-md-4 
+                                img(src="../img/md/team-icon-research.svg" alt="")
+                                //- .text-orange.text-center.mt-2 Research
+                  
+                    .bg-white.d-block.d-md-none
+                      h3.title.two-point-orange-before 產品設計師的特質
+                      p 唯度的產品設計師各自專精於不同領域，包括資訊架構、品牌設計或研究等，<br class="d-none d-md-block">但皆以全局觀進行產品設計。
+                      img(src="../img/sm/team-icon.svg" alt="")
+
+              .col-12   
+                .row.no-gutters      
+                  .col-12.col-md-8.offset-md-4
+                    .d-none.d-md-block.product-design
+                      .visule
+                        .product-design-bg
+                          img(src="../img/md/team-icon-product-design-bg.svg" alt="")
+                        .product-design-circle
+                          img(src="../img/md/team-icon-product-design.svg" alt="")
+                    
+                    .d-flex.d-md-none.product-design-sm
+                      img(src="../img/sm/product-design.svg" alt="")
+                  
+
+                .row.no-gutters
+                  .col-12
+                    .product-design-text.text-right
+                      h3.title.two-point-orange-before 產品設計團隊
+                      p 團隊中的管理者、研究員、工程師和產品設計師相輔相成，<br class="d-none d-md-block">透過密切合作與絕佳默契，逐步建構數位產品的獨特世界觀。
+
+
+        section#contact.contact
+          .container-fluid
+            .row.no-gutters
+              .col-12.col-md-5.offset-md-1.order-sm-2.order-md-1
+                .info
+                  p.text-white Digital Product Architects
+                  .logo 
+                    img(src="../img/logo-footer.svg" alt="")
+                  .phone 
+                    a.text-white.two-point-orange-before(href="tel:+886227123887") 02-27123887 
+                  .email 
+                    .text-white.two-point-orange-before.copy(data-clipboard-text="contact@unixisdesign.com") 
+                      span contact@unixisdesign.com
+                      img.copy-img.ml-2.mr-1(src="../img/icon/copy.svg" alt="")
+                      span.copy-success
+                        .text-white 複製成功！
+                  address.address.two-point-orange-before
+                    a.text-white(href="https://google.com.tw/maps/place/105台北市松山區南京東路四段171號/" target="_blank")
+                      span 臺北市松山區南京東路4段171號2樓之1
+                      img.ml-1(src="../img/icon/location.svg" alt="")
+
+              .col-12.col-md-6.order-sm-1.order-md-2
+                .bg-gray.contact-bg(data-aos="fade-down")
+                  .content-wrap(data-aos="fade-down")
+                    h2.title.text-orange.two-point-orange-after Contact
+                    h2.title 讓我們一起打磨一份有溫度的數位產品！  
+                    p 手上正好有待解決的問題嗎? 可以透過電話找我們聊聊， 或填寫表單，我們會盡快聯絡您!
+
+                    a.btn.btn-contact 
+                      .h4.text-gray Get in Touch
+                      .arrow-block
+                        img(src="../img/icon/arrow-btn-contact.svg" alt="")
+
+                .d-none.d-md-flex
+                  .text-right.w-100
+                    a.backtotop.js-scroll.hide.animate-link(href="#top")
+                      img.mr-1.align-middle(src="../img/icon/arrow-down-orange.svg" alt="")
+                      span.text-orange.animate-link-text Top
+        
+            .d-flex.d-md-none
+              .text-right.w-100
+                a.backtotop.js-scroll.hide.animate-link(href="#top")
+                  img.mr-1.align-middle(src="../img/icon/arrow-down-orange.svg" alt="")
+                  span.text-orange.animate-link-text Top
+      
+      footer.footer
+        .container-fluid
+          .row.no-gutters
+            .col-12.col-md-11.offset-md-1
+              .d-flex.justify-content-between
+                div
+                  p 唯度有限公司 UniXis Design CO., LTD.
+                div
+                  a.medium-link(href="" target="_blank")
+                    span Medium
+                    img.ml-2(src="../img/icon/medium-gray.svg" alt="")
+
+
+      
+
+
+
+    script(src="../js/lib.js")
+    script.
+
+      //- AOS 
+      AOS.init({
+        duration: 1600
+      });
+
+      //- Swiper
+      const swiper1 = new Swiper(".committedSwiper", {
+        effect: "fade",
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      const swiper2 = new Swiper(".serviceSwiper", {
+        direction: "vertical",
+        pagination: {
+          el: ".swiper-pagination2",
+          clickable: false,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + '0' + (index + 1) + "</span>";
+          },
+        },
+      });
+
+      const swiper3 = new Swiper(".clientsSwiper1", {
+        slidesPerView: 1,
+        direction: "vertical",
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination3",
+          clickable: true,
+        }
+      });
+
+      const swiper4 = new Swiper(".clientsSwiper2", {
+        slidesPerView: 1,
+        direction: "vertical",
+        autoplay: {
+          delay: 5200,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination4",
+          clickable: true,
+        }
+      });
+
+      const swiper5 = new Swiper(".clientsSwiper3", {
+        slidesPerView: 1,
+        direction: "vertical",
+        autoplay: {
+          delay: 5100,
+          disableOnInteraction: false,
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination5",
+          clickable: true,
+        }
+      });
+
+      //- const swiper6 = new Swiper(".clientsSwiper4", {
+      //-   slidesPerView: 1,
+      //-   direction: "vertical",
+      //-   autoplay: {
+      //-     delay: 2450,
+      //-     disableOnInteraction: false,
+      //-   },
+      //-   loop: true,
+      //-   pagination: {
+      //-     el: ".swiper-pagination6",
+      //-     clickable: true,
+      //-   }
+      //- });
+
+
+      // All animations will take exactly 500ms
+      const scroll = new SmoothScroll('a.js-scroll[href*="#"]', {
+        speed: 500,
+        speedAsDuration: true,
+        updateURL: false,
+        popstate: false
+      });
+
+      //- mobile nav burger
+      (function(){
+        const burger = document.querySelector('.burger-wrap'),
+            mNav = document.querySelector('.m-menu');
+        
+        burger.onclick = function() {
+          mNav.classList.toggle('m-menu-opened');
+        }
+      }());
+
+      new ClipboardJS('.copy')
+
+      //- const waypoint = new Waypoint({
+      //-   element: document.getElementById('value'),
+      //-   handler: function() {
+      //-     console.log('waypoint value')
+      //-   }
+      //- });
+
+      // init controller
+      var controller = new ScrollMagic.Controller();
+
+      new ScrollMagic.Scene({
+        triggerElement: "#service", 
+        duration: 4000,
+        triggerHook: "onLeave"
+      }).setPin(".service", {pushFollowers: false}).addTo(controller);
+
+      new ScrollMagic.Scene({
+        triggerElement: "#service", 
+        duration: 1000,
+        offset: 0,
+        triggerHook: "onLeave"
+      }).addTo(controller).reverse(true).on('enter', function(e){
+        swiper2.slideTo(0);
+      });
+
+      new ScrollMagic.Scene({
+        triggerElement: "#service", 
+        duration: 2000,
+        offset: 1000,
+        triggerHook: "onLeave"
+      }).addTo(controller).reverse(true).on('enter', function(e){
+        swiper2.slideTo(1);
+      });
+
+      new ScrollMagic.Scene({
+        triggerElement: "#service", 
+        duration: 3000,
+        offset: 2000,
+        triggerHook: "onLeave"
+      }).addTo(controller).reverse(true).on('enter', function(e){
+        swiper2.slideTo(2);
+      });
+
+      new ScrollMagic.Scene({
+        triggerElement: "#service", 
+        duration: 4000,
+        offset: 3000,
+        triggerHook: "onLeave"
+      }).addTo(controller).reverse(true).on('enter', function(e){
+        swiper2.slideTo(3);
+      });
+
+
+      // jQuery
+      $(function() {
+
+        //- $('.swiper-pagination2 .swiper-pagination-bullet').on('change', function() {
+        //-   if ($(this).hasClass('swiper-pagination-bullet-active')){
+        //-     $(this).click();
+        //-     console.log('change')
+        //-   }
+        //- });
+
+        $('.side-menu li').on('click', function() {
+          $(this).addClass('active');
+          $(this).siblings().removeClass('active');
+        });
+
+        $('.talk-to-us').on('click', function() {
+          $('.side-menu li').removeClass('active');
+          $('.navContact').addClass('active');
+        });
+
+        $('.copy').on('click', function() {
+          $('.copy-success').addClass('copied');
+          setTimeout(function(){
+            // toggle another class
+            $('.copy-success').removeClass('copied');  
+          }, 2000);
+        });
+
+        $(window).on('scroll', function() {
+          const windowH = $(window).scrollTop(),
+                footerH = $('.footer').offset().top + $('.backtotop').outerHeight() - window.innerHeight,
+                gap = windowH - footerH;
+
+          if (gap > 0) {
+            $('.side-menu li').removeClass('active');
+            $('.navContact').addClass('active');
+          }
+          //- if (windowH <= 200) {
+          //-   $('.backtotop').removeClass('show').addClass('hide')
+          //- }
+          //- if (windowH > 200) {
+          //-   $('.backtotop').removeClass('hide').addClass('show')
+          //- }
+          //- if (windowH > 200 && windowH >= footerH - 40) {
+          //-   $('.backtotop').addClass('fixed').css('top', -40 - gap);
+          //- }
+          //- else {
+          //-   $('.backtotop').removeClass('fixed')
+          //- }
+          //- console.log(windowH, gap)
+        });
+
+        
+
+
+        var waypoints = $('#value').waypoint({
+          handler: function(direction) {
+            $('.navValue').addClass('active');
+            $('.navValue').siblings().removeClass('active');
+            $('.product-design-circle').removeClass('fade-out');
+          },
+          //- offset: '50%'
+        });
+        var waypoints = $('#service').waypoint({
+          handler: function(direction) {
+            $('.navService').addClass('active');
+            $('.navService').siblings().removeClass('active');
+            $('.product-design-circle').removeClass('fade-out');
+          },
+        });
+        var waypoints = $('#culture').waypoint({
+          handler: function(direction) {
+            $('.navCulture').addClass('active');
+            $('.navCulture').siblings().removeClass('active');
+            $('.product-design-circle').removeClass('fade-out');
+          },
+        });
+        var waypoints = $('#team').waypoint({
+          handler: function(direction) {
+            $('.navTeam').addClass('active');
+            $('.navTeam').siblings().removeClass('active');
+            $('.product-design-circle').addClass('fade-out');
+          },
+        });
+        var waypoints = $('#contact').waypoint({
+          handler: function(direction) {
+            $('.navContact').addClass('active');
+            $('.navContact').siblings().removeClass('active');
+            $('.product-design-circle').removeClass('fade-out');
+          },
+        });
+
+        $('.m-nav a').on('click', function() {
+          $('.m-menu').removeClass('m-menu-opened');
+        });
+
+        function committedBG() {
+          document.addEventListener('mousemove', function (event) {
+            if (window.event) { // IE fix
+              event = window.event;
+            }
+            // Grab the mouse's X-position.
+            var mousex = event.clientX;
+            var mousey = event.clientY;
+            $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
+            $('.committed .committed-bg-2').css({'left': 25 + mousex / 250 + "%", 'top': 0 + mousey / 1000 + "%"});
+            $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
+            $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 100 + mousey / 5 + "px"});
+
+          }, false);
+        }
+
+        committedBG();
+        
+        $(window).resize(function() {
+          if ($(window).width() > 1000) {
+            committedBG();
+          }
+          console.log('resize')
+        });
+        
+
+
+      });
+
+
+

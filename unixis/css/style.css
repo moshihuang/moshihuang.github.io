@@ -9172,7 +9172,7 @@ h1.title, .h1.title {
   left: 0;
   z-index: 1;
 }
-.committed h5.sub-title {
+.committed .text-wrap {
   margin-top: 80px;
 }
 .committed .committedSwiper {
@@ -9704,6 +9704,9 @@ h1.title, .h1.title {
   .committed .container-fluid {
     background: url("../img/sm/committed-bg.png") center 300px no-repeat !important;
   }
+  .committed .text-wrap {
+    margin-top: 40px !important;
+  }
 }
 /* pad portrait 直 */ 
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
@@ -9719,9 +9722,9 @@ h1.title, .h1.title {
 
   .committed .bg-orange {
     width: 70% !important;
-    height: 49% !important;
+    height: 98% !important;
   }
-  .committed h5.sub-title {
+  .committed .text-wrap {
     margin-top: 60px !important;
   }
   .committed .committedSwiper {
@@ -9732,6 +9735,15 @@ h1.title, .h1.title {
     background: url("../img/sm/committed-bg.png") center 300px no-repeat !important;
   }
 
+  .value .bg-orange {
+    height: 300px !important;
+  }
+  .value .bg-gray {
+    height: 260px !important;
+  }
+  .value .list {
+    flex-direction: row !important;
+  }
   .value .list .list-item {
     flex-direction: column !important;
     align-items: center !important;
@@ -9936,7 +9948,7 @@ h1.title, .h1.title {
   .committed .committed-bg {
     display: none;
   }
-  .committed h5.sub-title {
+  .committed .text-wrap {
     margin-top: 0;
   }
   .committed .scroll-down {
@@ -9959,13 +9971,13 @@ h1.title, .h1.title {
   }
   .value .bg-orange {
     width: calc(100% - 32px);
-    height: 440px;
+    height: 400px;
     left: 0;
     padding-left: 32px;
   }
   .value .bg-gray {
     width: 100%;
-    height: 420px;
+    height: 380px;
   }
   .value .text-wrap {
     width: 84%;

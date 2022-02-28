@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <meta name="theme-color" content="#00726A">
+    <meta name="theme-color" content="#FF5036">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="">
     <meta name="apple-mobile-web-app-title" content="Unixis Design">
@@ -75,9 +75,9 @@
             <div class="row no-gutters">
               <div class="col-12 col-md-4 offset-md-1">
                 <h5 class="sub-title two-point-orange-after" data-aos="fade-down">We Committed to</h5>
-                <h1 class="title" data-aos="fade-down">打磨匠心獨具的<br>數位產品</h1>
-                <p data-aos="fade-down">唯度設計 UNIXIS DESIGN 是一間數位產品事務所，我們秉持對待數位產品如同建築的職人精神，以創新與整合力，打造社會所需的產品與服務。</p>
-                <div class="scroll-down"><a class="js-scroll animate-link" href="#value"><img class="mr-1" src="../img/icon/arrow-down-orange.svg" alt=""><span class="animate-link-text text-orange">Scroll down</span></a></div>
+                <h1 class="title" data-aos="fade-down" data-aos-delay="200">打磨匠心獨具的<br>數位產品</h1>
+                <p data-aos="fade-down" data-aos-delay="400">唯度設計 UNIXIS DESIGN 是一間數位產品事務所，我們秉持對待數位產品如同建築的職人精神，以創新與整合力，打造社會所需的產品與服務。</p>
+                <div class="scroll-down" data-aos="fade-down" data-aos-delay="600"><a class="js-scroll animate-link" href="#value"><img class="mr-1" src="../img/icon/arrow-down-orange.svg" alt=""><span class="animate-link-text text-orange">Scroll down</span></a></div>
               </div>
               <div class="col-12 col-md-5 offset-md-1">
                 <div class="bg-orange"></div>
@@ -350,7 +350,7 @@
                       <div class="row no-gutters">
                         <div class="col-12 col-md-10 offset-md-1">
                           <h3 class="title two-point-orange-before">產品設計師的特質</h3>
-                          <p>唯度的產品設計師各自專精於不同領域，包括資訊架構、品牌設計或研究等，<br>但皆以全局觀進行產品設計。</p>
+                          <p>唯度的產品設計師各自專精於不同領域，包括資訊架構、品牌設計或研究等，但皆以全局觀進行產品設計。</p>
                           <div class="list"> 
                             <div class="row no-gutters">
                               <div class="col-12 col-md-4"> <img src="../img/md/team-icon-architecture.svg" alt=""></div>
@@ -446,7 +446,9 @@
     <script src="../js/lib.js"></script>
     <script>
       //- AOS 
-      AOS.init();
+      AOS.init({
+        duration: 1600
+      });
       
       //- Swiper
       const swiper1 = new Swiper(".committedSwiper", {
@@ -463,6 +465,7 @@
       });
       
       const swiper2 = new Swiper(".serviceSwiper", {
+        direction: "vertical",
         pagination: {
           el: ".swiper-pagination2",
           clickable: false,
@@ -605,12 +608,12 @@
       // jQuery
       $(function() {
       
-        $('.swiper-pagination2 .swiper-pagination-bullet').on('change', function() {
-          if ($(this).hasClass('swiper-pagination-bullet-active')){
-            $(this).click();
-            console.log('change')
-          }
-        });
+        //- $('.swiper-pagination2 .swiper-pagination-bullet').on('change', function() {
+        //-   if ($(this).hasClass('swiper-pagination-bullet-active')){
+        //-     $(this).click();
+        //-     console.log('change')
+        //-   }
+        //- });
       
         $('.side-menu li').on('click', function() {
           $(this).addClass('active');
@@ -717,9 +720,10 @@
         committedBG();
         
         $(window).resize(function() {
-          if ($(window).width() > 768) {
+          if ($(window).width() > 1000) {
             committedBG();
-          } 
+          }
+          console.log('resize')
         });
         
       

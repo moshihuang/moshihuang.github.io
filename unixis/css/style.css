@@ -10004,7 +10004,7 @@ h1.title, .h1.title {
   }
 
   .committed {
-    padding-top: 40px;
+    padding-top: 0;
     padding-bottom: 120px;
   }
   .committed .no-gutters {

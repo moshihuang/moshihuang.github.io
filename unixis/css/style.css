@@ -9759,7 +9759,7 @@ h1.title, .h1.title {
     height: 84% !important;
   }
   .committed .container-fluid {
-    background: url("../img/sm/committed-bg.svg") center 300px no-repeat !important;
+    background: url("../img/sm/committed-bg.svg") left bottom no-repeat;
   }
   .committed .text-wrap {
     margin-top: 40px !important;
@@ -9789,7 +9789,7 @@ h1.title, .h1.title {
     margin-left: 0 !important;
   }
   .committed .container-fluid {
-    background: url("../img/sm/committed-bg.svg") center 300px no-repeat !important;
+    background: url("../img/sm/committed-bg.svg") left bottom no-repeat;
   }
 
   .value .bg-orange {
@@ -10005,14 +10005,14 @@ h1.title, .h1.title {
 
   .committed {
     padding-top: 0;
-    padding-bottom: 120px;
+    padding-bottom: 0;
   }
   .committed .no-gutters {
     margin-left: 32px;
     margin-right: 32px;
   }
   .committed .container-fluid {
-    background: url("../img/sm/committed-bg.svg") center 300px no-repeat;
+    background: url("../img/sm/committed-bg.svg") left bottom no-repeat;
   }
   .committed .committed-bg {
     display: none;
@@ -10036,6 +10036,7 @@ h1.title, .h1.title {
   }
 
   .value {
+    padding-top: 40px;
     padding-bottom: 0;
   }
   .value .bg-orange {
@@ -10093,10 +10094,13 @@ h1.title, .h1.title {
   .service .serviceSwiper .swiper-slide .content-wrap {
     padding: 0 32px 48px 32px;
   }
+  .service .serviceSwiper .swiper-slide .num {
+    padding-top: 40px;
+  }
   .service .serviceSwiper .swiper-slide .desc {
     margin-bottom: 16px;
   }
-  .service .serviceSwiper .swiper-slide .order-sm-2 img {
+  .service .serviceSwiper .swiper-slide .order-2 img {
     margin-left: 0;
     width: 80%;
   }

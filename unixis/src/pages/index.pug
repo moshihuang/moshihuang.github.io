@@ -95,18 +95,19 @@ html(lang="zh-TW")
           .container-fluid
             .row.no-gutters
               .col-12.col-md-4.offset-md-1
-                h5.sub-title.two-point-orange-after(data-aos="fade-down") We Committed to
-                h1.title(data-aos="fade-down" data-aos-delay="200") 打磨匠心獨具的<br>數位產品
-                p(data-aos="fade-down" data-aos-delay="400") 唯度設計 UNIXIS DESIGN 是一間數位產品事務所，我們秉持對待數位產品如同建築的職人精神，以創新與整合力，打造社會所需的產品與服務。
+                .text-wrap
+                  h5.sub-title.two-point-orange-after(data-aos="fade-down") We Committed to
+                  h1.title(data-aos="fade-down" data-aos-delay="600") 打磨匠心獨具的<br>數位產品
+                  p(data-aos="fade-down" data-aos-delay="1200") 唯度設計 UNIXIS DESIGN 是一間數位產品事務所，我們秉持對待數位產品如同建築的職人精神，以創新與整合力，打造社會所需的產品與服務。
                 
-                .scroll-down(data-aos="fade-down" data-aos-delay="600")
+                .scroll-down(data-aos="fade-down" data-aos-delay="1800")
                   a.js-scroll.animate-link(href="#value")
                     img.mr-1(src="../img/icon/arrow-down-orange.svg" alt="")
                     span.animate-link-text.text-orange Scroll down
 
               .col-12.col-md-5.offset-md-1
                 .bg-orange
-                .swiper.committedSwiper
+                .swiper.committedSwiper(data-aos="fade-down")
                   .swiper-wrapper
                     .swiper-slide
                       img(src="../img/md/committed-img-1.jpg" alt="")
@@ -363,10 +364,10 @@ html(lang="zh-TW")
           .container-fluid
             .row.no-gutters
               .col-12.col-md-7
-                .bg-orange
+                .bg-orange(data-aos="fade-down")
                   .row.no-gutters
                     .col-12.col-md-11.offset-md-1
-                      .title-wrap
+                      .title-wrap(data-aos="fade-down")
                         h2.title.text-gray.two-point-gray-after Team
                         h5.sub-title.text-gray 團隊組成以產品設計師為核心，向外延展相關職務
 
@@ -381,15 +382,12 @@ html(lang="zh-TW")
                           p 唯度的產品設計師各自專精於不同領域，包括資訊架構、品牌設計或研究等，但皆以全局觀進行產品設計。
                           .list 
                             .row.no-gutters
-                              .col-12.col-md-4 
-                                img(src="../img/md/team-icon-architecture.svg" alt="")
-                                //- .text-orange.text-center.mt-2 Architecture
-                              .col-12.col-md-4 
+                              .col-12.col-md-4(data-aos="fade-down" data-aos-delay="400")
                                 img(src="../img/md/team-icon-brand.svg" alt="")
-                                //- .text-orange.text-center.mt-2 Brand
-                              .col-12.col-md-4 
+                              .col-12.col-md-4(data-aos="fade-down" data-aos-delay="600")
+                                img(src="../img/md/team-icon-architecture.svg" alt="")
+                              .col-12.col-md-4(data-aos="fade-down" data-aos-delay="800")
                                 img(src="../img/md/team-icon-research.svg" alt="")
-                                //- .text-orange.text-center.mt-2 Research
                   
                     .bg-white.d-block.d-md-none
                       h3.title.two-point-orange-before 產品設計師的特質
@@ -420,7 +418,7 @@ html(lang="zh-TW")
         section#contact.contact
           .container-fluid
             .row.no-gutters
-              .col-12.col-md-5.offset-md-1.order-sm-2.order-md-1
+              .col-12.col-md-5.offset-md-1.order-2.order-md-1
                 .info
                   p.text-white Digital Product Architects
                   .logo 
@@ -438,8 +436,13 @@ html(lang="zh-TW")
                       span 臺北市松山區南京東路4段171號2樓之1
                       img.ml-1(src="../img/icon/location.svg" alt="")
 
-              .col-12.col-md-6.order-sm-1.order-md-2
+              .col-12.col-md-6.order-1.order-md-2
                 .bg-gray.contact-bg(data-aos="fade-down")
+                  .contact-bg-line
+                    .line.top
+                    .line.bottom
+                    .line.left
+                    .line.right
                   .content-wrap(data-aos="fade-down")
                     h2.title.text-orange.two-point-orange-after Contact
                     h2.title 讓我們一起打磨一份有溫度的數位產品！  
@@ -449,7 +452,7 @@ html(lang="zh-TW")
                       .h4.text-gray Get in Touch
                       .arrow-block
                         img(src="../img/icon/arrow-btn-contact.svg" alt="")
-
+                
                 .d-none.d-md-flex
                   .text-right.w-100
                     a.backtotop.js-scroll.hide.animate-link(href="#top")
@@ -747,7 +750,7 @@ html(lang="zh-TW")
             var mousex = event.clientX;
             var mousey = event.clientY;
             $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
-            $('.committed .committed-bg-2').css({'left': 25 + mousex / 250 + "%", 'top': 0 + mousey / 1000 + "%"});
+            $('.committed .committed-bg-2').css({'left': 42 + mousex / 400 + "%", 'top': 0 + mousey / 1000 + "%"});
             $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
             $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 100 + mousey / 5 + "px"});
 

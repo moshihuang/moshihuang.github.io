@@ -1,34 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="135px" height="158px" viewBox="0 0 135 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>Group 193</title>
-    <g id="最終版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop_1440" transform="translate(-668.000000, -4680.000000)">
-            <g id="Group-193" transform="translate(668.000000, 4680.000000)">
-                <text id="Research" font-family="MuseoSans-500, Museo Sans" font-size="16" font-weight="normal" letter-spacing="-0.385882286" fill="#FF5036">
-                    <tspan x="41" y="146">Research</tspan>
-                </text>
-                <g id="Group-192" transform="translate(8.000000, 14.000000)">
-                    <path d="M57.3816171,107 C32.3186852,107 12,86.0828729 12,60.2762431 L12,46.7237569 C12,20.9171271 32.3186852,0 57.3816171,0 L73.6591058,0 C98.7220377,0 119.04609,20.9171271 119.04609,46.7237569 L119.04609,60.2762431 C119.04609,86.0828729 98.7220377,107 73.6591058,107 L57.3816171,107 Z" id="Fill-25-Copy-10" fill="#E4E9EF"></path>
-                    <g id="Group-98" transform="translate(0.000000, 10.077463)">
-                        <g id="Group-91" stroke-width="1.08">
-                            <polygon id="Rectangle-Copy-18" stroke="#FF5036" fill="#FF5036" transform="translate(49.925759, 39.774432) rotate(-15.000000) translate(-49.925759, -39.774432) " points="6.12773737 10.3325544 93.7218658 10.3354016 93.7237799 69.2163104 6.12965148 69.2134632"></polygon>
-                            <polygon id="Rectangle" stroke="#FF5036" fill="#FFFFFF" transform="translate(60.298519, 46.405159) rotate(-15.000000) translate(-60.298519, -46.405159) " points="16.5004755 16.2746158 104.094604 16.2774631 104.096563 76.5357031 16.5024344 76.5328559"></polygon>
-                            <g id="Group-72" transform="translate(94.679558, 37.451962) rotate(-15.000000) translate(-94.679558, -37.451962) translate(71.013380, 31.790857)">
-                                <g id="Group-97" transform="translate(-0.000000, 0.000000)">
-                                    <line x1="0.1582276" y1="1.27963894" x2="41.6153544" y2="1.07911756" id="Path-17" stroke="#FF5036"></line>
-                                    <line x1="0.607568416" y1="6.26730123" x2="46.6833004" y2="5.81572316" id="Path-17-Copy" stroke="#242628"></line>
-                                    <line x1="-9.09494702e-13" y1="10.8961217" x2="18.3161168" y2="10.8961217" id="Path-17-Copy-2" stroke="#FF5036"></line>
+    <title>Group 140</title>
+    <g id="0215_官網字級調整" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-668.000000, -4744.000000)" id="Group-196">
+            <g transform="translate(235.000000, 4579.000000)">
+                <g id="Group-140" transform="translate(433.000000, 165.000000)">
+                    <path d="" id="Path-2" stroke="#979797"></path>
+                    <g id="Group-138" transform="translate(14.000000, 14.000000)">
+                        <text id="Research" font-family="MuseoSans-500, Museo Sans" font-size="14" font-weight="normal" letter-spacing="-0.337647" fill="#FF5036">
+                            <tspan x="31" y="121">Research</tspan>
+                        </text>
+                        <g id="Group-192">
+                            <path d="M51.57526,96 C29.0484075,96 10.7857386,77.2332318 10.7857386,54.07962 L10.7857386,41.92038 C10.7857386,18.7667682 29.0484075,0 51.57526,0 L66.2056548,0 C88.7325074,0 107,18.7667682 107,41.92038 L107,54.07962 C107,77.2332318 88.7325074,96 66.2056548,96 L51.57526,96 Z" id="Fill-25-Copy-10" fill="#E4E9EF"></path>
+                            <g id="Group-98" transform="translate(-0.000000, 9.041462)">
+                                <g id="Group-91" stroke-width="0.972">
+                                    <polygon id="Rectangle-Copy-18" stroke="#FF5036" fill="#FF5036" transform="translate(44.873848, 35.685472) rotate(-15.000000) translate(-44.873848, -35.685472) " points="5.50053095 9.24945687 84.2216681 9.28738405 84.2471657 62.1214872 5.52602853 62.08356"></polygon>
+                                    <polygon id="Rectangle" stroke="#FF5036" fill="#FFFFFF" transform="translate(54.197005, 41.634536) rotate(-15.000000) translate(-54.197005, -41.634536) " points="14.8233897 14.5805777 93.5445269 14.6185049 93.5706209 68.6884935 14.8494837 68.6505663"></polygon>
+                                    <g id="Group-72" transform="translate(85.099080, 33.601760) rotate(-15.000000) translate(-85.099080, -33.601760) translate(63.827646, 28.522638)">
+                                        <g id="Group-96" transform="translate(-0.000000, -0.000000)">
+                                            <g id="Group-97" transform="translate(0.000000, -0.000000)">
+                                                <line x1="0.142216794" y1="1.14808727" x2="37.404361" y2="0.968180245" id="Path-17" stroke="#FF5036"></line>
+                                                <line x1="0.546089508" y1="5.62299923" x2="41.9594894" y2="5.21784508" id="Path-17-Copy" stroke="#242628"></line>
+                                                <line x1="0" y1="9.77595964" x2="16.4627373" y2="9.77595964" id="Path-17-Copy-2" stroke="#FF5036"></line>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <polygon id="Rectangle" fill="#242628" transform="translate(34.163137, 40.377933) rotate(-15.000000) translate(-34.163137, -40.377933) " points="21.8950874 28.1676533 46.3978331 28.2010069 46.4311866 52.5882124 21.928441 52.5548589"></polygon>
+                                <g id="Group-95" transform="translate(31.458404, 30.435173)" stroke="#FF5036">
+                                    <ellipse id="Oval-Copy-3" stroke-width="0.972" transform="translate(12.385688, 12.584896) rotate(-90.000000) translate(-12.385688, -12.584896) " cx="12.3856877" cy="12.5848963" rx="12.5848963" ry="12.3856877"></ellipse>
+                                    <line x1="25.8924225" y1="31.8782619" x2="35.4809149" y2="15.9538064" id="Path-24" stroke-width="4.86" transform="translate(30.686669, 23.916034) rotate(-90.000000) translate(-30.686669, -23.916034) "></line>
                                 </g>
                             </g>
                         </g>
-                        <polygon id="Rectangle" fill="#242628" transform="translate(38.009232, 45.004571) rotate(-15.000000) translate(-38.009232, -45.004571) " points="24.3645108 31.4029787 51.6290534 31.4278794 51.6539541 58.6061633 24.3894115 58.5812626"></polygon>
-                        <g id="Group-95" transform="translate(35.000000, 33.922537)" stroke="#FF5036">
-                            <ellipse id="Oval-Copy-3" stroke-width="1.08" transform="translate(13.780072, 14.026916) rotate(-90.000000) translate(-13.780072, -14.026916) " cx="13.7800718" cy="14.0269157" rx="14.0269157" ry="13.7800718"></ellipse>
-                            <line x1="28.7977955" y1="35.5150307" x2="39.4849693" y2="17.7977955" id="Path-24" stroke-width="5.4" transform="translate(34.141382, 26.656413) rotate(-90.000000) translate(-34.141382, -26.656413) "></line>
-                        </g>
                     </g>
+                    <rect id="Rectangle" x="0" y="0" width="135" height="158"></rect>
                 </g>
-                <rect id="Rectangle" x="0" y="0" width="135" height="158"></rect>
             </g>
         </g>
     </g>

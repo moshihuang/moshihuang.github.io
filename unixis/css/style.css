@@ -9019,6 +9019,10 @@ img {
   display: none;
 }
 
+[data-aos=fade-down] {
+  transform: translate3d(0, -60px, 0);
+}
+
 .side-menu {
   width: 120px;
   height: 100%;
@@ -9179,12 +9183,17 @@ h1.title, .h1.title {
 .committed .text-wrap {
   margin-top: 80px;
 }
+.committed .text-wrap .sub-title {
+  margin-bottom: 16px;
+}
 .committed .text-wrap h1.title[data-aos=fade-down],
-.committed .text-wrap p[data-aos=fade-down] {
+.committed .text-wrap p[data-aos=fade-down],
+.committed .text-wrap .scroll-down[data-aos=fade-down] {
   transform: translate3d(0, -40px, 0);
 }
 .committed .text-wrap h1.title.aos-animate[data-aos=fade-down],
-.committed .text-wrap p.aos-animate[data-aos=fade-down] {
+.committed .text-wrap p.aos-animate[data-aos=fade-down],
+.committed .text-wrap .scroll-down[data-aos=fade-down] {
   transform: translateZ(0);
 }
 .committed .committedSwiper {

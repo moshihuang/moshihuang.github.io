@@ -9921,7 +9921,7 @@ h1.title, .h1.title {
     height: 18px;
     position: relative;
     top: 40%;
-    right: -24px;
+    right: -26px;
   }
   .m-menu .burger-wrap .burger .bar {
     width: 100%;
@@ -10004,7 +10004,7 @@ h1.title, .h1.title {
   }
 
   .committed {
-    padding-top: 0;
+    padding-top: 40px;
     padding-bottom: 0;
   }
   .committed .no-gutters {

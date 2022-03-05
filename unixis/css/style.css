@@ -9515,6 +9515,7 @@ h1.title, .h1.title {
 }
 .contact .info .logo {
   margin-bottom: 72px;
+  max-width: 270px;
 }
 .contact .info .phone, .contact .info .email, .contact .info address {
   margin-bottom: 16px;

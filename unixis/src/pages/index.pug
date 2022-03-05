@@ -97,8 +97,8 @@ html(lang="zh-TW")
               .col-12.col-md-4.offset-md-1
                 .text-wrap
                   h5.sub-title.two-point-orange-after(data-aos="fade-down") We Committed to
-                  h1.title(data-aos="fade-down" data-aos-delay="600") 打磨匠心獨具的<br>數位產品
-                  p(data-aos="fade-down" data-aos-delay="1200") 唯度設計 UNIXIS DESIGN 是一間數位產品事務所，我們秉持對待數位產品如同建築的職人精神，以創新與整合力，打造社會所需的產品與服務。
+                  h1.title(data-aos="fade-down" data-aos-delay="800") 打磨匠心獨具的<br>數位產品
+                  p(data-aos="fade-down" data-aos-delay="1300") 唯度設計 UNIXIS DESIGN 是一間數位產品事務所，我們秉持對待數位產品如同建築的職人精神，以創新與整合力，打造社會所需的產品與服務。
                 
                 .scroll-down(data-aos="fade-down" data-aos-delay="1800")
                   a.js-scroll.animate-link(href="#value")
@@ -106,8 +106,8 @@ html(lang="zh-TW")
                     span.animate-link-text.text-orange Scroll down
 
               .col-12.col-md-5.offset-md-1
-                .bg-orange
-                .swiper.committedSwiper(data-aos="fade-down")
+                .bg-orange(data-aos="fade-down")
+                .swiper.committedSwiper(data-aos="fade-down" data-aos-delay="400")
                   .swiper-wrapper
                     .swiper-slide
                       img(src="../img/md/committed-img-1.jpg" alt="")
@@ -415,7 +415,9 @@ html(lang="zh-TW")
                       p 團隊中的管理者、研究員、工程師和產品設計師相輔相成，<br class="d-none d-md-block">透過密切合作與絕佳默契，逐步建構數位產品的獨特世界觀。
 
 
-        section#contact.contact
+        #contact
+
+        section.contact
           .container-fluid
             .row.no-gutters
               .col-12.col-md-5.offset-md-1.order-2.order-md-1
@@ -426,8 +428,8 @@ html(lang="zh-TW")
                   .phone 
                     a.text-white.two-point-orange-before(href="tel:+886227123887") 02-27123887 
                   .email 
-                    .text-white.two-point-orange-before.copy(data-clipboard-text="contact@unixisdesign.com") 
-                      span contact@unixisdesign.com
+                    .text-white.two-point-orange-before.copy(data-clipboard-text="service@unixisdesign.com") 
+                      span service@unixisdesign.com
                       img.copy-img.ml-2.mr-1(src="../img/icon/copy.svg" alt="")
                       span.copy-success
                         .text-white 複製成功！
@@ -574,10 +576,11 @@ html(lang="zh-TW")
 
       // All animations will take exactly 500ms
       const scroll = new SmoothScroll('a.js-scroll[href*="#"]', {
-        speed: 500,
+        speed: 400,
         speedAsDuration: true,
         updateURL: false,
-        popstate: false
+        popstate: false,
+        offset: 0
       });
 
       //- mobile nav burger
@@ -749,10 +752,22 @@ html(lang="zh-TW")
             // Grab the mouse's X-position.
             var mousex = event.clientX;
             var mousey = event.clientY;
-            $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
-            $('.committed .committed-bg-2').css({'left': 42 + mousex / 400 + "%", 'top': 0 + mousey / 1000 + "%"});
-            $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
-            $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 75 + mousey / 5 + "px"});
+
+            setTimeout( function(){
+              $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
+            }, 400); 
+
+            setTimeout( function(){
+              $('.committed .committed-bg-2').css({'left': 42 + mousex / 400 + "%", 'top': 0 + mousey / 1000 + "%"});
+            }, 555); 
+
+            setTimeout( function(){
+              $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
+            }, 350); 
+
+            setTimeout( function(){
+              $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 75 + mousey / 5 + "px"});
+            }, 500); 
 
           }, false);
         }

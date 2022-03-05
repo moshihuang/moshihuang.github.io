@@ -168,7 +168,8 @@ img
 .m-menu
   display: none
 
-
+[data-aos=fade-down]
+  transform: translate3d(0,-60px,0)
 
 
 .side-menu
@@ -315,6 +316,16 @@ h1.title, .h1.title
 
   .text-wrap
     margin-top: 80px
+    .sub-title
+      margin-bottom: 16px
+    h1.title[data-aos=fade-down],
+    p[data-aos=fade-down],
+    .scroll-down[data-aos=fade-down]
+      transform: translate3d(0,-40px,0)
+    h1.title.aos-animate[data-aos=fade-down],
+    p.aos-animate[data-aos=fade-down],
+    .scroll-down[data-aos=fade-down]
+      transform: translateZ(0)
 
   .committedSwiper
     padding-right: 0px
@@ -513,12 +524,13 @@ h1.title, .h1.title
     width: 100%
     height: 550px
     position: absolute
-    top: -80px
+    top: 0
     z-index: 1
   .bg-white
     width: calc(100% - 30px)
     margin-bottom: 64px
     position: relative
+    top: 80px
     z-index: 2
     border: 1px solid $orange
   .content-wrap
@@ -586,6 +598,11 @@ h1.title, .h1.title
     position: relative
 
 
+#contact
+  position: relative
+  top: -88px
+
+
 .contact
   background: $black
   .info
@@ -593,6 +610,7 @@ h1.title, .h1.title
     padding-bottom: 200px
     .logo
       margin-bottom: 72px
+      max-width: 270px
     .phone, .email, address
       margin-bottom: 16px
       color: $white
@@ -1034,7 +1052,7 @@ h1.title, .h1.title
         position: relative
         // margin: 0 auto
         top: 40%
-        right: -24px
+        right: -26px
         .bar
           width: 100%
           height: 2px
@@ -1118,7 +1136,7 @@ h1.title, .h1.title
 
 
   .committed
-    padding-top: 0
+    padding-top: 40px
     padding-bottom: 0
     .no-gutters
       margin-left: 32px
@@ -1194,7 +1212,7 @@ h1.title, .h1.title
           .item
             margin-right: 4px
         .content-wrap
-          padding: 0 32px 48px 32px
+          padding: 0 24px 48px 24px
         .num
           padding-top: 40px
         .desc

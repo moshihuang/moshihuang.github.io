@@ -9308,6 +9308,9 @@ h1.title, .h1.title {
   left: 8.3%;
   z-index: 2;
 }
+.service .swiper-pointer-events.swiper-vertical {
+  touch-action: none !important;
+}
 .service .serviceSwiper {
   height: calc(100vh - 200px);
   position: relative;
@@ -9315,6 +9318,8 @@ h1.title, .h1.title {
 }
 .service .serviceSwiper .swiper-slide {
   overflow: visible;
+  touch-action: none;
+  pointer-events: none;
 }
 .service .serviceSwiper .swiper-slide .content-wrap {
   padding-left: 10%;
@@ -10318,10 +10323,6 @@ h1.title, .h1.title {
   }
 }
 @media (max-width: 768px) {
-  .service .serviceSwiper .swiper-slide {
-    touch-action: none;
-    pointer-events: none;
-  }
   .service .serviceSwiper .swiper-slide .order-2 img {
     width: 70%;
   }

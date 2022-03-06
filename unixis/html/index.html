@@ -486,6 +486,8 @@
         pagination: {
           el: ".swiper-pagination2",
           clickable: false,
+          allowTouchMove: false,
+          autoHeight: true,
           renderBullet: function (index, className) {
             return '<span class="' + className + '">' + '0' + (index + 1) + "</span>";
           },

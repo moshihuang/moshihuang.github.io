@@ -9790,6 +9790,7 @@ h1.title, .h1.title {
   }
   .committed .container-fluid {
     background: url("../img/sm/committed-bg.svg") left bottom no-repeat;
+    background-size: 100%;
   }
   .committed .text-wrap {
     margin-top: 40px !important;
@@ -9802,6 +9803,7 @@ h1.title, .h1.title {
   }
   .grid-line .vertical-wrap .container-fluid {
     width: calc(100% - 92px - 92px - 56px) !important;
+    background-size: 100%;
   }
   .grid-line .vertical-wrap .line:nth-child(n+5) {
     display: none !important;
@@ -9880,10 +9882,6 @@ h1.title, .h1.title {
   }
 }
 @media (max-width: 1000px) {
-  a.animate-link .animate-link-text:before {
-    width: 100%;
-  }
-
   .container-fluid {
     width: 100%;
   }
@@ -10047,6 +10045,7 @@ h1.title, .h1.title {
   }
   .committed .container-fluid {
     background: url("../img/sm/committed-bg.svg") left bottom no-repeat;
+    background-size: auto;
   }
   .committed .committed-bg {
     display: none;
@@ -10118,8 +10117,12 @@ h1.title, .h1.title {
   .service .bg-orange {
     padding: 12px 24px;
     height: 80px;
-    top: 90px;
     left: 30px;
+    position: relative;
+    top: 0;
+  }
+  .service .bg-orange h2 {
+    margin-bottom: 0;
   }
   .service .serviceSwiper {
     height: calc(100vh - 145px);
@@ -10128,6 +10131,7 @@ h1.title, .h1.title {
     display: inline;
   }
   .service .serviceSwiper .swiper-slide .goal-list {
+    margin-top: 8px;
     margin-bottom: 8px;
   }
   .service .serviceSwiper .swiper-slide .goal-list .item {
@@ -10151,7 +10155,7 @@ h1.title, .h1.title {
   }
 
   .clients {
-    padding-bottom: 200px;
+    padding-bottom: 64px;
   }
   .clients .bg-orange {
     width: 90%;
@@ -10226,14 +10230,13 @@ h1.title, .h1.title {
   }
   .team .bg-white {
     width: 90%;
-    padding: 60px 32px;
+    padding: 60px 32px 48px 32px;
     margin-bottom: 40px;
     top: 0;
     left: -1px;
   }
   .team .bg-white p {
     margin-bottom: 32px;
-    width: 70%;
   }
   .team .product-design-circle-sm {
     padding-left: 32px;

@@ -9472,10 +9472,6 @@ h1.title, .h1.title {
   z-index: 3;
   border: 1px solid #FF5036;
 }
-.team .bg-white:after {
-  content: "";
-  position: absolute;
-}
 .team h3.title.two-point-orange-before:before {
   top: -3px;
 }
@@ -9882,6 +9878,10 @@ h1.title, .h1.title {
   }
 }
 @media (max-width: 1000px) {
+  .two-point-orange-before:before {
+    top: 0;
+  }
+
   .container-fluid {
     width: 100%;
   }
@@ -10133,9 +10133,13 @@ h1.title, .h1.title {
   .service .serviceSwiper .swiper-slide .goal-list {
     margin-top: 8px;
     margin-bottom: 8px;
+    display: flex;
   }
   .service .serviceSwiper .swiper-slide .goal-list .item {
     margin-right: 4px;
+  }
+  .service .serviceSwiper .swiper-slide .goal-list .item:last-child {
+    margin-right: 0;
   }
   .service .serviceSwiper .swiper-slide .content-wrap {
     padding: 36px 24px 24px 24px;
@@ -10148,7 +10152,7 @@ h1.title, .h1.title {
   }
   .service .serviceSwiper .swiper-slide .order-2 img {
     margin-left: 0;
-    width: 70%;
+    width: 50%;
   }
   .service .serviceSwiper .swiper-pagination2 {
     display: none;
@@ -10301,6 +10305,11 @@ h1.title, .h1.title {
   }
   .footer .d-flex.justify-content-between div {
     margin: 8px 0;
+  }
+}
+@media (max-width: 768px) {
+  .service .serviceSwiper .swiper-slide .order-2 img {
+    width: 70%;
   }
 }
 @media (max-width: 375px) {

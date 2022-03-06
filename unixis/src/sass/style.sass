@@ -487,7 +487,8 @@ h1.title, .h1.title
 
 
 .clients
-  padding-bottom: 280px
+  padding-top: 120px
+  padding-bottom: 200px
   .bg-orange
     padding: 32px 80px 24px 0
     margin-bottom: 40px
@@ -542,6 +543,7 @@ h1.title, .h1.title
 
   .culture-img
     width: 100%
+    padding-top: 120px
     padding-left: 120px
     display: flex
     img
@@ -565,6 +567,7 @@ h1.title, .h1.title
     z-index: 3
     border: 1px solid $orange
 
+
   h3.title.two-point-orange-before:before
     top: -3px 
 
@@ -576,7 +579,7 @@ h1.title, .h1.title
   .product-design
     width: 100%
     position: relative
-    margin-top: -36%
+    margin-top: -60px
     z-index: 2
     .visule
       margin-bottom: 16px
@@ -587,13 +590,13 @@ h1.title, .h1.title
         width: 100%
     .product-design-circle
       position: absolute
-      top: 17%
-      left: 22%
+      top: 14%
+      left: 37%
       img
-        width: 100%
+        width: 76%
 
   .product-design-text
-    margin-top: 32px
+    padding-top: 120px
     padding-bottom: 400px
     position: relative
 
@@ -890,6 +893,7 @@ h1.title, .h1.title
       height: 84% !important
     .container-fluid
       background: url("../img/sm/committed-bg.svg") left bottom no-repeat
+      background-size: 100%
     .text-wrap
       margin-top: 40px !important
 
@@ -905,6 +909,7 @@ h1.title, .h1.title
     .vertical-wrap 
       .container-fluid
         width: calc(100% - 92px - 92px - 56px) !important
+        background-size: 100%
       .line
         &:nth-child(n+5)
           display: none !important
@@ -980,6 +985,15 @@ h1.title, .h1.title
 
 
 @media (max-width: 1000px)
+
+  // a.animate-link
+  //   .animate-link-text
+  //     &:before
+  //       width: 100%
+
+  .two-point-orange-before:before
+    top: 0
+
   .container-fluid
     width: 100%
 
@@ -1144,6 +1158,7 @@ h1.title, .h1.title
       
     .container-fluid
       background: url("../img/sm/committed-bg.svg") left bottom no-repeat
+      background-size: auto
 
     .committed-bg
       display: none
@@ -1200,27 +1215,42 @@ h1.title, .h1.title
     min-height: auto
     .bg-gray
       left: 0
+      height: 144px
     .bg-orange
-      height: 120px
-      top: 100px
+      padding: 12px 24px
+      height: 80px
+      // top: 90px
       left: 30px
+      position: relative
+      top: 0
+      h2
+        margin-bottom: 0
 
     .serviceSwiper 
+      height: calc(100vh - 145px)
       .swiper-slide
+        h2
+          display: inline
+
         .goal-list 
+          margin-top: 8px
           margin-bottom: 8px
+          display: flex
           .item
-            margin-right: 4px
+            margin-right: 4px 
+            &:last-child
+              margin-right: 0
         .content-wrap
-          padding: 0 24px 48px 24px
+          padding: 36px 24px 24px 24px
         .num
           padding-top: 40px
         .desc
           margin-bottom: 16px
+
         .order-2
           img
             margin-left: 0
-            width: 80%
+            width: 50%
 
       .swiper-pagination2
         display: none
@@ -1228,7 +1258,7 @@ h1.title, .h1.title
 
 
   .clients
-    padding-bottom: 200px
+    padding-bottom: 64px
     .bg-orange
       width: 90%
       padding: 32px
@@ -1258,8 +1288,8 @@ h1.title, .h1.title
     .bg-orange
       left: -40px
     .bg-white
-      padding-left: 32px
-      padding-right: 32px
+      padding-left: 24px
+      padding-right: 24px
       margin-bottom: 48px
       border-top: 1px solid $orange
       border-left: 0
@@ -1267,6 +1297,7 @@ h1.title, .h1.title
     .content-wrap
       padding-top: 64px
       padding-bottom: 48px
+
       h2.sub-title
         margin-bottom: 0
       .col-12.col-md-4.offset-md-1,
@@ -1274,6 +1305,7 @@ h1.title, .h1.title
         margin-top: 60px
         
     .culture-img
+      padding-top: 40px
       flex-direction: column
       padding-left: 0
       img
@@ -1289,13 +1321,13 @@ h1.title, .h1.title
       width: 80%
     .bg-white
       width: 90%
-      padding: 60px 32px
+      padding: 60px 32px 48px 32px
       margin-bottom: 40px
       top: 0
       left: -1px
       p
         margin-bottom: 32px
-        width: 70%
+        // width: 70%
 
     .product-design-circle-sm
       padding-left: 32px
@@ -1312,8 +1344,9 @@ h1.title, .h1.title
         width: 100%
 
     .product-design-text
+      text-align: right
       top: 0
-      padding: 0 32px 68px 32px
+      padding: 24px 18px 68px 18px
 
 
 
@@ -1355,14 +1388,25 @@ h1.title, .h1.title
         
 
 
+
+
+
+
+@media (max-width: 768px)
+  .service 
+    .serviceSwiper 
+      .swiper-slide 
+        .order-2 
+          img
+            width: 70%
+
+
+
+
+
 @media (max-width: 375px)
   .side-menu 
     display: none
-
-
-
-
-
 
 
 
@@ -1389,5 +1433,6 @@ h1.title, .h1.title
 
 
 
-@media (max-width: 768px)
   
+
+

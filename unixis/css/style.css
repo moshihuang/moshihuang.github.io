@@ -9781,15 +9781,23 @@ h1.title, .h1.title {
 }
 /* pad Landscape 橫 */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+  .committed {
+    padding-top: 0;
+  }
   .committed .bg-orange {
     height: 84% !important;
   }
-  .committed .container-fluid {
-    background: url("../img/sm/committed-bg.svg") left bottom no-repeat;
-    background-size: 100%;
-  }
   .committed .text-wrap {
     margin-top: 40px !important;
+  }
+  .committed .committed-bg .committed-bg-2 {
+    left: 40%;
+  }
+  .committed .committed-bg .committed-bg-3 {
+    left: 90%;
+  }
+  .committed .committed-bg .committed-bg-4 {
+    top: 200px;
   }
 }
 /* pad portrait 直 */ 
@@ -9805,6 +9813,9 @@ h1.title, .h1.title {
     display: none !important;
   }
 
+  .committed {
+    padding-top: 0;
+  }
   .committed .bg-orange {
     width: 70% !important;
     height: 98% !important;
@@ -9818,6 +9829,7 @@ h1.title, .h1.title {
   }
   .committed .container-fluid {
     background: url("../img/sm/committed-bg.svg") left bottom no-repeat;
+    background-size: 100%;
   }
 
   .value .bg-orange {
@@ -9834,17 +9846,9 @@ h1.title, .h1.title {
     align-items: center !important;
   }
 
-  .clients .bg-gray {
-    width: 440px !important;
-    height: 132px !important;
-  }
   .clients .bg-gray .d-md-flex .swiper {
     height: 60px !important;
     margin: 0 !important;
-  }
-
-  .culture .culture-img {
-    padding-left: 96px !important;
   }
 
   .team .bg-orange .title-wrap {
@@ -10036,7 +10040,7 @@ h1.title, .h1.title {
   }
 
   .committed {
-    padding-top: 40px;
+    padding-top: 0;
     padding-bottom: 0;
   }
   .committed .no-gutters {
@@ -10045,7 +10049,8 @@ h1.title, .h1.title {
   }
   .committed .container-fluid {
     background: url("../img/sm/committed-bg.svg") left bottom no-repeat;
-    background-size: auto;
+    background-size: 100%;
+    background-position: left top;
   }
   .committed .committed-bg {
     display: none;
@@ -10069,7 +10074,7 @@ h1.title, .h1.title {
   }
 
   .value {
-    padding-top: 40px;
+    padding-top: 0;
     padding-bottom: 0;
   }
   .value .bg-orange {
@@ -10177,7 +10182,7 @@ h1.title, .h1.title {
   .clients .bg-gray .logo-wrap {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .clients p {
     margin: 24px 32px;
@@ -10239,6 +10244,10 @@ h1.title, .h1.title {
     top: 0;
     left: -1px;
   }
+  .team .bg-white img {
+    margin: 0 auto;
+    display: block;
+  }
   .team .bg-white p {
     margin-bottom: 32px;
   }
@@ -10253,9 +10262,10 @@ h1.title, .h1.title {
   .team .product-design-sm {
     padding: 0 32px;
     width: 100%;
+    text-align: center;
   }
   .team .product-design-sm img {
-    width: 100%;
+    width: 60%;
   }
   .team .product-design-text {
     text-align: right;
@@ -10310,6 +10320,32 @@ h1.title, .h1.title {
 @media (max-width: 768px) {
   .service .serviceSwiper .swiper-slide .order-2 img {
     width: 70%;
+  }
+}
+@media (max-width: 414px) {
+  .committed {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  .committed .no-gutters {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  .committed .container-fluid {
+    background: url("../img/sm/committed-bg.svg") left bottom no-repeat;
+    background-size: auto;
+  }
+
+  .value {
+    padding-top: 40px;
+  }
+
+  .clients .bg-gray .logo-wrap {
+    justify-content: space-around;
+  }
+
+  .team .product-design-sm img {
+    width: 100%;
   }
 }
 @media (max-width: 375px) {

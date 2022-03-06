@@ -309,13 +309,13 @@
                         </div>
                         <div class="row no-gutters">
                           <div class="col-12 col-md-4 offset-md-1">
-                            <div class="text-center" data-aos="fade-down">
+                            <div class="text-center" data-aos="fade-down" data-aos-delay="400">
                               <h4 class="text-orange">專業且開放的設計環境</h4>
                               <p>在唯度裡，我們秉持著多樣化的彈性與個性，彼此互相交流分享，共同面對不同的挑戰。</p><img src="../img/md/culture-img-1.svg" alt="">
                             </div>
                           </div>
                           <div class="col-12 col-md-4 offset-md-2">
-                            <div class="text-center" data-aos="fade-down" data-aos-delay="400">
+                            <div class="text-center" data-aos="fade-down" data-aos-delay="800">
                               <h4 class="text-orange">完整的知識系統</h4>
                               <p>唯度致力於培育人才，分享專業知識，任何人都可以是產品設計的專家。</p><img src="../img/md/culture-img-2.svg" alt="">
                             </div>
@@ -348,7 +348,7 @@
               <div class="col-12 col-md-11 offset-md-1">
                 <div class="row no-gutters">
                   <div class="col-12 col-md-7">
-                    <div class="bg-white d-none d-md-block" data-aos="fade-down" data-aos-anchor=".product-design-bg">
+                    <div class="bg-white d-none d-md-block" data-aos="fade-down">
                       <div class="row no-gutters">
                         <div class="col-12 col-md-10 offset-md-1">
                           <h3 class="title two-point-orange-before">產品設計師的特質</h3>
@@ -370,23 +370,31 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12">  
-                <div class="row no-gutters">     
-                  <div class="col-12 col-md-8 offset-md-4">
-                    <div class="d-none d-md-block product-design">
-                      <div class="visule">
-                        <div class="product-design-bg"><img src="../img/md/team-icon-product-design-bg.svg" alt=""></div>
-                        <div class="product-design-circle"><img src="../img/md/team-icon-product-design.svg" alt=""></div>
+              <div class="col-12">
+                <div class="row no-gutters">
+                  <div class="d-none d-md-flex">
+                    <div class="col-12 col-md-4 offset-md-1">
+                      <div class="product-design-text">
+                        <h3 class="title two-point-orange-before">產品設計團隊</h3>
+                        <p>團隊中的管理者、研究員、工程師和產品設計師相輔相成，<br class="d-none d-md-block">透過密切合作與絕佳默契，逐步建構數位產品的獨特世界觀。</p>
                       </div>
                     </div>
-                    <div class="d-flex d-md-none product-design-sm"><img src="../img/sm/product-design.svg" alt=""></div>
+                    <div class="col-12 col-md-7">
+                      <div class="d-none d-md-block product-design">
+                        <div class="visule">
+                          <div class="product-design-bg"><img src="../img/md/team-icon-product-design-bg.svg" alt=""></div>
+                          <div class="product-design-circle"><img src="../img/md/team-icon-product-design.svg" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="col-12">
-                    <div class="product-design-text text-right">
-                      <h3 class="title two-point-orange-before">產品設計團隊</h3>
-                      <p>團隊中的管理者、研究員、工程師和產品設計師相輔相成，<br class="d-none d-md-block">透過密切合作與絕佳默契，逐步建構數位產品的獨特世界觀。</p>
+                  <div class="d-block d-md-none">
+                    <div class="col-12 product-design-sm"><img src="../img/sm/product-design.svg" alt=""></div>
+                    <div class="col-12">
+                      <div class="product-design-text">
+                        <h3 class="title two-point-orange-before">產品設計團隊</h3>
+                        <p>團隊中的管理者、研究員、工程師和產品設計師相輔相成，<br class="d-none d-md-block">透過密切合作與絕佳默契，逐步建構數位產品的獨特世界觀。</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -674,7 +682,6 @@
           handler: function(direction) {
             $('.navValue').addClass('active');
             $('.navValue').siblings().removeClass('active');
-            $('.product-design-circle').removeClass('fade-out');
           },
           //- offset: '50%'
         });
@@ -682,28 +689,24 @@
           handler: function(direction) {
             $('.navService').addClass('active');
             $('.navService').siblings().removeClass('active');
-            $('.product-design-circle').removeClass('fade-out');
           },
         });
         var waypoints = $('#culture').waypoint({
           handler: function(direction) {
             $('.navCulture').addClass('active');
             $('.navCulture').siblings().removeClass('active');
-            $('.product-design-circle').removeClass('fade-out');
           },
         });
         var waypoints = $('#team').waypoint({
           handler: function(direction) {
             $('.navTeam').addClass('active');
             $('.navTeam').siblings().removeClass('active');
-            $('.product-design-circle').addClass('fade-out');
           },
         });
         var waypoints = $('#contact').waypoint({
           handler: function(direction) {
             $('.navContact').addClass('active');
             $('.navContact').siblings().removeClass('active');
-            $('.product-design-circle').removeClass('fade-out');
           },
         });
       

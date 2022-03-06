@@ -9381,7 +9381,8 @@ h1.title, .h1.title {
 }
 
 .clients {
-  padding-bottom: 280px;
+  padding-top: 120px;
+  padding-bottom: 200px;
 }
 .clients .bg-orange {
   padding: 32px 80px 24px 0;
@@ -9443,6 +9444,7 @@ h1.title, .h1.title {
 }
 .culture .culture-img {
   width: 100%;
+  padding-top: 120px;
   padding-left: 120px;
   display: flex;
 }
@@ -9470,6 +9472,10 @@ h1.title, .h1.title {
   z-index: 3;
   border: 1px solid #FF5036;
 }
+.team .bg-white:after {
+  content: "";
+  position: absolute;
+}
 .team h3.title.two-point-orange-before:before {
   top: -3px;
 }
@@ -9480,7 +9486,7 @@ h1.title, .h1.title {
 .team .product-design {
   width: 100%;
   position: relative;
-  margin-top: -36%;
+  margin-top: -60px;
   z-index: 2;
 }
 .team .product-design .visule {
@@ -9495,14 +9501,14 @@ h1.title, .h1.title {
 }
 .team .product-design .product-design-circle {
   position: absolute;
-  top: 17%;
-  left: 22%;
+  top: 14%;
+  left: 37%;
 }
 .team .product-design .product-design-circle img {
-  width: 100%;
+  width: 76%;
 }
 .team .product-design-text {
-  margin-top: 32px;
+  padding-top: 120px;
   padding-bottom: 400px;
   position: relative;
 }
@@ -9874,6 +9880,10 @@ h1.title, .h1.title {
   }
 }
 @media (max-width: 1000px) {
+  a.animate-link .animate-link-text:before {
+    width: 100%;
+  }
+
   .container-fluid {
     width: 100%;
   }
@@ -10103,11 +10113,19 @@ h1.title, .h1.title {
   }
   .service .bg-gray {
     left: 0;
+    height: 144px;
   }
   .service .bg-orange {
-    height: 120px;
-    top: 100px;
+    padding: 12px 24px;
+    height: 80px;
+    top: 90px;
     left: 30px;
+  }
+  .service .serviceSwiper {
+    height: calc(100vh - 145px);
+  }
+  .service .serviceSwiper .swiper-slide h2 {
+    display: inline;
   }
   .service .serviceSwiper .swiper-slide .goal-list {
     margin-bottom: 8px;
@@ -10116,7 +10134,7 @@ h1.title, .h1.title {
     margin-right: 4px;
   }
   .service .serviceSwiper .swiper-slide .content-wrap {
-    padding: 0 24px 48px 24px;
+    padding: 36px 24px 24px 24px;
   }
   .service .serviceSwiper .swiper-slide .num {
     padding-top: 40px;
@@ -10126,7 +10144,7 @@ h1.title, .h1.title {
   }
   .service .serviceSwiper .swiper-slide .order-2 img {
     margin-left: 0;
-    width: 80%;
+    width: 70%;
   }
   .service .serviceSwiper .swiper-pagination2 {
     display: none;
@@ -10170,8 +10188,8 @@ h1.title, .h1.title {
     left: -40px;
   }
   .culture .bg-white {
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-bottom: 48px;
     border-top: 1px solid #FF5036;
     border-left: 0;
@@ -10189,6 +10207,7 @@ h1.title, .h1.title {
     margin-top: 60px;
   }
   .culture .culture-img {
+    padding-top: 40px;
     flex-direction: column;
     padding-left: 0;
   }
@@ -10232,8 +10251,9 @@ h1.title, .h1.title {
     width: 100%;
   }
   .team .product-design-text {
+    text-align: right;
     top: 0;
-    padding: 0 32px 68px 32px;
+    padding: 24px 18px 68px 18px;
   }
 
   .contact {

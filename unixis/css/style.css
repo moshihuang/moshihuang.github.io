@@ -10318,6 +10318,10 @@ h1.title, .h1.title {
   }
 }
 @media (max-width: 768px) {
+  .service .serviceSwiper .swiper-slide {
+    touch-action: none;
+    pointer-events: none;
+  }
   .service .serviceSwiper .swiper-slide .order-2 img {
     width: 70%;
   }

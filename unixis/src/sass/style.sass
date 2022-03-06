@@ -426,9 +426,19 @@ h1.title, .h1.title
     height: calc(100vh - 200px)
     position: relative
     z-index: 1
+    touch-action: none
+    pointer-events: none
     // overflow: visible
+    .swiper-wrapper
+      touch-action: none
+      pointer-events: none
     .swiper-slide
       overflow: visible
+      touch-action: none
+      pointer-events: none
+      a.animate-link
+        pointer-events: auto
+        z-index: 4
       .content-wrap
         padding-left: 10%
         padding-bottom: 12px
@@ -889,13 +899,21 @@ h1.title, .h1.title
 /* pad Landscape 橫 */
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape)
   .committed 
+    padding-top: 0
     .bg-orange
       height: 84% !important
-    .container-fluid
-      background: url("../img/sm/committed-bg.svg") left bottom no-repeat
-      background-size: 100%
+    // .container-fluid
+    //   background: url("../img/sm/committed-bg.svg") left bottom no-repeat
+    //   background-size: 100%
     .text-wrap
       margin-top: 40px !important
+    .committed-bg 
+      .committed-bg-2
+        left: 40%
+      .committed-bg-3
+        left: 90%
+      .committed-bg-4
+        top: 200px
 
 
 
@@ -914,7 +932,8 @@ h1.title, .h1.title
         &:nth-child(n+5)
           display: none !important
 
-  .committed 
+  .committed
+    padding-top: 0
     .bg-orange
       width: 70% !important
       height: 98% !important
@@ -926,6 +945,7 @@ h1.title, .h1.title
       margin-left: 0 !important
     .container-fluid
       background: url("../img/sm/committed-bg.svg") left bottom no-repeat
+      background-size: 100%
 
   .value 
     .bg-orange
@@ -941,16 +961,16 @@ h1.title, .h1.title
 
   .clients 
     .bg-gray
-      width: 440px !important
-      height: 132px !important
+      // width: 440px !important
+      // height: 132px !important
       .d-md-flex 
         .swiper
           height: 60px !important
           margin: 0 !important
 
-  .culture 
-    .culture-img
-      padding-left: 96px !important
+  // .culture 
+  //   .culture-img
+  //     padding-left: 96px !important
 
 
   .team 
@@ -1150,7 +1170,7 @@ h1.title, .h1.title
 
 
   .committed
-    padding-top: 40px
+    padding-top: 0
     padding-bottom: 0
     .no-gutters
       margin-left: 32px
@@ -1158,7 +1178,8 @@ h1.title, .h1.title
       
     .container-fluid
       background: url("../img/sm/committed-bg.svg") left bottom no-repeat
-      background-size: auto
+      background-size: 100%
+      background-position: left top
 
     .committed-bg
       display: none
@@ -1180,7 +1201,7 @@ h1.title, .h1.title
 
 
   .value
-    padding-top: 40px
+    padding-top: 0
     padding-bottom: 0
     .bg-orange
       width: calc(100% - 32px)
@@ -1273,7 +1294,7 @@ h1.title, .h1.title
       .logo-wrap
         width: 100%
         display: flex
-        justify-content: space-between
+        justify-content: space-around
     p
       margin: 24px 32px
 
@@ -1325,6 +1346,9 @@ h1.title, .h1.title
       margin-bottom: 40px
       top: 0
       left: -1px
+      img
+        margin: 0 auto
+        display: block
       p
         margin-bottom: 32px
         // width: 70%
@@ -1340,8 +1364,10 @@ h1.title, .h1.title
     .product-design-sm
       padding: 0 32px
       width: 100%
+      text-align: center
       img
-        width: 100%
+        width: 60%
+
 
     .product-design-text
       text-align: right
@@ -1401,6 +1427,31 @@ h1.title, .h1.title
             width: 70%
 
 
+@media (max-width: 414px)
+
+  .committed
+    padding-top: 40px
+    padding-bottom: 0
+    .no-gutters
+      margin-left: 32px
+      margin-right: 32px
+      
+    .container-fluid
+      background: url("../img/sm/committed-bg.svg") left bottom no-repeat
+      background-size: auto
+
+  .value
+    padding-top: 40px
+
+  .clients 
+    .bg-gray 
+      .logo-wrap
+        justify-content: space-around
+
+  .team 
+    .product-design-sm 
+      img
+        width: 100%
 
 
 

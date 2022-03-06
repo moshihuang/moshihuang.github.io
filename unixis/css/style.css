@@ -9308,13 +9308,16 @@ h1.title, .h1.title {
   left: 8.3%;
   z-index: 2;
 }
-.service .swiper-pointer-events.swiper-vertical {
-  touch-action: none !important;
-}
 .service .serviceSwiper {
   height: calc(100vh - 200px);
   position: relative;
   z-index: 1;
+  touch-action: none;
+  pointer-events: none;
+}
+.service .serviceSwiper .swiper-wrapper {
+  touch-action: none;
+  pointer-events: none;
 }
 .service .serviceSwiper .swiper-slide {
   overflow: visible;

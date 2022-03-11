@@ -9324,6 +9324,10 @@ h1.title, .h1.title {
   touch-action: none;
   pointer-events: none;
 }
+.service .serviceSwiper .swiper-slide a.animate-link {
+  pointer-events: auto;
+  z-index: 4;
+}
 .service .serviceSwiper .swiper-slide .content-wrap {
   padding-left: 10%;
   padding-bottom: 12px;

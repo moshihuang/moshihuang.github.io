@@ -9702,6 +9702,10 @@ h1.title, .h1.title {
     display: none;
   }
 
+  .service .serviceSwiper .swiper-slide .goal-list .item {
+    margin-right: 8px;
+  }
+
   .clients .bg-gray .d-md-flex .swiper {
     margin-right: 30px;
   }
@@ -9763,6 +9767,9 @@ h1.title, .h1.title {
   .culture .bg-white {
     width: 100%;
   }
+  .culture .culture-img {
+    padding-left: 0;
+  }
 
   .team .product-design .product-design-circle {
     top: 2%;
@@ -9799,9 +9806,6 @@ h1.title, .h1.title {
   .committed .bg-orange {
     height: 84% !important;
   }
-  .committed .text-wrap {
-    margin-top: 40px !important;
-  }
   .committed .committed-bg .committed-bg-2 {
     left: 40%;
   }
@@ -9832,16 +9836,12 @@ h1.title, .h1.title {
     width: 70% !important;
     height: 98% !important;
   }
-  .committed .text-wrap {
-    margin-top: 60px !important;
-  }
   .committed .committedSwiper {
     width: 70% !important;
     margin-left: 0 !important;
   }
   .committed .container-fluid {
     background: url("../img/sm/committed-bg.svg") left bottom no-repeat;
-    background-size: 100%;
   }
 
   .value .bg-orange {
@@ -9856,6 +9856,13 @@ h1.title, .h1.title {
   .value .list .list-item {
     flex-direction: column !important;
     align-items: center !important;
+  }
+  .value .list .list-img {
+    margin-right: 0 !important;
+    width: 30% !important;
+  }
+  .value .list .list-img img {
+    width: 72px;
   }
 
   .clients .bg-gray .d-md-flex .swiper {
@@ -10052,7 +10059,7 @@ h1.title, .h1.title {
   }
 
   .committed {
-    padding-top: 0;
+    padding-top: 40px;
     padding-bottom: 0;
   }
   .committed .no-gutters {
@@ -10110,16 +10117,24 @@ h1.title, .h1.title {
   .value .list {
     padding-top: 84px;
     margin-bottom: 64px;
+    flex-direction: row;
   }
   .value .list .list-item {
-    margin: 0 32px 48px 32px;
+    margin: 0 24px 48px 24px;
     flex-direction: column;
     align-items: center;
   }
   .value .list .list-img {
     margin-bottom: 16px;
+    margin-right: 0;
+    width: 20%;
+  }
+  .value .list .list-img img {
+    width: 72px;
+    max-width: 72px;
   }
   .value .list .list-content {
+    width: 100%;
     text-align: center;
   }
 
@@ -10154,12 +10169,13 @@ h1.title, .h1.title {
   }
   .service .serviceSwiper .swiper-slide .goal-list .item {
     margin-right: 4px;
+    font-weight: 600;
   }
   .service .serviceSwiper .swiper-slide .goal-list .item:last-child {
     margin-right: 0;
   }
   .service .serviceSwiper .swiper-slide .content-wrap {
-    padding: 36px 24px 24px 24px;
+    padding: 36px 12px 24px 24px;
   }
   .service .serviceSwiper .swiper-slide .num {
     padding-top: 40px;
@@ -10230,15 +10246,6 @@ h1.title, .h1.title {
   .culture .content-wrap .col-12.col-md-4.offset-md-1,
 .culture .content-wrap .col-12.col-md-4.offset-md-2 {
     margin-top: 60px;
-  }
-  .culture .culture-img {
-    padding-top: 40px;
-    flex-direction: column;
-    padding-left: 0;
-  }
-  .culture .culture-img img {
-    width: 100%;
-    margin: 24px 0 0 0;
   }
 
   .team {
@@ -10333,6 +10340,20 @@ h1.title, .h1.title {
   .service .serviceSwiper .swiper-slide .order-2 img {
     width: 70%;
   }
+
+  .value .list {
+    flex-direction: column;
+  }
+
+  .culture .culture-img {
+    padding-top: 40px;
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .culture .culture-img img {
+    width: 100%;
+    margin: 24px 0 0 0;
+  }
 }
 @media (max-width: 414px) {
   .committed {
@@ -10350,6 +10371,10 @@ h1.title, .h1.title {
 
   .value {
     padding-top: 40px;
+  }
+
+  .service .serviceSwiper .swiper-slide .order-2 img {
+    width: 65%;
   }
 
   .clients .bg-gray .logo-wrap {

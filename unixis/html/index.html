@@ -365,10 +365,15 @@
                         </div>
                       </div>
                     </div>
-                    <div class="bg-white d-block d-md-none">
+                    <div class="bg-white d-block d-md-none" data-aos="fade-down">
                       <h3 class="title two-point-orange-before">產品設計師的特質</h3>
                       <p>唯度的產品設計師各自專精於不同領域，包括資訊架構、品牌設計或研究等，<br class="d-none d-md-block">但皆以全局觀進行產品設計。</p><img src="../img/sm/team-icon.svg" alt="">
                     </div>
+                  </div>
+                </div>
+                <div class="row no-gutters">
+                  <div class="col-12 col-md-2 offset-md-6 d-none d-md-flex">
+                    <div class="bg-path-arrow" data-aos="fade-down"><img src="../img/md/team-path-arrow.svg" alt=""></div>
                   </div>
                 </div>
               </div>
@@ -376,14 +381,14 @@
                 <div class="row no-gutters">
                   <div class="d-none d-md-flex">
                     <div class="col-12 col-md-4 offset-md-1">
-                      <div class="product-design-text">
+                      <div class="product-design-text" data-aos="fade-down">
                         <h3 class="title two-point-orange-before">產品設計團隊</h3>
                         <p>團隊中的管理者、研究員、工程師和產品設計師相輔相成，透過密切合作與絕佳默契，逐步建構數位產品的獨特世界觀。</p>
                       </div>
                     </div>
                     <div class="col-12 col-md-7">
                       <div class="d-none d-md-block product-design">
-                        <div class="visule">
+                        <div class="visule" data-aos="fade-down">
                           <div class="product-design-bg"><img src="../img/md/team-icon-product-design-bg.svg" alt=""></div>
                           <div class="product-design-circle"><img src="../img/md/team-icon-product-design.svg" alt=""></div>
                         </div>
@@ -718,16 +723,30 @@
       
         $('.m-nav a').on('click', function() {
           $('.m-menu').removeClass('m-menu-opened');
-        });
+        }); 
       
         function committedBG() {
+          var timeout;
           document.addEventListener('mousemove', function (event) {
-            if (window.event) { // IE fix
-              event = window.event;
+            if (timeout !== undefined) {
+              window.clearTimeout(timeout);
             }
             // Grab the mouse's X-position.
             var mousex = event.clientX;
             var mousey = event.clientY;
+      
+            //- $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
+            //- $('.committed .committed-bg-2').css({'left': 42 + mousex / 400 + "%", 'top': 0 + mousey / 1000 + "%"});
+            //- $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
+            //- $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 75 + mousey / 5 + "px"});
+      
+            //- timeout = window.setTimeout(function () {
+            //-   // trigger the new event on event.target, so that it can bubble appropriately
+            //-   $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
+            //-   $('.committed .committed-bg-2').css({'left': 42 + mousex / 400 + "%", 'top': 0 + mousey / 1000 + "%"});
+            //-   $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
+            //-   $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 75 + mousey / 5 + "px"});
+            //- }, 100);
       
             setTimeout( function(){
               $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
@@ -743,7 +762,7 @@
       
             setTimeout( function(){
               $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 75 + mousey / 5 + "px"});
-            }, 500); 
+            }, 500);
       
           }, false);
         }

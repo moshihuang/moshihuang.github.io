@@ -9484,6 +9484,12 @@ h1.title, .h1.title {
   z-index: 3;
   border: 1px solid #FF5036;
 }
+.team .bg-path-arrow {
+  position: absolute;
+  bottom: 20px;
+  right: -4px;
+  z-index: 3;
+}
 .team h3.title.two-point-orange-before:before {
   top: -3px;
 }
@@ -9771,12 +9777,18 @@ h1.title, .h1.title {
     padding-left: 0;
   }
 
+  .team .bg-white:after {
+    bottom: 0;
+  }
+  .team .product-design {
+    margin-top: -40px;
+  }
   .team .product-design .product-design-circle {
     top: 2%;
-    left: 17%;
+    left: 39%;
   }
   .team .product-design .product-design-circle img {
-    width: 60%;
+    width: 70%;
   }
 
   .contact .info {
@@ -10144,11 +10156,15 @@ h1.title, .h1.title {
   }
   .service .bg-gray {
     left: 0;
-    height: 144px;
+    height: auto;
+    padding: 24px 32px;
+  }
+  .service .bg-gray h5 {
+    margin-bottom: 0;
   }
   .service .bg-orange {
     padding: 12px 24px;
-    height: 80px;
+    height: 70px;
     left: 30px;
     position: relative;
     top: 0;
@@ -10175,7 +10191,7 @@ h1.title, .h1.title {
     margin-right: 0;
   }
   .service .serviceSwiper .swiper-slide .content-wrap {
-    padding: 36px 12px 24px 24px;
+    padding: 24px 12px 24px 24px;
   }
   .service .serviceSwiper .swiper-slide .num {
     padding-top: 40px;
@@ -10270,6 +10286,9 @@ h1.title, .h1.title {
   .team .bg-white p {
     margin-bottom: 32px;
   }
+  .team .bg-path-arrow {
+    right: -4px;
+  }
   .team .product-design-circle-sm {
     padding-left: 32px;
     padding-right: 32px;
@@ -10284,7 +10303,7 @@ h1.title, .h1.title {
     text-align: center;
   }
   .team .product-design-sm img {
-    width: 60%;
+    width: 45%;
   }
   .team .product-design-text {
     text-align: right;

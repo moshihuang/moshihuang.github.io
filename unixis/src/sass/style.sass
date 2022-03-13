@@ -576,7 +576,20 @@ h1.title, .h1.title
     top: -60px
     z-index: 3
     border: 1px solid $orange
-
+    // &:after
+    //   content: ''
+    //   width: 25%
+    //   height: 100%
+    //   position: absolute
+    //   bottom: -13%
+    //   right: -17%
+    //   background: url("../img/md/team-path-arrow.svg") center bottom no-repeat
+    //   background-size: 100%
+  .bg-path-arrow
+    position: absolute
+    bottom: 20px
+    right: -4px
+    z-index: 3
 
   h3.title.two-point-orange-before:before
     top: -3px 
@@ -804,12 +817,20 @@ h1.title, .h1.title
         &:nth-child(n+6)
           display: none
 
+  .service 
+    .serviceSwiper 
+      .swiper-slide 
+        .goal-list 
+          .item
+            margin-right: 8px
+
   .clients 
     .bg-gray 
       .d-md-flex 
         .swiper
           margin-right: 30px
 
+  
 
 
 @media (max-width: 1140px)
@@ -867,15 +888,22 @@ h1.title, .h1.title
   .culture 
     .bg-white
       width: 100%
+    .culture-img
+      padding-left: 0
 
   
-  .team 
+  .team
+    .bg-white
+      &:after
+        bottom: 0
+
     .product-design 
+      margin-top: -40px
       .product-design-circle
         top: 2%
-        left: 17%
+        left: 39%
         img
-          width: 60%
+          width: 70%
 
 
   .contact 
@@ -905,8 +933,8 @@ h1.title, .h1.title
     // .container-fluid
     //   background: url("../img/sm/committed-bg.svg") left bottom no-repeat
     //   background-size: 100%
-    .text-wrap
-      margin-top: 40px !important
+    // .text-wrap
+    //   margin-top: 40px !important
     .committed-bg 
       .committed-bg-2
         left: 40%
@@ -938,14 +966,14 @@ h1.title, .h1.title
       width: 70% !important
       height: 98% !important
       // height: 49% !important
-    .text-wrap
-      margin-top: 60px !important
+    // .text-wrap
+    //   margin-top: 60px !important
     .committedSwiper
       width: 70% !important
       margin-left: 0 !important
     .container-fluid
       background: url("../img/sm/committed-bg.svg") left bottom no-repeat
-      background-size: 100%
+      // background-size: 100%
 
   .value 
     .bg-orange
@@ -957,6 +985,11 @@ h1.title, .h1.title
       .list-item
         flex-direction: column !important
         align-items: center !important
+      .list-img
+        margin-right: 0 !important
+        width: 30% !important
+        img
+          width: 72px
 
 
   .clients 
@@ -1170,7 +1203,7 @@ h1.title, .h1.title
 
 
   .committed
-    padding-top: 0
+    padding-top: 40px
     padding-bottom: 0
     .no-gutters
       margin-left: 32px
@@ -1221,13 +1254,20 @@ h1.title, .h1.title
     .list
       padding-top: 84px
       margin-bottom: 64px
+      flex-direction: row
       .list-item
-        margin: 0 32px 48px 32px
+        margin: 0 24px 48px 24px
         flex-direction: column
         align-items: center
       .list-img
         margin-bottom: 16px
+        margin-right: 0
+        width: 20%
+        img
+          width: 72px
+          max-width: 72px
       .list-content
+        width: 100%
         text-align: center
       
 
@@ -1236,10 +1276,14 @@ h1.title, .h1.title
     min-height: auto
     .bg-gray
       left: 0
-      height: 144px
+      // height: 144px
+      height: auto
+      padding: 24px 32px
+      h5
+        margin-bottom: 0
     .bg-orange
       padding: 12px 24px
-      height: 80px
+      height: 70px
       // top: 90px
       left: 30px
       position: relative
@@ -1259,10 +1303,12 @@ h1.title, .h1.title
           display: flex
           .item
             margin-right: 4px 
+            font-weight: $font-bold
             &:last-child
               margin-right: 0
+
         .content-wrap
-          padding: 36px 24px 24px 24px
+          padding: 24px 12px 24px 24px
         .num
           padding-top: 40px
         .desc
@@ -1325,13 +1371,7 @@ h1.title, .h1.title
       .col-12.col-md-4.offset-md-2
         margin-top: 60px
         
-    .culture-img
-      padding-top: 40px
-      flex-direction: column
-      padding-left: 0
-      img
-        width: 100%
-        margin: 24px 0 0 0
+    
 
 
   .team
@@ -1346,12 +1386,18 @@ h1.title, .h1.title
       margin-bottom: 40px
       top: 0
       left: -1px
+      // &:after
+      //   display: none
       img
         margin: 0 auto
         display: block
       p
         margin-bottom: 32px
         // width: 70%
+    
+    .bg-path-arrow
+      right: -4px
+
 
     .product-design-circle-sm
       padding-left: 32px
@@ -1366,7 +1412,7 @@ h1.title, .h1.title
       width: 100%
       text-align: center
       img
-        width: 60%
+        width: 45%
 
 
     .product-design-text
@@ -1426,6 +1472,20 @@ h1.title, .h1.title
           img
             width: 70%
 
+  .value 
+    .list
+      flex-direction: column
+
+
+  .culture
+    .culture-img
+      padding-top: 40px
+      flex-direction: column
+      padding-left: 0
+      img
+        width: 100%
+        margin: 24px 0 0 0
+
 
 @media (max-width: 414px)
 
@@ -1442,6 +1502,13 @@ h1.title, .h1.title
 
   .value
     padding-top: 40px
+
+  .service 
+    .serviceSwiper 
+      .swiper-slide 
+        .order-2 
+          img
+            width: 65%
 
   .clients 
     .bg-gray 

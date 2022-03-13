@@ -39,6 +39,8 @@ html(lang="zh-TW")
               .bar.bottom
           ul.menu()
             li
+              a.js-scroll.two-point-gray-before(href="#top") Home
+            li
               a.js-scroll.two-point-gray-before(href="#value") Value
             li
               a.js-scroll.two-point-gray-before(href="#service") Service
@@ -105,7 +107,7 @@ html(lang="zh-TW")
                     img.mr-1(src="../img/icon/arrow-down-orange.svg" alt="")
                     span.animate-link-text.text-orange Scroll down
 
-              .col-12.col-md-5.offset-md-1
+              .col-12.col-sm-7.col-md-5.offset-md-1
                 .bg-orange(data-aos="fade-down")
                 .swiper.committedSwiper(data-aos="fade-down" data-aos-delay="400")
                   .swiper-wrapper
@@ -135,7 +137,7 @@ html(lang="zh-TW")
             .row.no-gutters
               .col-12.col-md-7
                 .bg-gray(data-aos="fade-down")
-                .bg-orange
+                .bg-orange(data-aos="fade-down")
                   .text-wrap(data-aos="fade-down")
                     h5.sub-title.text-gray 對數位產品的執著，<br class="d-sm-block d-md-none">是我們獨樹一格的原因
                     h2.title
@@ -169,7 +171,7 @@ html(lang="zh-TW")
           .container-fluid
             .row.no-gutters
               .col-9.col-md-7.offset-md-5
-                .bg-gray.d-none.d-md-block(data-aos="fade-down")
+                .bg-gray(data-aos="fade-down")
                   h5.sub-title.text-orange 依客戶需求，淬鍊出能改善生活的產品與服務
                 .bg-orange(data-aos="fade-down")
                   h2.title.text-gray.two-point-gray-after Service
@@ -179,9 +181,9 @@ html(lang="zh-TW")
                   .swiper-wrapper
                     .swiper-slide.service-swiper-slide-1
                       .row.no-gutters
-                        .col-12.col-md-5.order-2.order-md-1
+                        .col-12.col-md-5.order-2.order-md-1(data-aos="fade-down")
                           img(src="../img/md/service-carousel-img-1.jpg" alt="")
-                        .col-12.col-md-6.order-1.order-md-2
+                        .col-12.col-md-6.order-1.order-md-2(data-aos="fade-down")
                           .content-wrap
                             h2.num.text-orange 01
                             h2.title 確認產品走向
@@ -197,9 +199,9 @@ html(lang="zh-TW")
 
                     .swiper-slide.service-swiper-slide-2
                       .row.no-gutters
-                        .col-12.col-md-5.order-2.order-md-1
+                        .col-12.col-md-5.order-2.order-md-1(data-aos="fade-down")
                           img(src="../img/md/service-carousel-img-2.jpg" alt="")
-                        .col-12.col-md-6.order-1.order-md-2
+                        .col-12.col-md-6.order-1.order-md-2(data-aos="fade-down")
                           .content-wrap
                             h2.num.text-orange 02
                             h2.title 塑造產品個性
@@ -214,9 +216,9 @@ html(lang="zh-TW")
 
                     .swiper-slide.service-swiper-slide-3
                       .row.no-gutters
-                        .col-12.col-md-5.order-2.order-md-1
+                        .col-12.col-md-5.order-2.order-md-1(data-aos="fade-down")
                           img(src="../img/md/service-carousel-img-3.jpg" alt="")
-                        .col-12.col-md-6.order-1.order-md-2
+                        .col-12.col-md-6.order-1.order-md-2(data-aos="fade-down")
                           .content-wrap
                             h2.num.text-orange 03
                             h2.title 強健產品體魄
@@ -230,9 +232,9 @@ html(lang="zh-TW")
 
                     .swiper-slide.service-swiper-slide-4
                       .row.no-gutters
-                        .col-12.col-md-5.order-2.order-md-1
+                        .col-12.col-md-5.order-2.order-md-1(data-aos="fade-down")
                           img(src="../img/md/service-carousel-img-4.jpg" alt="")
-                        .col-12.col-md-6.order-1.order-md-2
+                        .col-12.col-md-6.order-1.order-md-2(data-aos="fade-down")
                           .content-wrap
                             h2.num.text-orange 04
                             h2.title 調整產品體質
@@ -254,7 +256,7 @@ html(lang="zh-TW")
           .container-fluid
             .row.no-gutters
               .col-12.col-md-6
-                .bg-orange
+                .bg-orange(data-aos="fade-down")
                   .row
                     .col-12.col-md-10.offset-md-1.col-md-9.offset-lg-2
                       .text-wrap(data-aos="fade-down")
@@ -266,7 +268,7 @@ html(lang="zh-TW")
                 .mr-0.mr-md-5(data-aos="fade-down")
                   p 不論您是否已經有初步想法，不論您的企業規模大小，我們都能協助您打造您孕育一個用戶喜歡、有商業價值，也可實現的產品。
               .col-12.col-md-6
-                .bg-gray
+                .bg-gray(data-aos="fade-down")
                   .d-none.d-md-flex
                     .swiper.clientsSwiper1
                       .swiper-wrapper
@@ -388,23 +390,30 @@ html(lang="zh-TW")
                                 img(src="../img/md/team-icon-architecture.svg" alt="")
                               .col-12.col-md-4(data-aos="fade-down" data-aos-delay="800")
                                 img(src="../img/md/team-icon-research.svg" alt="")
-                  
-                    .bg-white.d-block.d-md-none
+
+                    .bg-white.d-block.d-md-none(data-aos="fade-down")
                       h3.title.two-point-orange-before 產品設計師的特質
                       p 唯度的產品設計師各自專精於不同領域，包括資訊架構、品牌設計或研究等，<br class="d-none d-md-block">但皆以全局觀進行產品設計。
                       img(src="../img/sm/team-icon.svg" alt="")
+
+                .row.no-gutters
+                  .col-12.col-md-2.offset-md-6.d-none.d-md-flex
+                    .bg-path-arrow(data-aos="fade-down")
+                      img(src="../img/md/team-path-arrow.svg" alt="")
+
+                    
 
               .col-12
                 .row.no-gutters
                   .d-none.d-md-flex
                     .col-12.col-md-4.offset-md-1
-                      .product-design-text
+                      .product-design-text(data-aos="fade-down")
                         h3.title.two-point-orange-before 產品設計團隊
-                        p 團隊中的管理者、研究員、工程師和產品設計師相輔相成，<br class="d-none d-md-block">透過密切合作與絕佳默契，逐步建構數位產品的獨特世界觀。
+                        p 團隊中的管理者、研究員、工程師和產品設計師相輔相成，透過密切合作與絕佳默契，逐步建構數位產品的獨特世界觀。
 
                     .col-12.col-md-7
                       .d-none.d-md-block.product-design
-                        .visule
+                        .visule(data-aos="fade-down")
                           .product-design-bg
                             img(src="../img/md/team-icon-product-design-bg.svg" alt="")
                           .product-design-circle
@@ -746,41 +755,81 @@ html(lang="zh-TW")
 
         $('.m-nav a').on('click', function() {
           $('.m-menu').removeClass('m-menu-opened');
-        });
+        }); 
 
-        function committedBG() {
-          document.addEventListener('mousemove', function (event) {
-            if (window.event) { // IE fix
-              event = window.event;
-            }
-            // Grab the mouse's X-position.
-            var mousex = event.clientX;
-            var mousey = event.clientY;
+        //- function committedBG() {
+        //-   var timeout;
+        //-   document.addEventListener('mousemove', function (event) {
+        //-     if (timeout !== undefined) {
+        //-       window.clearTimeout(timeout);
+        //-     }
+        //-     // Grab the mouse's X-position.
+        //-     var mousex = event.clientX;
+        //-     var mousey = event.clientY;
 
-            setTimeout( function(){
-              $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
-            }, 400); 
+        //-     timeout = window.setTimeout(function () {
+        //-       // trigger the new event on event.target, so that it can bubble appropriately
+        //-       $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
+        //-       $('.committed .committed-bg-2').css({'left': 42 + mousex / 400 + "%", 'top': 0 + mousey / 1000 + "%"});
+        //-       $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
+        //-       $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 75 + mousey / 5 + "px"});
+        //-     }, 100);
 
-            setTimeout( function(){
-              $('.committed .committed-bg-2').css({'left': 42 + mousex / 400 + "%", 'top': 0 + mousey / 1000 + "%"});
-            }, 555); 
+        //-     //- setTimeout( function(){
+        //-     //-   $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
+        //-     //- }, 400); 
 
-            setTimeout( function(){
-              $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
-            }, 350); 
+        //-     //- setTimeout( function(){
+        //-     //-   $('.committed .committed-bg-2').css({'left': 42 + mousex / 400 + "%", 'top': 0 + mousey / 1000 + "%"});
+        //-     //- }, 555); 
 
-            setTimeout( function(){
-              $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 75 + mousey / 5 + "px"});
-            }, 500); 
+        //-     //- setTimeout( function(){
+        //-     //-   $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
+        //-     //- }, 350); 
 
-          }, false);
+        //-     //- setTimeout( function(){
+        //-     //-   $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 75 + mousey / 5 + "px"});
+        //-     //- }, 500);
+
+        //-   }, false);
+        //- }
+
+        var lFollowX = 0,
+            lFollowY = 0,
+            x = 0,
+            y = 0,
+            friction = 1 / 30;
+
+        function moveBackground() {
+          x += (lFollowX - x) * friction;
+          y += (lFollowY - y) * friction;
+          
+          translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
+
+          $('..committed .committed-bg-3').css({
+            'transform': translate
+          });
+
+          window.requestAnimationFrame(moveBackground);
         }
 
-        committedBG();
+        $(window).on('mousemove', function(e) {
+
+          var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+          var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+          lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
+          lFollowY = (10 * lMouseY) / 100;
+
+        });
+
+        moveBackground();
+
+        //- committedBG();
         
         $(window).resize(function() {
           if ($(window).width() > 1000) {
-            committedBG();
+            //- committedBG();
+            moveBackground();
           }
           console.log('resize')
         });

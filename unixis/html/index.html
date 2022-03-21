@@ -68,10 +68,10 @@
       <main class="content">
         <section class="committed">
           <div class="committed-bg"> 
-            <div class="committed-bg-1"> <img src="../img/md/committed-bg-1.svg" alt=""></div>
-            <div class="committed-bg-2"><img src="../img/md/committed-bg-2.svg" alt=""></div>
-            <div class="committed-bg-3"><img src="../img/md/committed-bg-3.svg" alt=""></div>
-            <div class="committed-bg-4"><img src="../img/md/committed-bg-4.svg" alt=""></div>
+            <div class="committed-bg-1"> </div>
+            <div class="committed-bg-2"></div>
+            <div class="committed-bg-3"></div>
+            <div class="committed-bg-4"></div>
           </div>
           <div class="container-fluid">
             <div class="row no-gutters">
@@ -725,53 +725,104 @@
           $('.m-menu').removeClass('m-menu-opened');
         }); 
       
-        function committedBG() {
-          var timeout;
-          document.addEventListener('mousemove', function (event) {
-            if (timeout !== undefined) {
-              window.clearTimeout(timeout);
-            }
-            // Grab the mouse's X-position.
-            var mousex = event.clientX;
-            var mousey = event.clientY;
+        //- function committedBG() {
+        //-   var timeout;
+        //-   document.addEventListener('mousemove', function (event) {
+        //-     if (timeout !== undefined) {
+        //-       window.clearTimeout(timeout);
+        //-     }
+        //-     // Grab the mouse's X-position.
+        //-     var mousex = event.clientX;
+        //-     var mousey = event.clientY;
       
-            //- $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
-            //- $('.committed .committed-bg-2').css({'left': 42 + mousex / 400 + "%", 'top': 0 + mousey / 1000 + "%"});
-            //- $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
-            //- $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 75 + mousey / 5 + "px"});
+        //-     timeout = window.setTimeout(function () {
+        //-       // trigger the new event on event.target, so that it can bubble appropriately
+        //-       $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
+        //-       $('.committed .committed-bg-2').css({'left': 42 + mousex / 400 + "%", 'top': 0 + mousey / 1000 + "%"});
+        //-       $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
+        //-       $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 75 + mousey / 5 + "px"});
+        //-     }, 100);
       
-            //- timeout = window.setTimeout(function () {
-            //-   // trigger the new event on event.target, so that it can bubble appropriately
-            //-   $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
-            //-   $('.committed .committed-bg-2').css({'left': 42 + mousex / 400 + "%", 'top': 0 + mousey / 1000 + "%"});
-            //-   $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
-            //-   $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 75 + mousey / 5 + "px"});
-            //- }, 100);
+        //-     //- setTimeout( function(){
+        //-     //-   $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
+        //-     //- }, 400); 
       
-            setTimeout( function(){
-              $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
-            }, 400); 
+        //-     //- setTimeout( function(){
+        //-     //-   $('.committed .committed-bg-2').css({'left': 42 + mousex / 400 + "%", 'top': 0 + mousey / 1000 + "%"});
+        //-     //- }, 555); 
       
-            setTimeout( function(){
-              $('.committed .committed-bg-2').css({'left': 42 + mousex / 400 + "%", 'top': 0 + mousey / 1000 + "%"});
-            }, 555); 
+        //-     //- setTimeout( function(){
+        //-     //-   $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
+        //-     //- }, 350); 
       
-            setTimeout( function(){
-              $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
-            }, 350); 
+        //-     //- setTimeout( function(){
+        //-     //-   $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 75 + mousey / 5 + "px"});
+        //-     //- }, 500);
       
-            setTimeout( function(){
-              $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 75 + mousey / 5 + "px"});
-            }, 500);
+        //-   }, false);
+        //- }
       
-          }, false);
+        var lFollowX = 0,
+            lFollowY = 0,
+            x1 = 0,
+            y1 = 0,
+            x2 = 0,
+            y2 = 0,
+            x3 = 0,
+            y3 = 0,
+            x4 = 0,
+            y4 = 0,
+            friction1 = 1 / 60,
+            friction2 = 1 / 150,
+            friction3 = 1 / 80,
+            friction4 = 1 / 120;
+      
+        function moveBackground() {
+          x1 += (lFollowX - x1 + 5) * friction1;
+          y1 += (lFollowY - y1 - 10) * friction1;
+          x2 += (lFollowX - x2 - 50) * friction2;
+          y2 += (lFollowY - y2 + 40) * friction2;
+          x3 += (lFollowX - x3 + 50) * friction3;
+          y3 += (lFollowY - y3 + 30) * friction3;
+          x4 += (lFollowX - x4) * friction4;
+          y4 += (lFollowY - y4 - 150) * friction4;
+          
+          translate1 = 'translate(' + x1 + 'px, ' + y1 + 'px) scale(1)';
+          translate2 = 'translate(' + x2 + 'px, ' + y2 + 'px) scale(1)';
+          translate3 = 'translate(' + x3 + 'px, ' + y3 + 'px) scale(1)';
+          translate4 = 'translate(' + x4 + 'px, ' + y4 + 'px) scale(1)';
+      
+          $('.committed-bg-1').css({
+            'transform': translate1
+          });
+          $('.committed-bg-2').css({
+            'transform': translate2
+          });
+          $('.committed-bg-3').css({
+            'transform': translate3
+          });
+          $('.committed-bg-4').css({
+            'transform': translate4
+          });
+      
+          window.requestAnimationFrame(moveBackground);
         }
       
-        committedBG();
+        $(window).on('mousemove', function(e) {
+          var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
+          var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+          lFollowX = (40 * lMouseX) / 30; // 100 : 12 = lMouxeX : lFollow
+          lFollowY = (30 * lMouseY) / 20;
+        });
+      
+        moveBackground();
+      
+        //- committedBG();
         
         $(window).resize(function() {
           if ($(window).width() > 1000) {
-            committedBG();
+            //- committedBG();
+            moveBackground();
           }
           console.log('resize')
         });

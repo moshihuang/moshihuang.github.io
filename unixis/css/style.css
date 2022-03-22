@@ -8730,7 +8730,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   word-break: break-word;
   margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.4;
 }
 
@@ -9363,7 +9363,7 @@ h1.title, .h1.title {
 }
 .service .serviceSwiper .swiper-slide .goal-list .item {
   margin-right: 16px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .service .serviceSwiper .swiper-slide .desc {
   margin-bottom: 48px;

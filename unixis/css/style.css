@@ -6,6 +6,7 @@
  * * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  * * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  * */
+@import url(../font/MuseoSans_500.otf);
 *,
 *::before,
 *::after {
@@ -9208,7 +9209,18 @@ h1.title, .h1.title {
   overflow: visible;
 }
 .committed .committedSwiper .swiper-wrapper {
+  position: relative;
   border: 1px solid #FF5036;
+}
+.committed .committedSwiper .swiper-wrapper:after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  width: 5px;
+  height: 5px;
+  background: #FF5036;
+  border-radius: 10px;
 }
 .committed .committedSwiper .swiper-button-next {
   width: 83px;
@@ -9351,6 +9363,7 @@ h1.title, .h1.title {
 }
 .service .serviceSwiper .swiper-slide .goal-list .item {
   margin-right: 16px;
+  font-weight: 600;
 }
 .service .serviceSwiper .swiper-slide .desc {
   margin-bottom: 48px;
@@ -9455,6 +9468,16 @@ h1.title, .h1.title {
   z-index: 2;
   border: 1px solid #FF5036;
 }
+.culture .bg-white:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  width: 5px;
+  height: 5px;
+  background: #FF5036;
+  border-radius: 10px;
+}
 .culture .content-wrap {
   padding: 72px 0;
   position: relative;
@@ -9493,6 +9516,16 @@ h1.title, .h1.title {
   z-index: 3;
   border: 1px solid #FF5036;
 }
+.team .bg-white:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: -3px;
+  width: 5px;
+  height: 5px;
+  background: #FF5036;
+  border-radius: 10px;
+}
 .team .bg-path-arrow {
   position: absolute;
   bottom: 20px;
@@ -9523,12 +9556,10 @@ h1.title, .h1.title {
   width: 100%;
 }
 .team .product-design .product-design-circle {
+  width: 20%;
   position: absolute;
-  top: 14%;
-  left: 37%;
-}
-.team .product-design .product-design-circle img {
-  width: 76%;
+  top: 12%;
+  left: 39%;
 }
 .team .product-design-text {
   padding-top: 120px;
@@ -9724,6 +9755,10 @@ h1.title, .h1.title {
   .clients .bg-gray .d-md-flex .swiper {
     margin-right: 30px;
   }
+
+  .team .product-design .product-design-circle {
+    top: 14%;
+  }
 }
 @media (max-width: 1140px) {
   .container-fluid {
@@ -9793,11 +9828,9 @@ h1.title, .h1.title {
     margin-top: -40px;
   }
   .team .product-design .product-design-circle {
-    top: 2%;
-    left: 39%;
-  }
-  .team .product-design .product-design-circle img {
-    width: 70%;
+    width: 20%;
+    top: 8%;
+    left: 38%;
   }
 
   .contact .info {
@@ -9823,6 +9856,7 @@ h1.title, .h1.title {
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
   .committed {
     padding-top: 0;
+    padding-bottom: 120px;
   }
   .committed .bg-orange {
     height: 84% !important;
@@ -9852,6 +9886,7 @@ h1.title, .h1.title {
 
   .committed {
     padding-top: 0;
+    padding-bottom: 120px;
   }
   .committed .bg-orange {
     width: 70% !important;
@@ -10187,7 +10222,7 @@ h1.title, .h1.title {
     margin-bottom: 0;
   }
   .service .serviceSwiper {
-    height: calc(100vh - 145px);
+    height: calc(100vh - 170px);
   }
   .service .serviceSwiper .swiper-slide h2 {
     display: inline;
@@ -10199,7 +10234,6 @@ h1.title, .h1.title {
   }
   .service .serviceSwiper .swiper-slide .goal-list .item {
     margin-right: 4px;
-    font-weight: 600;
   }
   .service .serviceSwiper .swiper-slide .goal-list .item:last-child {
     margin-right: 0;

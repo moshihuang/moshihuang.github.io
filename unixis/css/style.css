@@ -10082,13 +10082,33 @@ h1.title, .h1.title {
   .m-menu ul.menu li a:active {
     background: #EE472E;
   }
-  .m-menu ul.menu li a.medium {
-    font-size: 1rem;
-    line-height: 4rem;
-  }
   .m-menu ul.menu li.divider {
     margin: 24px 32px;
     border-top: 1px solid #E4E9EF;
+  }
+  .m-menu ul.menu li.lang a {
+    display: inline-flex;
+    margin: 0 12px;
+    position: relative;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.25rem;
+  }
+  .m-menu ul.menu li.lang a.active {
+    font-weight: 700;
+  }
+  .m-menu ul.menu li.lang a.active:after {
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: 8px;
+    width: 80%;
+    height: 4px;
+    background: #fff;
+  }
+  .m-menu ul.menu li a.medium {
+    font-size: 1rem;
+    line-height: 4rem;
   }
   .m-menu.m-menu-opened {
     height: 100%;

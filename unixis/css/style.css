@@ -9986,6 +9986,10 @@ section.lang a.active:before {
   }
 }
 @media (max-width: 1000px) {
+  section.lang {
+    display: none;
+  }
+
   .two-point-orange-before:before {
     top: 0;
   }
@@ -10448,10 +10452,6 @@ section.lang a.active:before {
   }
 }
 @media (max-width: 768px) {
-  section.lang {
-    display: none;
-  }
-
   .service .serviceSwiper .swiper-slide .order-2 img {
     width: 70%;
   }

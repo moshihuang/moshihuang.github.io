@@ -9134,6 +9134,30 @@ h1.title, .h1.title {
   margin-bottom: 16px;
 }
 
+section.lang {
+  position: absolute;
+  top: 40px;
+  right: 36px;
+}
+section.lang a {
+  padding: 16px 8px;
+  color: #242628;
+}
+section.lang a.active {
+  color: #FF5036;
+  position: relative;
+}
+section.lang a.active:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 8px;
+  left: calc(50% - 3px);
+  border-radius: 50%;
+  background: #FF5036;
+}
+
 .committed {
   padding-top: 110px;
   padding-bottom: 240px;
@@ -10424,6 +10448,10 @@ h1.title, .h1.title {
   }
 }
 @media (max-width: 768px) {
+  section.lang {
+    display: none;
+  }
+
   .service .serviceSwiper .swiper-slide .order-2 img {
     width: 70%;
   }

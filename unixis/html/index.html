@@ -652,8 +652,12 @@
         //- });
       
         $('.side-menu li').on('click', function() {
+          $(this).siblings().removeClass('active'); 
           $(this).addClass('active');
-          $(this).siblings().removeClass('active');
+          setTimeout(function(){
+            $(this).addClass('active');
+          }, 600);
+          
         });
       
         $('.talk-to-us').on('click', function() {
@@ -678,6 +682,7 @@
             $('.side-menu li').removeClass('active');
             $('.navContact').addClass('active');
           }
+          console.log(gap)
           //- if (windowH <= 200) {
           //-   $('.backtotop').removeClass('show').addClass('hide')
           //- }
@@ -831,7 +836,7 @@
             //- committedBG();
             moveBackground();
           }
-          console.log('resize')
+          //- console.log('resize')
         });
         
       

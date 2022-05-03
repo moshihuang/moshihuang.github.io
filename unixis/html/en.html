@@ -24,7 +24,7 @@
     <link href="../css/lib.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="en">
     <div id="top"> </div>
     <div class="grid-line">
       <div class="horizontal-wrap"><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span><span class="line"></span></div>
@@ -88,9 +88,9 @@
                   <h1 class="title" data-aos="fade-down" data-aos-delay="800">Cultivate Distinctive Digital Products</h1>
                   <p data-aos="fade-down" data-aos-delay="1300">UNIXIS DESIGN is a digital product design firm. We are a group of craftsmans who are particular about building beneficial digital products for the society ( with creativity and thoroughness. ). </p>
                 </div>
-                <div class="scroll-down" data-aos="fade-down" data-aos-delay="1800"><a class="js-scroll animate-link" href="#value"><img class="mr-1" src="../img/icon/arrow-down-orange.svg" alt=""><span class="animate-link-text text-orange">Scroll down</span></a></div>
+                <div class="scroll-down" data-aos="fade-down" data-aos-delay="1800"><a class="js-scroll animate-link" href="#value"><img class="mr-1" src="../img/icon/arrow-down-orange.svg" alt=""><span class="animate-link-text text-orange font-weight-bold">Scroll down</span></a></div>
               </div>
-              <div class="col-12 col-sm-5 col-md-5 offset-md-1">
+              <div class="col-12 col-sm-7 col-md-5 offset-md-1">
                 <div class="bg-orange" data-aos="fade-down"></div>
                 <div class="swiper committedSwiper" data-aos="fade-down" data-aos-delay="400">
                   <div class="swiper-wrapper">
@@ -178,7 +178,7 @@
                               <div class="item two-point-orange-before">POC</div>
                               <div class="item two-point-orange-before">Exploratory Research</div>
                             </div>
-                            <p class="desc">Define a product value proposition via exploratory research and test the design concept to verify the viability.</p><a class="arrow-circle-link animate-link" href="#"><span class="text-orange animate-link-text">More on Medium</span><img class="ml-1" src="../img/icon/arrow-circle-orange.svg" alt=""></a>
+                            <p class="desc">Define a product value proposition via exploratory research and test the design concept to verify the viability.</p><a class="arrow-circle-link animate-link" href="#"><span class="text-orange animate-link-text font-weight-bold">More on Medium</span><img class="ml-1" src="../img/icon/arrow-circle-orange.svg" alt=""></a>
                           </div>
                         </div>
                       </div>
@@ -195,7 +195,7 @@
                               <div class="item two-point-orange-before">Value Proposition</div>
                               <div class="item two-point-orange-before">UI/UX Concept</div>
                             </div>
-                            <p class="desc">Build a brand statement and innovative design concept according to the product value proposition.</p><a class="arrow-circle-link animate-link" href="#"><span class="text-orange animate-link-text">More on Medium</span><img class="ml-1" src="../img/icon/arrow-circle-orange.svg" alt=""></a>
+                            <p class="desc">Build a brand statement and innovative design concept according to the product value proposition.</p><a class="arrow-circle-link animate-link" href="#"><span class="text-orange animate-link-text font-weight-bold">More on Medium</span><img class="ml-1" src="../img/icon/arrow-circle-orange.svg" alt=""></a>
                           </div>
                         </div>
                       </div>
@@ -211,7 +211,7 @@
                               <div class="item two-point-orange-before">Business Specification</div>
                               <div class="item two-point-orange-before">UI/UX Design Implementation</div>
                             </div>
-                            <p class="desc">Communicate with clients with the business goal and specs to reach a consensus about the extensive design details.</p><a class="arrow-circle-link animate-link" href="#"><span class="text-orange animate-link-text">More on Medium</span><img class="ml-1" src="../img/icon/arrow-circle-orange.svg" alt=""></a>
+                            <p class="desc">Communicate with clients with the business goal and specs to reach a consensus about the extensive design details.</p><a class="arrow-circle-link animate-link" href="#"><span class="text-orange animate-link-text font-weight-bold">More on Medium</span><img class="ml-1" src="../img/icon/arrow-circle-orange.svg" alt=""></a>
                           </div>
                         </div>
                       </div>
@@ -228,7 +228,7 @@
                               <div class="item two-point-orange-before">Brand Design</div>
                               <div class="item two-point-orange-before">UI/UX Design</div>
                             </div>
-                            <p class="desc">Optimize the user experience of the product continuously via data tracking and usability testing after the launch. </p><a class="arrow-circle-link animate-link" href="#"><span class="text-orange animate-link-text">More on Medium</span><img class="ml-1" src="../img/icon/arrow-circle-orange.svg" alt=""></a>
+                            <p class="desc">Optimize the user experience of the product continuously via data tracking and usability testing after the launch. </p><a class="arrow-circle-link animate-link" href="#"><span class="text-orange animate-link-text font-weight-bold">More on Medium</span><img class="ml-1" src="../img/icon/arrow-circle-orange.svg" alt=""></a>
                           </div>
                         </div>
                       </div>
@@ -475,6 +475,19 @@
     </div>
     <script src="../js/lib.js"></script>
     <script>
+      const getMobileOS = () => {
+        const ua = navigator.userAgent;
+        if (/android/i.test(ua)) {
+          document.body.classList.add('android');
+          alert('android')
+        }
+        else if ((/iPad|iPhone|iPod/.test(ua)) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)){
+          document.body.classList.add('ios');
+          alert('ios')
+        }
+      }
+      getMobileOS();
+      
       //- AOS 
       AOS.init({
         duration: 1600

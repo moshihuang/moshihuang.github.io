@@ -90,7 +90,7 @@
                 </div>
                 <div class="scroll-down" data-aos="fade-down" data-aos-delay="1800"><a class="js-scroll animate-link" href="#value"><img class="mr-1" src="../img/icon/arrow-down-orange.svg" alt=""><span class="animate-link-text text-orange">Scroll down</span></a></div>
               </div>
-              <div class="col-12 col-sm-5 col-md-5 offset-md-1">
+              <div class="col-12 col-sm-7 col-md-5 offset-md-1">
                 <div class="bg-orange" data-aos="fade-down"></div>
                 <div class="swiper committedSwiper" data-aos="fade-down" data-aos-delay="400">
                   <div class="swiper-wrapper">
@@ -476,6 +476,19 @@
     </div>
     <script src="../js/lib.js"></script>
     <script>
+      const getMobileOS = () => {
+        const ua = navigator.userAgent;
+        if (/android/i.test(ua)) {
+          document.body.classList.add('android');
+          alert('android')
+        }
+        else if ((/iPad|iPhone|iPod/.test(ua)) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)){
+          document.body.classList.add('ios');
+          alert('ios')
+        }
+      }
+      getMobileOS();
+      
       //- AOS 
       AOS.init({
         duration: 1600

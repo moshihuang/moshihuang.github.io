@@ -9481,6 +9481,17 @@ section.lang a.active:before {
   top: 50%;
 }
 
+.en .service .serviceSwiper .swiper-slide .goal-list .two-point-orange-before {
+  margin-right: 4px;
+  position: relative;
+  top: -2px;
+}
+.en .service .serviceSwiper .swiper-slide .goal-list .two-point-orange-before:first-child {
+  padding-left: 0;
+}
+.en .service .serviceSwiper .swiper-slide .goal-list .two-point-orange-before:first-child:before {
+  content: "";
+}
 .en .service .serviceSwiper .swiper-slide .goal-list .two-point-orange-before:before {
   content: "/";
   color: #FF5036;
@@ -10395,6 +10406,10 @@ section.lang a.active:before {
     height: 90px;
   }
 
+  .en .clients {
+    padding-top: 24px;
+  }
+
   .culture {
     padding-bottom: 40px;
   }
@@ -10529,6 +10544,20 @@ section.lang a.active:before {
     width: 70%;
   }
 
+  .en .service .bg-gray {
+    padding: 16px 16px 16px 32px;
+  }
+  .en .service .serviceSwiper .content-wrap {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .en .service .serviceSwiper .swiper-slide .num {
+    padding-top: 20px;
+  }
+  .en .service .serviceSwiper .swiper-slide h2 {
+    font-size: 1.25rem;
+  }
+
   .value .list {
     flex-direction: column;
   }
@@ -10570,6 +10599,10 @@ section.lang a.active:before {
 
   .service .serviceSwiper .swiper-slide .order-2 img {
     width: 65%;
+  }
+
+  .en .service .serviceSwiper .swiper-slide .order-2 img {
+    width: 60%;
   }
 
   .clients .bg-gray .logo-wrap {

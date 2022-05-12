@@ -8820,13 +8820,13 @@ small, .small, .caption1 {
 }
 .en h6, .en .h6 {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 22px;
 }
 .en p, .en .body-1 {
   font-size: 1rem;
   line-height: 22px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 @media (max-width: 1140px) {

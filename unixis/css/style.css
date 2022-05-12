@@ -8734,6 +8734,16 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.4;
 }
 
+.android h1, .android h2, .android h3, .android h4, .android h5, .android h6,
+.android .h1, .android .h2, .android .h3, .android .h4, .android .h5, .android .h6 {
+  font-weight: 700;
+}
+
+.ios h1, .ios h2, .ios h3, .ios h4, .ios h5, .ios h6,
+.ios .h1, .ios .h2, .ios .h3, .ios .h4, .ios .h5, .ios .h6 {
+  font-weight: 600;
+}
+
 h1, .h1 {
   font-size: 2.5rem;
 }
@@ -9490,6 +9500,10 @@ section.lang a.active:before {
   top: 50%;
 }
 
+.ios .service .serviceSwiper .swiper-slide .goal-list .item {
+  font-weight: 600;
+}
+
 .en .service .serviceSwiper .swiper-slide .goal-list .two-point-orange-before {
   margin-right: 4px;
   position: relative;
@@ -10237,6 +10251,10 @@ section.lang a.active:before {
   .m-menu.m-menu-opened ul.menu li {
     transform: scale(1) translateY(0px);
     opacity: 1;
+  }
+
+  .ios .m-menu ul.menu li.lang a.active {
+    font-weight: 600;
   }
 
   .committed {

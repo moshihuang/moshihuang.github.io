@@ -483,8 +483,10 @@
       
         if (iosPlatforms.indexOf(platform) !== -1) {
           os = 'iOS';
+          document.body.classList.add('ios');
         } else if (/Android/.test(userAgent)) {
           os = 'Android';
+          document.body.classList.add('android');
         }
         return os;
       }

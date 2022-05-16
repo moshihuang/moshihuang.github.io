@@ -4036,6 +4036,10 @@ button.bg-dark:focus {
   font-weight: 700 !important;
 }
 
+.ios .font-weight-bold {
+  font-weight: 600 !important;
+}
+
 .font-weight-bolder {
   font-weight: bolder !important;
 }

@@ -10356,7 +10356,7 @@ section.lang a.active:before {
   .service .bg-gray {
     left: 0;
     height: auto;
-    padding: 24px 32px;
+    padding: 16px 32px;
   }
   .service .bg-gray h5 {
     margin-bottom: 0;
@@ -10384,18 +10384,29 @@ section.lang a.active:before {
   }
   .service .serviceSwiper .swiper-slide .goal-list .item {
     margin-right: 4px;
+    font-size: 15px;
   }
   .service .serviceSwiper .swiper-slide .goal-list .item:last-child {
     margin-right: 0;
   }
+  .service .serviceSwiper .swiper-slide .goal-list .two-point-orange-before:first-child {
+    padding-left: 0;
+  }
+  .service .serviceSwiper .swiper-slide .goal-list .two-point-orange-before:first-child:before {
+    content: "";
+  }
+  .service .serviceSwiper .swiper-slide .goal-list .two-point-orange-before:not(:first-child):before {
+    content: "/";
+    color: #FF5036;
+  }
   .service .serviceSwiper .swiper-slide .content-wrap {
-    padding: 24px 12px 24px 24px;
+    padding: 12px 24px;
   }
   .service .serviceSwiper .swiper-slide .num {
     padding-top: 40px;
   }
   .service .serviceSwiper .swiper-slide .desc {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
   .service .serviceSwiper .swiper-slide .order-2 img {
     margin-left: 0;
@@ -10646,6 +10657,14 @@ section.lang a.active:before {
 @media (max-width: 375px) {
   .side-menu {
     display: none;
+  }
+}
+@media (max-width: 320px) {
+  .service .serviceSwiper .swiper-slide .content-wrap {
+    padding: 12px;
+  }
+  .service .serviceSwiper .swiper-slide .order-2 img {
+    width: 54%;
   }
 }
 /*# sourceMappingURL=style.css.map */

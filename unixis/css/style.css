@@ -10346,7 +10346,8 @@ section.lang a.active:before {
   }
 
   .en .value .text-wrap {
-    top: 10%;
+    top: 12%;
+    left: 0;
   }
 
   .service {

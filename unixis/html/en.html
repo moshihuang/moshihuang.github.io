@@ -490,7 +490,7 @@
         }
         return os;
       }
-      alert(getOS());
+      //- alert(getOS());
       
       
       
@@ -669,9 +669,9 @@
         //-   }
         //- });
       
-        $('.side-menu li').on('click', function() {
-          $(this).addClass('active');
-          $(this).siblings().removeClass('active');
+        $('.side-menu li a').on('click', function(e) {
+          $('.side-menu li').removeClass('active');
+          $(this).siblings('li').addClass('active');
         });
       
         $('.talk-to-us').on('click', function() {
@@ -696,22 +696,8 @@
             $('.side-menu li').removeClass('active');
             $('.navContact').addClass('active');
           }
-          //- if (windowH <= 200) {
-          //-   $('.backtotop').removeClass('show').addClass('hide')
-          //- }
-          //- if (windowH > 200) {
-          //-   $('.backtotop').removeClass('hide').addClass('show')
-          //- }
-          //- if (windowH > 200 && windowH >= footerH - 40) {
-          //-   $('.backtotop').addClass('fixed').css('top', -40 - gap);
-          //- }
-          //- else {
-          //-   $('.backtotop').removeClass('fixed')
-          //- }
-          //- console.log(windowH, gap)
         });
       
-        
       
       
         var waypoints = $('#value').waypoint({
@@ -719,7 +705,6 @@
             $('.navValue').addClass('active');
             $('.navValue').siblings().removeClass('active');
           },
-          //- offset: '50%'
         });
         var waypoints = $('#service').waypoint({
           handler: function(direction) {
@@ -750,42 +735,7 @@
           $('.m-menu').removeClass('m-menu-opened');
         }); 
       
-        //- function committedBG() {
-        //-   var timeout;
-        //-   document.addEventListener('mousemove', function (event) {
-        //-     if (timeout !== undefined) {
-        //-       window.clearTimeout(timeout);
-        //-     }
-        //-     // Grab the mouse's X-position.
-        //-     var mousex = event.clientX;
-        //-     var mousey = event.clientY;
-      
-        //-     timeout = window.setTimeout(function () {
-        //-       // trigger the new event on event.target, so that it can bubble appropriately
-        //-       $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
-        //-       $('.committed .committed-bg-2').css({'left': 42 + mousex / 400 + "%", 'top': 0 + mousey / 1000 + "%"});
-        //-       $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
-        //-       $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 75 + mousey / 5 + "px"});
-        //-     }, 100);
-      
-        //-     //- setTimeout( function(){
-        //-     //-   $('.committed .committed-bg-1').css({'left': 70 + mousex / 800 + "%", 'top': -125 + mousey / 20 + "px"});
-        //-     //- }, 400); 
-      
-        //-     //- setTimeout( function(){
-        //-     //-   $('.committed .committed-bg-2').css({'left': 42 + mousex / 400 + "%", 'top': 0 + mousey / 1000 + "%"});
-        //-     //- }, 555); 
-      
-        //-     //- setTimeout( function(){
-        //-     //-   $('.committed .committed-bg-3').css({'left': 78 + mousex / 90 + "%", 'top': -40 + mousey / 10 + "px"});
-        //-     //- }, 350); 
-      
-        //-     //- setTimeout( function(){
-        //-     //-   $('.committed .committed-bg-4').css({'left': 55 + mousex / 200 + "%", 'top': 75 + mousey / 5 + "px"});
-        //-     //- }, 500);
-      
-        //-   }, false);
-        //- }
+        
       
         var lFollowX = 0,
             lFollowY = 0,

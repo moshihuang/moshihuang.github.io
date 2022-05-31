@@ -206,8 +206,8 @@
     
     .body-wrap {
       height: calc(100vh);
-      height: calc(100vh - env(safe-area-inset-top));
-      height: calc(100vh - constant(safe-area-inset-top));
+      height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+      height: calc(100vh - constant(safe-area-inset-top) - constant(safe-area-inset-bottom));
       padding: 16px;
       display: flex;
       flex-direction: column;
